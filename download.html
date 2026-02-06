@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Downloading.....</title>
+</head>
+<body style="background:#000;color:#0ae448;text-align:center;padding:80px;font-family:inter">
+
+<h1>Payment Successful ✅</h1>
+<p>Your download will start automatically.....</p>
+
+<script>
+const url = new URLSearchParams(window.location.search);
+const product = url.get('product');
+
+const files = {
+"button-pack": "files/button-pack.zip",
+"scroll-pack": "files/scroll-pack.zip",
+"loader-pack": "files/loader-pack.zip"
+};
+if(files[product]){
+window.location = files[product];
+} else {
+document.body.innerHTML = '<h2>Invalid Product</h2>';
+}
+</script>
+
+
+</body>
+</html>

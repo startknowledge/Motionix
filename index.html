@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motionix – Premium Web Animation Templates</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0b1220, #000000 70%);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 18px 60px;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .logo { font-size: 26px; font-weight: 800; letter-spacing: 1px; color: #0ae448; }
+
+    nav a { margin-left: 24px; font-weight: 500; opacity: 0.85; }
+
+    nav a:hover { opacity: 1; color: #0ae448; }
+
+    section { padding: 120px 8%; }
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero h1 { font-size: 64px; line-height: 1.05; }
+    .hero p { margin-top: 20px; font-size: 18px; opacity: 0.85; }
+
+    .btn-group { margin-top: 32px; }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      margin-right: 14px;
+      transition: 0.3s ease;
+    }
+
+    .btn.primary { background: #0ae448; color: #000; }
+    .btn.secondary { border: 1px solid #555; }
+
+    .btn:hover { transform: scale(1.06); }
+
+    .hero-visual {
+      width: 100%;
+      height: 420px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0ae448, #0072ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      font-weight: 800;
+      color: #000;
+      box-shadow: 0 0 80px rgba(10,228,72,0.4);
+    }
+
+    h2 { font-size: 48px; margin-bottom: 40px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.04);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      transition: 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .card:hover { transform: translateY(-10px) scale(1.03); box-shadow: 0 0 40px rgba(10,228,72,0.25); }
+
+    .demo-box {
+      height: 140px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #111, #222);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #0ae448;
+      margin-bottom: 14px;
+    }
+
+    .price { color: #0ae448; font-size: 20px; font-weight: 700; margin-top: 10px; }
+
+    footer { text-align: center; padding: 60px 20px; opacity: 0.6; }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      header { padding: 16px 24px; }
+      .hero h1 { font-size: 48px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Motionix</div>
+  <nav>
+    <a href="#demos">Demos</a>
+    <a href="#templates">Templates</a>
+    <a href="#work">How It Works</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Build Stunning Web Animations Faster</h1>
+    <p>Premium GSAP powered animation templates for developers & designers.</p>
+    <div class="btn-group">
+      <a class="btn primary" href="#demos">View Demos</a>
+      <a class="btn secondary" href="#templates">Browse Templates</a>
+    </div>
+  </div>
+  <div class="hero-visual">GSAP POWER</div>
+</section>
+
+<section id="demos">
+  <h2>Live Animation Demos</h2>
+  <div class="grid">
+    <div class="card demo"><div class="demo-box">Hover Button</div>Live Demo</div>
+    <div class="card demo"><div class="demo-box">Scroll Text</div>Live Demo</div>
+    <div class="card demo"><div class="demo-box">Card Hover</div>Live Demo</div>
+    <div class="card demo"><div class="demo-box">Loader</div>Live Demo</div>
+  </div>
+</section>
+
+<section id="templates">
+  <h2>Featured Templates</h2>
+  <div class="grid">
+    <div class="card"><div class="demo-box">Button Pack</div>Button Animation Pack<div class="price">$9</div></div>
+    <div class="card"><div class="demo-box">Scroll Pack</div>Scroll Animation Pack<div class="price">$12</div></div>
+    <div class="card"><div class="demo-box">Loader Pack</div>Loader Animation Pack<div class="price">$7</div></div>
+  </div>
+</section>
+
+<section id="work">
+  <h2>How It Works</h2>
+  <div class="grid">
+    <div class="card">1. Choose Template</div>
+    <div class="card">2. Copy Code</div>
+    <div class="card">3. Paste In Project</div>
+    <div class="card">4. Done 🚀</div>
+  </div>
+</section>
+<div class="card">
+  <div class="demo-box">Button Hover Demo</div>
+
+  <button onclick="openDemo()">Live Demo</button>
+
+  <!--<button onclick="buyTemplate('button-pack')">
+    Buy ₹199
+  </button>-->
+  <button onclick="buyTemplate('button-pack',199)">Buy ₹199</button>
+</div>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="js/main.js"></script>
+
+<footer>
+  © 2026 Motionix — Premium Web Animations
+</footer>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from(".hero h1", { y: 80, opacity: 0, duration: 1.2 });
+  gsap.from(".hero p", { y: 50, opacity: 0, duration: 1, delay: 0.2 });
+  gsap.from(".btn", { scale: 0.8, opacity: 0, duration: 0.8, delay: 0.4, stagger: 0.1 });
+
+  gsap.utils.toArray(".card").forEach(card => {
+    gsap.from(card, {
+      scrollTrigger: { trigger: card, start: "top 85%" },
+      y: 60, opacity: 0, duration: 0.8
+    });
+  });
+</script>
+
+</body>
+</html>
