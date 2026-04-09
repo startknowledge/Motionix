@@ -243,5 +243,33 @@
     "image": "https://picsum.photos/id/73/1200/630",
     "excerpt": "\n\nmotion engine | Motionix\n<meta name=\"description\" content=\"Complete guide to motion engine. Learn actionable strategie...",
     "date": "4/9/2026"
+  },
+  {
+    "title": "cross platform animation",
+    "url": "cross-platform-animation.html",
+    "image": "https://picsum.photos/id/84/1200/630",
+    "excerpt": "\n\ncross platform animation | Motionix\n<meta name=\"description\" content=\"Complete guide to cross platform animation. Lear...",
+    "date": "4/9/2026"
+  },
+  {
+    "title": "javascript motion library",
+    "url": "javascript-motion-library.html",
+    "image": "https://picsum.photos/id/66/1200/630",
+    "excerpt": "\n\njavascript motion library | Motionix\n<meta name=\"description\" content=\"Complete guide to javascript motion library. Le...",
+    "date": "4/9/2026"
+  },
+  {
+    "title": "Revolutionizing User Experience: The Power of Mobile Animation",
+    "url": "mobile-animation.html",
+    "image": "https://picsum.photos/id/69/1200/630",
+    "excerpt": "\n\nmobile animation | Motionix\n<meta name=\"description\" content=\"Complete guide to mobile animation. Learn actionable str...",
+    "date": "4/9/2026"
+  },
+  {
+    "title": "Mastering UI Transitions: Elevate User Experience with Seamless Interactions",
+    "url": "ui-transitions.html",
+    "image": "https://picsum.photos/id/37/1200/630",
+    "excerpt": "\n\nui transitions | Motionix\n<meta name=\"description\" content=\"Complete guide to ui transitions. Learn actionable strateg...",
+    "date": "4/9/2026"
   }
 ]
