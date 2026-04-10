@@ -404,5 +404,47 @@
     "image": "https://picsum.photos/id/95/1200/630",
     "excerpt": "\n\nui animation component | Motionix\n<meta name=\"description\" content=\"Complete guide to ui animation component. Learn ac...",
     "date": "4/10/2026"
+  },
+  {
+    "title": "Mastering 2D Web Rendering: Techniques, Tools, and Best Practices for Stunning Visuals",
+    "url": "2d-web-rendering.html",
+    "image": "https://picsum.photos/id/41/1200/630",
+    "excerpt": "\n\n2d web rendering | Motionix\n<meta name=\"description\" content=\"Complete guide to 2d web rendering. Learn actionable str...",
+    "date": "4/10/2026"
+  },
+  {
+    "title": "full page scroll animation",
+    "url": "full-page-scroll-animation.html",
+    "image": "https://picsum.photos/id/26/1200/630",
+    "excerpt": "\n\nfull page scroll animation | Motionix\n<meta name=\"description\" content=\"Complete guide to full page scroll animation. ...",
+    "date": "4/10/2026"
+  },
+  {
+    "title": "gesture animation",
+    "url": "gesture-animation.html",
+    "image": "https://picsum.photos/id/29/1200/630",
+    "excerpt": "\n\ngesture animation | Motionix\n<meta name=\"description\" content=\"Complete guide to gesture animation. Learn actionable s...",
+    "date": "4/10/2026"
+  },
+  {
+    "title": "jquery animation alternative",
+    "url": "jquery-animation-alternative.html",
+    "image": "https://picsum.photos/id/2/1200/630",
+    "excerpt": "\n\njquery animation alternative | Motionix\n<meta name=\"description\" content=\"Complete guide to jquery animation alternati...",
+    "date": "4/10/2026"
+  },
+  {
+    "title": "modern animation",
+    "url": "modern-animation.html",
+    "image": "https://picsum.photos/id/89/1200/630",
+    "excerpt": "\n\nmodern animation | Motionix\n<meta name=\"description\" content=\"Complete guide to modern animation. Learn actionable str...",
+    "date": "4/10/2026"
+  },
+  {
+    "title": "Master Path Animation: How to Bring Your Designs to Life with Smooth, Dynamic Motion",
+    "url": "path-animation.html",
+    "image": "https://picsum.photos/id/46/1200/630",
+    "excerpt": "\n\npath animation | Motionix\n<meta name=\"description\" content=\"Complete guide to path animation. Learn actionable strateg...",
+    "date": "4/10/2026"
   }
 ]
