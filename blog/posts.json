@@ -551,5 +551,40 @@
     "image": "https://picsum.photos/id/35/1200/630",
     "excerpt": "\n\nviewport animation | Motionix\n<meta name=\"description\" content=\"Complete guide to viewport animation. Learn actionable...",
     "date": "4/11/2026"
+  },
+  {
+    "title": "Mastering Canvas Rendering: Unlock the Full Potential of Your Web Applications",
+    "url": "canvas-rendering.html",
+    "image": "https://picsum.photos/id/78/1200/630",
+    "excerpt": "\n\ncanvas rendering | Motionix\n<meta name=\"description\" content=\"Complete guide to canvas rendering. Learn actionable str...",
+    "date": "4/11/2026"
+  },
+  {
+    "title": "Unlocking the Power of Frontend Animation: Boosting User Experience and Conversions",
+    "url": "frontend-animation.html",
+    "image": "https://picsum.photos/id/31/1200/630",
+    "excerpt": "\n\nfrontend animation | Motionix\n<meta name=\"description\" content=\"Complete guide to frontend animation. Learn actionable...",
+    "date": "4/11/2026"
+  },
+  {
+    "title": "Unlocking the Power of GSAP Animation: A Comprehensive Guide to Elevating Your Website's Visual Storytelling",
+    "url": "gsap-animation.html",
+    "image": "https://picsum.photos/id/74/1200/630",
+    "excerpt": "\n\nGSAP animation | Motionix\n<meta name=\"description\" content=\"Complete guide to GSAP animation. Learn actionable strateg...",
+    "date": "4/11/2026"
+  },
+  {
+    "title": "Unlocking the Power of Interactive Perspective: Revolutionizing User Experience",
+    "url": "interactive-perspective.html",
+    "image": "https://picsum.photos/id/37/1200/630",
+    "excerpt": "\n\ninteractive perspective | Motionix\n<meta name=\"description\" content=\"Complete guide to interactive perspective. Learn ...",
+    "date": "4/11/2026"
+  },
+  {
+    "title": "Home",
+    "url": "smooth-scroll-library.html",
+    "image": "https://picsum.photos/id/61/1200/630",
+    "excerpt": "\n\nsmooth scroll library | Motionix\n<meta name=\"description\" content=\"Complete guide to smooth scroll library. Learn acti...",
+    "date": "4/11/2026"
   }
 ]
