@@ -203,9 +203,9 @@
     "date": "4/22/2026"
   },
   {
-    "title": "<strong>Frontend Motion: The Ultimate Guide to Creating Stunning, Performance-Optimized Animations in 2024</strong>",
+    "title": "<strong>Frontend Motion: The Ultimate Guide to Crafting Stunning, Performance-Optimized Animations in 2024</strong>",
     "url": "frontend-motion.html",
-    "image": "https://picsum.photos/id/2/1200/630",
+    "image": "https://picsum.photos/id/0/1200/630",
     "excerpt": "\n\nfrontend motion | Motionix\n<meta name=\"description\" content=\"Complete guide to frontend motion. Learn actionable strat...",
     "date": "4/22/2026"
   },
@@ -238,9 +238,9 @@
     "date": "4/22/2026"
   },
   {
-    "title": "Unlocking the Power of GSAP Animation: A Comprehensive Guide to Elevating Your Website's Visual Storytelling",
+    "title": "<strong>GSAP Animation: The Ultimate Guide to Creating Stunning, High-Performance Web Animations in 2024</strong>",
     "url": "gsap-animation.html",
-    "image": "https://picsum.photos/id/74/1200/630",
+    "image": "https://picsum.photos/id/59/1200/630",
     "excerpt": "\n\nGSAP animation | Motionix\n<meta name=\"description\" content=\"Complete guide to GSAP animation. Learn actionable strateg...",
     "date": "4/22/2026"
   },
@@ -291,6 +291,13 @@
     "url": "interactive-hover-ui.html",
     "image": "https://picsum.photos/id/67/1200/630",
     "excerpt": "\n\ninteractive hover ui | Motionix\n<meta name=\"description\" content=\"Complete guide to interactive hover ui. Learn action...",
+    "date": "4/22/2026"
+  },
+  {
+    "title": "<strong>The Ultimate Guide to Interactive Particles: Transforming Digital Experiences with Dynamic Visuals</strong>",
+    "url": "interactive-particles.html",
+    "image": "https://picsum.photos/id/43/1200/630",
+    "excerpt": "\n\ninteractive particles | Motionix\n<meta name=\"description\" content=\"Complete guide to interactive particles. Learn acti...",
     "date": "4/22/2026"
   },
   {
@@ -469,9 +476,9 @@
     "date": "4/22/2026"
   },
   {
-    "title": "Master Path Animation: How to Bring Your Designs to Life with Smooth, Dynamic Motion",
+    "title": "<strong>Path Animation: The Ultimate Guide to Creating Stunning Motion Design in 2024</strong>",
     "url": "path-animation.html",
-    "image": "https://picsum.photos/id/46/1200/630",
+    "image": "https://picsum.photos/id/91/1200/630",
     "excerpt": "\n\npath animation | Motionix\n<meta name=\"description\" content=\"Complete guide to path animation. Learn actionable strateg...",
     "date": "4/22/2026"
   },
@@ -553,10 +560,17 @@
     "date": "4/22/2026"
   },
   {
-    "title": "slider library",
+    "title": "<strong>The Ultimate Guide to Slider Libraries: Boost Your Website’s Visual Appeal &amp; Performance in 2024</strong>",
     "url": "slider-library.html",
-    "image": "https://picsum.photos/id/92/1200/630",
+    "image": "https://picsum.photos/id/47/1200/630",
     "excerpt": "\n\nslider library | Motionix\n<meta name=\"description\" content=\"Complete guide to slider library. Learn actionable strateg...",
+    "date": "4/22/2026"
+  },
+  {
+    "title": "<strong>The Ultimate Guide to Smooth Navigation Animation: Elevate UX with Seamless Transitions</strong>",
+    "url": "smooth-navigation-animation.html",
+    "image": "https://picsum.photos/id/58/1200/630",
+    "excerpt": "\n\nsmooth navigation animation | Motionix\n<meta name=\"description\" content=\"Complete guide to smooth navigation animation...",
     "date": "4/22/2026"
   },
   {
