@@ -63,6 +63,13 @@
     "date": "4/22/2026"
   },
   {
+    "title": "<strong>The Ultimate Guide to Background Animation: Elevate Your Website with Stunning Motion Design</strong>",
+    "url": "background-animation.html",
+    "image": "https://picsum.photos/id/30/1200/630",
+    "excerpt": "\n\nbackground animation | Motionix\n<meta name=\"description\" content=\"Complete guide to background animation. Learn action...",
+    "date": "4/22/2026"
+  },
+  {
     "title": "<strong>The Ultimate Guide to the Best Motionix Tools in 2024: Boost Your Motion Capture &amp; Animation Workflow</strong>",
     "url": "best-motionix-tools.html",
     "image": "https://picsum.photos/id/0/1200/630",
@@ -98,9 +105,9 @@
     "date": "4/22/2026"
   },
   {
-    "title": "card hover effect",
+    "title": "<strong>The Ultimate Guide to Card Hover Effects: Elevate Your Website Design with Motionix</strong>",
     "url": "card-hover-effect.html",
-    "image": "https://picsum.photos/id/10/1200/630",
+    "image": "https://picsum.photos/id/61/1200/630",
     "excerpt": "\n\ncard hover effect | Motionix\n<meta name=\"description\" content=\"Complete guide to card hover effect. Learn actionable s...",
     "date": "4/22/2026"
   },
@@ -343,6 +350,13 @@
     "date": "4/22/2026"
   },
   {
+    "title": "<strong>Lightweight Animation JS: The Ultimate Guide to Smooth, High-Performance Animations Without the Bloat</strong>",
+    "url": "lightweight-animation-js.html",
+    "image": "https://picsum.photos/id/15/1200/630",
+    "excerpt": "\n\nlightweight animation js | Motionix\n<meta name=\"description\" content=\"Complete guide to lightweight animation js. Lear...",
+    "date": "4/22/2026"
+  },
+  {
     "title": "<strong>Lightweight Animation: The Ultimate Guide to Faster, Smoother, and More Efficient Motion Design</strong>",
     "url": "lightweight-animation.html",
     "image": "https://picsum.photos/id/42/1200/630",
@@ -567,9 +581,9 @@
     "date": "4/22/2026"
   },
   {
-    "title": "<strong>The Ultimate Guide to Smooth Navigation Animation: Elevate UX with Seamless Transitions</strong>",
+    "title": "<strong>The Ultimate Guide to Smooth Navigation Animation: Elevate User Experience &amp; Boost Conversions</strong>",
     "url": "smooth-navigation-animation.html",
-    "image": "https://picsum.photos/id/58/1200/630",
+    "image": "https://picsum.photos/id/89/1200/630",
     "excerpt": "\n\nsmooth navigation animation | Motionix\n<meta name=\"description\" content=\"Complete guide to smooth navigation animation...",
     "date": "4/22/2026"
   },
@@ -581,9 +595,9 @@
     "date": "4/22/2026"
   },
   {
-    "title": "Home",
+    "title": "<strong>The Ultimate Guide to Smooth Scroll Libraries: Enhance User Experience with Seamless Navigation</strong>",
     "url": "smooth-scroll-library.html",
-    "image": "https://picsum.photos/id/61/1200/630",
+    "image": "https://picsum.photos/id/36/1200/630",
     "excerpt": "\n\nsmooth scroll library | Motionix\n<meta name=\"description\" content=\"Complete guide to smooth scroll library. Learn acti...",
     "date": "4/22/2026"
   },
@@ -767,6 +781,13 @@
     "url": "web-storytelling.html",
     "image": "https://picsum.photos/id/53/1200/630",
     "excerpt": "\n\nweb storytelling | Motionix\n<meta name=\"description\" content=\"Complete guide to web storytelling. Learn actionable str...",
+    "date": "4/22/2026"
+  },
+  {
+    "title": "<strong>WebGL Motion: The Ultimate Guide to Creating Stunning 3D Animations for the Web</strong>",
+    "url": "webgl-motion.html",
+    "image": "https://picsum.photos/id/37/1200/630",
+    "excerpt": "\n\nwebgl motion | Motionix\n<meta name=\"description\" content=\"Complete guide to webgl motion. Learn actionable strategies,...",
     "date": "4/22/2026"
   }
 ]
