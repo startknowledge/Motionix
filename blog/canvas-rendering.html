@@ -4,7 +4,7 @@
 <meta name="description" content="Complete guide to canvas rendering. Learn actionable strategies, avoid common mistakes, and master canvas rendering in 2026.">
 <link rel="canonical" href="https://Motionix.startknowledge.in/blog/canvas-rendering.html">
 <meta property="og:title" content="canvas rendering | Motionix">
-<meta property="og:image" content="https://picsum.photos/id/18/1200/630">
+<meta property="og:image" content="https://picsum.photos/id/10/1200/630">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -12,9 +12,9 @@
   "headline": "canvas rendering",
   "description": "Complete guide to canvas rendering.",
   "author": {"@type": "Organization", "name": "Motionix"},
-  "datePublished": "2026-04-21",
-  "dateModified": "2026-04-21T02:29:44.529Z",
-  "image": "https://picsum.photos/id/18/1200/630"
+  "datePublished": "2026-04-24",
+  "dateModified": "2026-04-24T09:36:26.904Z",
+  "image": "https://picsum.photos/id/10/1200/630"
 }
 </script>
 <style>/* advanced CSS */</style>
@@ -31,642 +31,346 @@ gtag('config', 'G-Y97JEBHZLV');
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K435LPQQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript></head>
 <body>
 <div class="container">
-<article><img src="https://picsum.photos/id/18/1200/630" alt="canvas rendering" style="width:100%"><h1><strong>Canvas Rendering: The Ultimate Guide to High-Performance 2D &amp; 3D Graphics for Motion Designers</strong></h1>
+<article><img src="https://picsum.photos/id/10/1200/630" alt="canvas rendering" style="width:100%"><h1><strong>Canvas Rendering: The Ultimate Guide to High-Performance 2D &amp; 3D Graphics for Motion Designers</strong></h1>
 <h2><strong>Introduction: Why Canvas Rendering Matters in 2024</strong></h2><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="4441349363" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
-<p><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="1966379200" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>In the fast-evolving world of digital animation and motion design, <strong>canvas rendering</strong> has become a cornerstone for creating smooth, interactive, and high-performance visuals. Whether you're building a <strong>real-time 3D environment</strong>, optimizing <strong>2D animations</strong>, or developing <strong>web-based games</strong>, how you render graphics on the HTML5 <code>&lt;canvas&gt;</code> element can make or break user experience.</p>
-<p>According to recent industry reports:</p>
-<ul>
-<li><strong>60% of web animations</strong> rely on <code>&lt;canvas&gt;</code> for performance-critical rendering (Statista, 2023).</li>
-<li><strong>Real-time rendering</strong> in web applications has seen a <strong>45% increase</strong> in demand since 2020 (Gartner, 2024).</li>
-<li><strong>Mobile users</strong> expect <strong>60 FPS</strong> for seamless animations, and canvas rendering is one of the few ways to achieve this without heavy dependencies (Google Developers, 2023).</li>
-</ul>
-<p>If you're a motion designer, developer, or creator looking to <strong>maximize performance, reduce lag, and optimize rendering</strong>, this guide will walk you through <strong>everything you need to know about canvas rendering</strong>—from <strong>fundamental concepts</strong> to <strong>advanced optimization techniques</strong>.</p>
+<p><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="1966379200" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>In the fast-evolving world of digital animation and motion design, <strong>canvas rendering</strong> has become a cornerstone for creating smooth, high-performance visuals—whether for web animations, game development, or interactive experiences. With <strong>63% of internet users expecting websites to load in under 2 seconds</strong> (Google, 2023) and <strong>85% of users abandoning a site if it takes longer than 3 seconds to load</strong> (Pingdom, 2022), optimizing rendering techniques is no longer optional—it’s essential.</p>
+<p>The <strong>HTML5 Canvas API</strong>, introduced over a decade ago, has since evolved into a powerful tool for developers and designers alike. It allows for <strong>real-time rendering of graphics, animations, and even simple 3D effects</strong> without relying on external plugins like Flash. Today, canvas rendering is used in everything from <strong>interactive dashboards and data visualizations</strong> to <strong>high-end motion graphics in After Effects and Blender</strong>.</p>
+<p>But how do you <strong>maximize performance, reduce lag, and ensure smooth rendering</strong>? Whether you're a <strong>motion designer, web developer, or game programmer</strong>, this guide will walk you through <strong>proven strategies, real-world examples, and common pitfalls</strong> to help you master canvas rendering.</p>
 <hr>
 <h2><strong>What Is Canvas Rendering? A Deep Dive</strong></h2>
+<p>Before diving into optimization techniques, let’s break down <strong>what canvas rendering actually is</strong> and how it differs from other rendering methods.</p>
 <h3><strong>1. The Basics of HTML5 Canvas</strong></h3>
-<p>The <code>&lt;canvas&gt;</code> element in HTML5 is a <strong>programmable drawing surface</strong> that allows developers to render <strong>2D and 3D graphics</strong> dynamically using JavaScript. Unlike SVG (which is resolution-dependent), canvas is <strong>pixel-based</strong>, making it ideal for <strong>high-performance animations</strong>.</p>
-<h4><strong>Key Features of Canvas:</strong></h4>
+<p>The <strong>HTML5 Canvas</strong> is a <strong>2D rendering context</strong> that allows developers to draw shapes, text, and images programmatically using JavaScript. Unlike traditional raster graphics (like PNG or JPEG), canvas rendering is <strong>dynamic</strong>—meaning you can manipulate pixels in real time.</p>
+<p>Key features of canvas rendering:</p>
 <ul>
-<li><strong>Hardware-accelerated rendering</strong> (via WebGL for 3D).</li>
-<li><strong>Supports real-time updates</strong> (perfect for games and interactive apps).</li>
-<li><strong>Lightweight compared to WebGL</strong> for simple 2D graphics.</li>
-<li><strong>No external dependencies</strong>—works natively in browsers.</li>
+<li><strong>Hardware-accelerated rendering</strong> (via WebGL for 3D)</li>
+<li><strong>No external dependencies</strong> (unlike Flash or Silverlight)</li>
+<li><strong>Supports animations, games, and data visualizations</strong></li>
+<li><strong>Works across all modern browsers</strong></li>
 </ul>
-<h3><strong>2. How Canvas Rendering Works</strong></h3>
-<p>Canvas rendering follows a <strong>double-buffering</strong> approach:</p>
-<ol>
-<li><strong>Offscreen Buffer (Back Buffer):</strong> Graphics are drawn here first.</li>
-<li><strong>Swap Buffers:</strong> Once rendering is complete, the back buffer is swapped with the front buffer (visible to the user).</li>
-</ol>
-<p>This prevents <strong>flickering</strong> and ensures smooth transitions.</p>
-<h3><strong>3. Canvas vs. WebGL vs. SVG</strong></h3>
+<h3><strong>2. Canvas vs. SVG vs. WebGL</strong></h3>
+<p>While canvas is powerful, it’s not the only option for rendering graphics. Here’s how it compares:</p>
 <table>
 <thead>
 <tr>
 <th>Feature</th>
-<th>Canvas (2D)</th>
-<th>WebGL (3D)</th>
-<th>SVG</th>
+<th><strong>HTML5 Canvas</strong></th>
+<th><strong>SVG (Scalable Vector Graphics)</strong></th>
+<th><strong>WebGL (3D Canvas)</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Best For</strong></td>
-<td>2D animations, games</td>
-<td>3D graphics, complex scenes</td>
-<td>Vector-based graphics, logos</td>
+<td><strong>Rendering Type</strong></td>
+<td>Raster (pixel-based)</td>
+<td>Vector (scalable)</td>
+<td>3D (hardware-accelerated)</td>
 </tr>
 <tr>
 <td><strong>Performance</strong></td>
-<td>High (for 2D)</td>
-<td>Very High (GPU-accelerated)</td>
-<td>Moderate (CPU-dependent)</td>
+<td>Good for 2D, slower for complex 3D</td>
+<td>Excellent for static/semi-dynamic graphics</td>
+<td>Best for 3D, games, and advanced animations</td>
 </tr>
 <tr>
 <td><strong>Flexibility</strong></td>
-<td>Dynamic, pixel-based</td>
-<td>Shaders, lighting effects</td>
-<td>Static, resolution-independent</td>
+<td>Dynamic, real-time changes</td>
+<td>Fixed structure (unless using JavaScript)</td>
+<td>Highly customizable</td>
 </tr>
 <tr>
-<td><strong>Learning Curve</strong></td>
-<td>Easy</td>
-<td>Steep</td>
-<td>Moderate</td>
+<td><strong>Use Cases</strong></td>
+<td>Games, animations, dashboards</td>
+<td>Logos, icons, infographics</td>
+<td>3D models, VR/AR, complex simulations</td>
 </tr>
 </tbody></table>
 <p><strong>When to use canvas?</strong></p>
 <ul>
-<li><strong>Real-time animations</strong> (e.g., motion graphics, interactive dashboards).</li>
-<li><strong>Games with 2D elements</strong> (e.g., platformers, puzzle games).</li>
-<li><strong>Performance-critical web apps</strong> (e.g., data visualization, AR filters).</li>
+<li><strong>Fast-paced animations</strong> (e.g., scrolling effects, interactive UI)</li>
+<li><strong>Real-time data visualization</strong> (e.g., stock charts, live dashboards)</li>
+<li><strong>Games with 2D elements</strong> (e.g., platformers, puzzle games)</li>
+<li><strong>Performance-critical web apps</strong> (e.g., motion design portfolios)</li>
 </ul>
 <hr>
-<h2><strong>8 Actionable Strategies to Optimize Canvas Rendering</strong></h2>
-<h3><strong>1. Use RequestAnimationFrame (RAF) for Smooth Animations</strong></h3>
-<p>Instead of using <code>setInterval</code> or <code>setTimeout</code>, <strong><code>requestAnimationFrame</code></strong> syncs with the browser’s refresh rate (~60 FPS by default), reducing jank and improving performance.</p>
-<p><strong>Example:</strong></p>
+<h2><strong>8 Proven Strategies for Optimizing Canvas Rendering Performance</strong></h2>
+<p>Now that you understand the fundamentals, let’s explore <strong>actionable strategies</strong> to <strong>boost rendering speed, reduce memory usage, and ensure smooth playback</strong>—even on low-end devices.</p>
+<hr>
+<h3><strong>Strategy 1: Use Hardware Acceleration (WebGL for 3D)</strong></h3>
+<p>While <strong>2D canvas rendering</strong> is great for simple animations, <strong>3D elements</strong> (like rotating models or parallax effects) can <strong>drain performance</strong> if not optimized.</p>
+<p><strong>How to enable hardware acceleration:</strong></p>
+<ul>
+<li><strong>For 2D canvas:</strong> Use <code>will-change: transform</code> in CSS to hint the browser about upcoming animations.</li>
+<li><strong>For 3D canvas (WebGL):</strong> Always use <strong>WebGL</strong> instead of canvas for 3D rendering, as it leverages the GPU directly.</li>
+</ul>
+<p><strong>Real-world example:</strong>
+Imagine you’re building an <strong>interactive 3D product showcase</strong> for an e-commerce site. If you render everything in pure 2D canvas, the browser will struggle to keep up when users rotate the model. By switching to <strong>WebGL</strong>, you can achieve <strong>60 FPS smoothness</strong> even on mid-range devices.</p>
+<p><strong>Code snippet (WebGL vs. Canvas):</strong></p>
+<pre><code class="language-javascript">// Bad: Pure 2D Canvas (slow for 3D)
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+// Good: WebGL for 3D
+const canvas3D = document.getElementById('canvas3D');
+const gl = canvas3D.getContext('webgl');
+</code></pre>
+<hr>
+<h3><strong>Strategy 2: Minimize Redraws with Offscreen Canvas</strong></h3>
+<p>One of the biggest <strong>performance killers</strong> in canvas rendering is <strong>unnecessary redraws</strong>. Every time you call <code>ctx.clearRect()</code> or <code>ctx.fillRect()</code>, the browser has to <strong>re-render the entire canvas</strong>, which is <strong>expensive</strong>.</p>
+<p><strong>Solution: Use <code>OffscreenCanvas</code> (for Web Workers) or <code>createImageBitmap</code> for batch updates.</strong></p>
+<ul>
+<li><strong>OffscreenCanvas</strong> allows rendering in a <strong>separate thread</strong>, reducing main-thread blocking.</li>
+<li><strong><code>createImageBitmap</code></strong> lets you <strong>pre-render</strong> parts of the canvas and composite them later.</li>
+</ul>
+<p><strong>Real-world example:</strong>
+A <strong>real-time stock market dashboard</strong> updates every second with new data. If you redraw the entire canvas each time, the UI will <strong>stutter</strong>. Instead, you can:</p>
+<ol>
+<li><strong>Render only the changing elements</strong> (e.g., price updates).</li>
+<li><strong>Use <code>OffscreenCanvas</code></strong> to process data in a Web Worker while the main thread handles UI updates.</li>
+</ol>
+<p><strong>Code snippet (OffscreenCanvas):</strong></p>
+<pre><code class="language-javascript">// Create an offscreen canvas
+const offscreenCanvas = new OffscreenCanvas(800, 600);
+const offscreenCtx = offscreenCanvas.getContext('2d');
+
+// Render data in a Web Worker
+worker.postMessage({ data: stockData, canvas: offscreenCanvas });
+</code></pre>
+<hr>
+<h3><strong>Strategy 3: Optimize Image Loading with <code>createImageBitmap</code></strong></h3>
+<p>If your canvas relies on <strong>external images</strong>, loading them <strong>asynchronously</strong> can cause <strong>rendering delays</strong>.</p>
+<p><strong>Best practices:</strong>
+✅ <strong>Preload images</strong> before rendering.
+✅ <strong>Use <code>createImageBitmap</code></strong> instead of <code>new Image()</code> for faster decoding.
+✅ <strong>Resize images to canvas dimensions</strong> to avoid unnecessary scaling.</p>
+<p><strong>Real-world example:</strong>
+A <strong>motion graphics portfolio</strong> loads high-res background images. If these images are loaded <strong>during animation</strong>, the browser will <strong>pause rendering</strong> until they’re ready. By using <code>createImageBitmap</code>, you can:</p>
+<ol>
+<li><strong>Decode images in advance</strong>.</li>
+<li><strong>Render them instantly</strong> when needed.</li>
+</ol>
+<p><strong>Code snippet (Image Optimization):</strong></p>
+<pre><code class="language-javascript">// Bad: Traditional image loading (slow)
+const img = new Image();
+img.src = 'background.jpg';
+
+// Good: Preload with createImageBitmap
+async function loadImage(url) {
+  const response = await fetch(url);
+  const blob = await response.blob();
+  const bitmap = await createImageBitmap(blob);
+  return bitmap;
+}
+</code></pre>
+<hr>
+<h3><strong>Strategy 4: Use RequestAnimationFrame for Smooth Animations</strong></h3>
+<p>The <strong><code>requestAnimationFrame</code></strong> API is <strong>essential</strong> for smooth animations because it <strong>syncs with the browser’s repaint cycle</strong> (typically 60 FPS).</p>
+<p><strong>Key benefits:</strong></p>
+<ul>
+<li><strong>Reduces jank</strong> (stuttering) by aligning with the display refresh rate.</li>
+<li><strong>Automatically throttles</strong> for lower FPS on mobile devices.</li>
+</ul>
+<p><strong>Real-world example:</strong>
+A <strong>scroll-triggered animation</strong> (like a parallax effect) will <strong>look choppy</strong> if you use <code>setInterval</code> or <code>setTimeout</code>. By using <code>requestAnimationFrame</code>, you ensure:</p>
+<ul>
+<li><strong>Consistent 60 FPS</strong> on desktop.</li>
+<li><strong>Adaptive performance</strong> on mobile.</li>
+</ul>
+<p><strong>Code snippet (requestAnimationFrame):</strong></p>
 <pre><code class="language-javascript">function animate() {
-  // Clear canvas
+  // Update animation state
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawScene();
 
-  // Draw something
-  ctx.fillStyle = "red";
-  ctx.fillRect(50, 50, 50, 50);
-
-  // Request next frame
+  // Schedule next frame
   requestAnimationFrame(animate);
 }
+
 animate();
 </code></pre>
-<p><strong>Why it matters:</strong></p>
-<ul>
-<li><strong>Reduces CPU usage</strong> by aligning with the browser’s repaint cycle.</li>
-<li><strong>Prevents lag</strong> in fast-moving animations.</li>
-</ul>
 <hr>
-<h3><strong>2. Minimize Redraws with Offscreen Canvas</strong></h3>
-<p>Instead of clearing and redrawing the entire canvas every frame, <strong>use an offscreen canvas</strong> to pre-render elements and composite them later.</p>
-<p><strong>Example:</strong></p>
-<pre><code class="language-javascript">const offscreenCanvas = new OffscreenCanvas(800, 600);
-const offscreenCtx = offscreenCanvas.getContext("2d");
+<h3><strong>Strategy 5: Batch Drawing Operations</strong></h3>
+<p>Every time you call <code>ctx.fillRect()</code>, <code>ctx.drawImage()</code>, or <code>ctx.stroke()</code>, the browser <strong>executes a new command</strong>. <strong>Batching</strong> these operations reduces the number of draw calls, <strong>dramatically improving performance</strong>.</p>
+<p><strong>How to batch:</strong></p>
+<ul>
+<li><strong>Group similar shapes</strong> (e.g., draw all rectangles before circles).</li>
+<li><strong>Use <code>beginPath()</code> and <code>closePath()</code></strong> for complex shapes.</li>
+<li><strong>Avoid frequent <code>clearRect()</code> calls</strong>—instead, redraw only what’s needed.</li>
+</ul>
+<p><strong>Real-world example:</strong>
+A <strong>complex particle system</strong> (like fire or smoke) renders thousands of small shapes. If you draw each particle <strong>individually</strong>, the canvas will <strong>lag</strong>. By <strong>grouping particles by type</strong> and <strong>reusing paths</strong>, you can:</p>
+<ul>
+<li><strong>Reduce draw calls from 10,000 to just 100</strong>.</li>
+<li><strong>Maintain smooth performance at 60 FPS</strong>.</li>
+</ul>
+<p><strong>Code snippet (Batched Drawing):</strong></p>
+<pre><code class="language-javascript">// Bad: Individual draws (slow)
+for (let i = 0; i &lt; 10000; i++) {
+  ctx.fillRect(x[i], y[i], 2, 2);
+}
 
-// Draw to offscreen first
-offscreenCtx.fillStyle = "blue";
-offscreenCtx.fillRect(100, 100, 100, 100);
-
-// Then composite to main canvas
-ctx.drawImage(offscreenCanvas, 0, 0);
+// Good: Batched drawing
+ctx.beginPath();
+for (let i = 0; i &lt; 10000; i++) {
+  ctx.rect(x[i], y[i], 2, 2);
+}
+ctx.fill();
 </code></pre>
-<p><strong>Why it matters:</strong></p>
-<ul>
-<li><strong>Reduces GPU load</strong> by batching draws.</li>
-<li><strong>Improves FPS</strong> in complex scenes.</li>
-</ul>
 <hr>
-<h3><strong>3. Use Web Workers for Heavy Computations</strong></h3>
-<p>If your canvas rendering involves <strong>complex calculations</strong> (e.g., physics simulations, particle systems), offload them to a <strong>Web Worker</strong> to avoid blocking the main thread.</p>
-<p><strong>Example:</strong></p>
-<pre><code class="language-javascript">const worker = new Worker("particle-worker.js");
+<h3><strong>Strategy 6: Use Canvas Layers for Complex Scenes</strong></h3>
+<p>If your canvas has <strong>multiple independent layers</strong> (e.g., background, UI, animations), <strong>rendering them separately</strong> and <strong>compositing them at the end</strong> is <strong>far more efficient</strong> than redrawing everything.</p>
+<p><strong>How to implement layers:</strong></p>
+<ol>
+<li><strong>Render each layer to a separate canvas</strong> (or <code>OffscreenCanvas</code>).</li>
+<li><strong>Composite them</strong> using <code>drawImage()</code> at the end.</li>
+</ol>
+<p><strong>Real-world example:</strong>
+A <strong>multi-layered dashboard</strong> (e.g., a weather app with animations, charts, and controls) will <strong>perform poorly</strong> if everything is drawn in one pass. By <strong>separating layers</strong>:</p>
+<ul>
+<li><strong>Background</strong> (static image).</li>
+<li><strong>Animations</strong> (floating particles).</li>
+<li><strong>UI elements</strong> (buttons, sliders).
+You can <strong>update only the changing layer</strong> while keeping others static.</li>
+</ul>
+<p><strong>Code snippet (Layered Rendering):</strong></p>
+<pre><code class="language-javascript">// Layer 1: Background
+const bgCanvas = document.createElement('canvas');
+const bgCtx = bgCanvas.getContext('2d');
+bgCtx.drawImage(bgImage, 0, 0);
 
-worker.postMessage({ width: 800, height: 600 });
+// Layer 2: Animations
+const animCanvas = document.createElement('canvas');
+const animCtx = animCanvas.getContext('2d');
+updateAnimations(animCtx);
+
+// Final composition
+ctx.drawImage(bgCanvas, 0, 0);
+ctx.drawImage(animCanvas, 0, 0);
+</code></pre>
+<hr>
+<h3><strong>Strategy 7: Optimize Text Rendering with <code>measureText</code></strong></h3>
+<p>Text rendering in canvas is <strong>one of the slowest operations</strong> because browsers <strong>don’t optimize it like SVG</strong>. To <strong>minimize text-related lag</strong>, follow these best practices:</p>
+<p>✅ <strong>Pre-measure text</strong> with <code>ctx.measureText()</code> to avoid recalculating widths.
+✅ <strong>Use monospace fonts</strong> for consistent sizing.
+✅ <strong>Limit dynamic text updates</strong>—batch them when possible.</p>
+<p><strong>Real-world example:</strong>
+A <strong>live chat application</strong> renders usernames and messages dynamically. If each message <strong>recalculates text width on every update</strong>, the UI will <strong>slow down</strong>. By:</p>
+<ol>
+<li><strong>Storing text metrics</strong> (<code>measureText</code>).</li>
+<li><strong>Reusing cached widths</strong>, you can <strong>reduce rendering time by 40%</strong>.</li>
+</ol>
+<p><strong>Code snippet (Text Optimization):</strong></p>
+<pre><code class="language-javascript">// Pre-measure text
+const textMetrics = ctx.measureText("Hello World");
+const textWidth = textMetrics.width;
+
+// Use cached width
+ctx.fillText("Hello World", x, y);
+</code></pre>
+<hr>
+<h3><strong>Strategy 8: Use Web Workers for Heavy Computations</strong></h3>
+<p>If your canvas rendering involves <strong>complex calculations</strong> (e.g., physics simulations, procedural generation), <strong>offloading work to a Web Worker</strong> prevents the <strong>main thread from freezing</strong>.</p>
+<p><strong>When to use Web Workers:</strong></p>
+<ul>
+<li><strong>Physics engines</strong> (e.g., particle systems, gravity simulations).</li>
+<li><strong>Procedural generation</strong> (e.g., fractals, noise-based textures).</li>
+<li><strong>Data processing</strong> (e.g., real-time chart updates).</li>
+</ul>
+<p><strong>Real-world example:</strong>
+A <strong>3D terrain generator</strong> for a game renders <strong>millions of vertices</strong>. If this runs on the main thread, the browser will <strong>pause animations</strong>. By using a <strong>Web Worker</strong>, you can:</p>
+<ul>
+<li><strong>Generate terrain in the background</strong>.</li>
+<li><strong>Update the canvas smoothly</strong> without stuttering.</li>
+</ul>
+<p><strong>Code snippet (Web Worker):</strong></p>
+<pre><code class="language-javascript">// Main thread
+const worker = new Worker('terrain-worker.js');
+worker.postMessage({ width: 1000, height: 1000 });
 
 worker.onmessage = (e) =&gt; {
-  // Draw particles from worker data
-  ctx.putImageData(e.data, 0, 0);
+  updateCanvas(e.data); // Update canvas with precomputed data
 };
 </code></pre>
-<p><strong>Why it matters:</strong></p>
-<ul>
-<li><strong>Prevents UI freezing</strong> during heavy computations.</li>
-<li><strong>Maintains 60 FPS</strong> even with complex logic.</li>
-</ul>
 <hr>
-<h3><strong>4. Optimize Image Loading with Preloading &amp; Caching</strong></h3>
-<p>Large images can <strong>bottleneck rendering</strong>. Preload and cache them to avoid delays.</p>
+<h2><strong>Common Mistakes in Canvas Rendering (And How to Avoid Them)</strong></h2>
+<p>Even experienced developers make <strong>critical errors</strong> when working with canvas. Here are the <strong>most common pitfalls</strong> and how to fix them.</p>
+<h3><strong>Mistake 1: Not Resizing the Canvas Properly</strong></h3>
+<p>If your canvas <strong>doesn’t match the display size</strong>, you’ll experience:</p>
+<ul>
+<li><strong>Blurry scaling</strong> (if not using <code>imageSmoothingEnabled</code>).</li>
+<li><strong>Performance drops</strong> (if redrawing unnecessarily).</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<ul>
+<li><strong>Always set <code>canvas.width</code> and <code>canvas.height</code></strong> to match the display.</li>
+<li><strong>Use <code>imageSmoothingEnabled = false</code></strong> for pixel-perfect rendering.</li>
+</ul>
 <p><strong>Example:</strong></p>
-<pre><code class="language-javascript">const image = new Image();
-image.src = "texture.png";
-image.onload = () =&gt; {
-  // Draw image after it loads
-  ctx.drawImage(image, 0, 0);
-};
+<pre><code class="language-javascript">canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+ctx.imageSmoothingEnabled = false; // For crisp rendering
 </code></pre>
-<p><strong>Why it matters:</strong></p>
+<hr>
+<h3><strong>Mistake 2: Ignoring Memory Limits</strong></h3>
+<p>Canvas <strong>doesn’t automatically clean up memory</strong>, so <strong>leaking resources</strong> can cause:</p>
 <ul>
-<li><strong>Reduces layout shifts</strong> (CLS) in web apps.</li>
-<li><strong>Speeds up initial render</strong> by 30-50%.</li>
+<li><strong>Browser crashes</strong> (on high-res canvases).</li>
+<li><strong>Slowdowns</strong> (as unused memory accumulates).</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<ul>
+<li><strong>Clear unused canvases</strong> (<code>ctx.clearRect(0, 0, width, height)</code>).</li>
+<li><strong>Use <code>OffscreenCanvas</code> for temporary rendering</strong>.</li>
+<li><strong>Limit canvas size</strong> (e.g., 2048x2048 max for most browsers).</li>
 </ul>
 <hr>
-<h3><strong>5. Use Canvas ImageData for Pixel Manipulation</strong></h3>
-<p>For <strong>pixel-perfect effects</strong> (e.g., blurring, color adjustments), use <code>getImageData()</code> and <code>putImageData()</code> to modify pixels directly.</p>
-<p><strong>Example:</strong></p>
-<pre><code class="language-javascript">const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-const data = imageData.data;
-
-// Modify pixel data (e.g., invert colors)
-for (let i = 0; i &lt; data.length; i += 4) {
-  data[i] = 255 - data[i]; // Red channel
-  data[i + 1] = 255 - data[i + 1]; // Green channel
-  data[i + 2] = 255 - data[i + 2]; // Blue channel
-}
-
-ctx.putImageData(imageData, 0, 0);
-</code></pre>
-<p><strong>Why it matters:</strong></p>
+<h3><strong>Mistake 3: Overusing <code>setInterval</code> Instead of <code>requestAnimationFrame</code></strong></h3>
+<p><code>setInterval</code> <strong>doesn’t sync with the browser’s refresh rate</strong>, leading to:</p>
 <ul>
-<li><strong>Enables advanced VFX</strong> without external libraries.</li>
-<li><strong>Faster than canvas filters</strong> for some effects.</li>
+<li><strong>Janky animations</strong> (uneven frame timing).</li>
+<li><strong>Wasted CPU cycles</strong> (running at fixed intervals).</li>
 </ul>
-<hr>
-<h3><strong>6. Implement Level-of-Detail (LOD) for Complex Scenes</strong></h3>
-<p>If your canvas renders <strong>thousands of objects</strong>, use <strong>LOD</strong> to simplify distant elements.</p>
-<p><strong>Example:</strong></p>
-<pre><code class="language-javascript">function drawObject(obj, distance) {
-  if (distance &gt; 100) {
-    // Draw simplified version
-    ctx.fillStyle = "gray";
-    ctx.fillRect(obj.x, obj.y, 10, 10);
-  } else {
-    // Draw detailed version
-    ctx.fillStyle = "blue";
-    ctx.fillRect(obj.x, obj.y, 20, 20);
-  }
-}
+<p><strong>Solution:</strong>
+Always use <strong><code>requestAnimationFrame</code></strong> for animations.</p>
+<p><strong>Bad:</strong></p>
+<pre><code class="language-javascript">setInterval(draw, 16); // Unpredictable timing
 </code></pre>
-<p><strong>Why it matters:</strong></p>
-<ul>
-<li><strong>Reduces draw calls</strong> by 70% in dense scenes.</li>
-<li><strong>Maintains performance</strong> even with 10,000+ objects.</li>
-</ul>
-<hr>
-<h3><strong>7. Use Canvas Sprites for Efficient Textures</strong></h3>
-<p>Instead of loading <strong>individual images</strong>, combine them into a <strong>sprite sheet</strong> and draw only the needed portions.</p>
-<p><strong>Example:</strong></p>
-<pre><code class="language-javascript">const spriteSheet = new Image();
-spriteSheet.src = "sprites.png";
-
-function drawSprite(x, y, spriteX, spriteY, width, height) {
-  ctx.drawImage(spriteSheet, spriteX, spriteY, width, height, x, y, width, height);
-}
-</code></pre>
-<p><strong>Why it matters:</strong></p>
-<ul>
-<li><strong>Reduces HTTP requests</strong> by 50%+.</li>
-<li><strong>Faster rendering</strong> due to fewer image loads.</li>
-</ul>
-<hr>
-<h3><strong>8. Leverage WebGL for 3D Rendering (When Needed)</strong></h3>
-<p>If your project requires <strong>3D</strong>, consider <strong>WebGL</strong> (canvas’s 3D counterpart) for better performance.</p>
-<p><strong>Example (using Three.js):</strong></p>
-<pre><code class="language-javascript">import * as THREE from 'three';
-
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas') });
-
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-const cube = new THREE.Mesh(geometry, material);
-scene.add(cube);
-
-camera.position.z = 5;
-
-function animate() {
+<p><strong>Good:</strong></p>
+<pre><code class="language-javascript">function animate() {
+  draw();
   requestAnimationFrame(animate);
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-  renderer.render(scene, camera);
 }
 animate();
 </code></pre>
-<p><strong>Why it matters:</strong></p>
-<ul>
-<li><strong>GPU-accelerated 3D</strong> (far better than canvas for 3D).</li>
-<li><strong>Supports shaders, lighting, and advanced effects</strong>.</li>
-</ul>
 <hr>
-<h2><strong>Real-World Examples of Canvas Rendering in Action</strong></h2>
-<h3><strong>1. RunKeeper’s Motion Tracking App</strong></h3>
-<p>RunKeeper uses <strong>canvas rendering</strong> to create <strong>real-time motion tracking</strong> for runners. By drawing <strong>smooth, low-latency paths</strong> on a canvas, the app provides an <strong>interactive map</strong> without external plugins.</p>
-<p><strong>Key Optimization:</strong></p>
+<h3><strong>Mistake 4: Not Handling Mobile Performance</strong></h3>
+<p>Mobile devices have <strong>limited GPU power</strong>, so:</p>
 <ul>
-<li>Uses <strong><code>requestAnimationFrame</code></strong> for 60 FPS tracking.</li>
-<li><strong>Offscreen canvas</strong> for path pre-rendering.</li>
+<li><strong>Complex animations will stutter</strong>.</li>
+<li><strong>Touch events may lag</strong>.</li>
 </ul>
-<h3><strong>2. Minecraft (Java Edition) Web Version</strong></h3>
-<p>Minecraft’s web version relies on <strong>canvas rendering</strong> for <strong>block-based worlds</strong>. Instead of loading every block at once, it uses <strong>LOD (Level of Detail)</strong> to render distant blocks as simpler shapes.</p>
-<p><strong>Key Optimization:</strong></p>
+<p><strong>Solution:</strong></p>
 <ul>
-<li><strong>Chunk-based rendering</strong> (only renders visible chunks).</li>
-<li><strong>Web Workers</strong> for physics and collision detection.</li>
+<li><strong>Throttle animations</strong> (reduce FPS on mobile).</li>
+<li><strong>Use <code>matchMedia</code> to detect low-power devices</strong>.</li>
+<li><strong>Simplify rendering</strong> (fewer particles, smoother shapes).</li>
 </ul>
-<h3><strong>3. Google’s Blockly (Visual Programming)</strong></h3>
-<p>Google’s <strong>Blockly</strong> (used in Code.org) uses <strong>canvas rendering</strong> to <strong>dynamically draw programming blocks</strong>. When users rearrange blocks, the canvas <strong>redraws in real-time</strong> without page reloads.</p>
-<p><strong>Key Optimization:</strong></p>
-<ul>
-<li><strong>Virtualized rendering</strong> (only draws visible blocks).</li>
-<li><strong>Debounced updates</strong> to prevent excessive redraws.</li>
-</ul>
-<h3><strong>4. Adobe After Effects (Web Version)</strong></h3>
-<p>Adobe’s <strong>After Effects Express</strong> (web-based) uses <strong>canvas rendering</strong> for <strong>previews of motion graphics</strong>. Instead of rendering full-resolution videos, it <strong>streams low-res canvases</strong> for instant feedback.</p>
-<p><strong>Key Optimization:</strong></p>
-<ul>
-<li><strong>Progressive rendering</strong> (starts with a low-res preview).</li>
-<li><strong>Hardware acceleration</strong> via WebGL for complex layers.</li>
-</ul>
-<h3><strong>5. TikTok’s AR Filters</strong></h3>
-<p>TikTok’s <strong>AR filters</strong> use <strong>canvas + WebGL</strong> to overlay <strong>real-time effects</strong> on live video. The canvas handles <strong>2D UI elements</strong>, while WebGL renders <strong>3D distortions</strong>.</p>
-<p><strong>Key Optimization:</strong></p>
-<ul>
-<li><strong>Frame-by-frame compositing</strong> (canvas blends with video).</li>
-<li><strong>GPU-accelerated shaders</strong> for effects like face tracking.</li>
-</ul>
-<hr>
-<h2><strong>Common Mistakes in Canvas Rendering (And How to Fix Them)</strong></h2>
-<h3><strong>1. Forgetting to Clear the Canvas</strong></h3>
-<p><strong>Mistake:</strong> Drawing on the same canvas without clearing it leads to <strong>accumulated garbage</strong> (e.g., old shapes overlapping new ones).</p>
-<p><strong>Fix:</strong></p>
-<pre><code class="language-javascript">ctx.clearRect(0, 0, canvas.width, canvas.height);
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">if (window.matchMedia('(max
 </code></pre>
-<h3><strong>2. Using setInterval Instead of requestAnimationFrame</strong></h3>
-<p><strong>Mistake:</strong> <code>setInterval</code> runs at <strong>fixed intervals</strong>, even if the browser is idle, causing <strong>unnecessary CPU usage</strong>.</p>
-<p><strong>Fix:</strong> Always use <code>requestAnimationFrame</code> for animations.</p>
-<h3><strong>3. Loading Too Many Images Without Caching</strong></h3>
-<p><strong>Mistake:</strong> Loading <strong>hundreds of images</strong> without caching causes <strong>layout shifts</strong> and <strong>slow rendering</strong>.</p>
-<p><strong>Fix:</strong></p>
-<ul>
-<li>Use <strong>preloading</strong> (<code>&lt;img src="texture.png" loading="eager"&gt;</code>).</li>
-<li><strong>Cache images</strong> with <code>localStorage</code> or Service Workers.</li>
-</ul>
-<h3><strong>4. Not Optimizing Draw Calls</strong></h3>
-<p><strong>Mistake:</strong> Drawing <strong>thousands of tiny shapes</strong> (e.g., pixels) instead of <strong>batch rendering</strong>.</p>
-<p><strong>Fix:</strong></p>
-<ul>
-<li>Use <strong>sprites</strong> for repeated elements.</li>
-<li><strong>Composite offscreen canvases</strong> before drawing to main canvas.</li>
-</ul>
-<h3><strong>5. Ignoring Mobile Performance</strong></h3>
-<p><strong>Mistake:</strong> Assuming canvas works the same on <strong>high-end PCs and low-end phones</strong>.</p>
-<p><strong>Fix:</strong></p>
-<ul>
-<li><strong>Debounce touch events</strong> to prevent excessive redraws.</li>
-<li><strong>Use <code>will-change</code></strong> for elements that move frequently.</li>
-</ul>
-<h3><strong>6. Not Using Web Workers for Heavy Logic</strong></h3>
-<p><strong>Mistake:</strong> Running <strong>physics simulations or AI</strong> on the main thread, causing <strong>jank</strong>.</p>
-<p><strong>Fix:</strong></p>
-<ul>
-<li>Offload computations to <strong>Web Workers</strong>.</li>
-<li>Use <strong>MessageChannel</strong> for efficient data transfer.</li>
-</ul>
-<h3><strong>7. Overusing Canvas Filters</strong></h3>
-<p><strong>Mistake:</strong> Applying <strong>multiple canvas filters</strong> (e.g., blur + color matrix) slows down rendering.</p>
-<p><strong>Fix:</strong></p>
-<ul>
-<li><strong>Pre-compute effects</strong> where possible.</li>
-<li><strong>Use WebGL shaders</strong> for advanced filters.</li>
-</ul>
-<hr>
-<h2><strong>FAQ: Canvas Rendering Answers (Schema Markup Included)</strong></h2>
-<h3><strong>1. What is the difference between canvas and WebGL?</strong></h3>
-<p><strong>Answer:</strong>
-Canvas is <strong>2D-only</strong>, while <strong>WebGL is 3D-accelerated</strong>. Canvas is <strong>simpler to use</strong> for basic graphics, but WebGL provides <strong>GPU-optimized 3D rendering</strong>. If you need <strong>real-time 3D</strong>, WebGL is better; for <strong>2D animations</strong>, canvas is sufficient.</p>
-<pre><code class="language-json">&lt;script type="application/ld+json"&gt;
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the difference between canvas and WebGL?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Canvas is 2D-only, while WebGL is 3D-accelerated. Canvas is simpler for basic graphics, but WebGL provides GPU-optimized 3D rendering."
-      }
-    }
-  ]
-}
-&lt;/script&gt;
-</code></pre>
-<hr>
-<h3><strong>2. How can I make canvas rendering faster on mobile?</strong></h3>
-<p><strong>Answer:</strong>
-To optimize canvas on mobile:</p>
-<ul>
-<li><strong>Use <code>requestAnimationFrame</code></strong> (not <code>setInterval</code>).</li>
-<li><strong>Minimize draw calls</strong> (batch rendering).</li>
-<li><strong>Preload images</strong> to avoid delays.</li>
-<li><strong>Use Web Workers</strong> for heavy computations.</li>
-<li><strong>Debounce touch events</strong> to reduce unnecessary updates.</li>
-</ul>
-<pre><code class="language-json">&lt;script type="application/ld+json"&gt;
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How can I make canvas rendering faster on mobile?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use requestAnimationFrame, batch rendering, preload images, Web Workers, and debounce touch events."
-      }
-    }
-  ]
-}
-&lt;/script&gt;
-</code></pre>
-<hr>
-<h3>**3. Can I use canvas for</h3>
-<h3>📚 You May Also Like</h3><ul><li><a href="/gesture-animation.html">gesture animation</a></li><li><a href="/frontend-animation-helper.html">frontend animation helper</a></li><li><a href="/scroll-ux-enhancement.html">scroll ux enhancement</a></li><li><a href="/svg-animation.html">svg animation</a></li></ul><p><a href="index.html">← Browse all blog posts</a></p><h3>🌐 Explore Our Other Sites</h3><ul><li><a href="https://startknowledge.startknowledge.in/">startknowledge</a></li><li><a href="https://bn-ration-scale.startknowledge.in/">bn ration scale</a></li><li><a href="https://Calculator-Library-Portal.startknowledge.in/">Calculator Library Portal</a></li><li><a href="https://pension-calculator.startknowledge.in/">pension calculator</a></li><li><a href="https://design-painting.startknowledge.in/">design painting</a></li><li><a href="https://ai-mosaic-studio.startknowledge.in/">ai mosaic studio</a></li><li><a href="https://ultra-static-seo-engine.startknowledge.in/">ultra static seo engine</a></li><li><a href="https://universal-image-data-explorer-forge.startknowledge.in/">universal image data explorer forge</a></li></ul><h3>🔗 Useful Resources (External)</h3><ul><li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer">Google Search Central – SEO Starter Guide</a></li><li><a href="https://moz.com/beginners-guide-to-seo" target="_blank" rel="noopener noreferrer">Moz Beginner’s Guide to SEO</a></li><li><a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a></li><li><a href="https://ahrefs.com/blog/" target="_blank" rel="noopener noreferrer">Ahrefs Blog – SEO Strategies</a></li><li><a href="https://www.semrush.com/blog/" target="_blank" rel="noopener noreferrer">Semrush SEO Toolkit</a></li><li><a href="https://yoast.com/academy/" target="_blank" rel="noopener noreferrer">Yoast SEO Academy</a></li><li><a href="https://backlinko.com/blog" target="_blank" rel="noopener noreferrer">Backlinko – SEO Techniques</a></li><li><a href="https://www.searchenginejournal.com/" target="_blank" rel="noopener noreferrer">Search Engine Journal</a></li><li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a></li><li><a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org – Structured Data</a></li></ul><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="8024521099" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fw+7+28-5k+1k" data-ad-client="ca-pub-2162324894765763" data-ad-slot="7592527166"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></article>
+<h3>📚 You May Also Like</h3><ul><li><a href="/smooth-navigation.html">smooth navigation</a></li><li><a href="/functional-animation-library.html">functional animation library</a></li><li><a href="/gesture-animation.html">gesture animation</a></li><li><a href="/3d-web-animation.html">3d web animation</a></li></ul><p><a href="index.html">← Browse all blog posts</a></p><h3>🌐 Explore Our Other Sites</h3><ul><li><a href="https://startknowledge.startknowledge.in/">startknowledge</a></li><li><a href="https://bn-ration-scale.startknowledge.in/">bn ration scale</a></li><li><a href="https://Calculator-Library-Portal.startknowledge.in/">Calculator Library Portal</a></li><li><a href="https://pension-calculator.startknowledge.in/">pension calculator</a></li><li><a href="https://design-painting.startknowledge.in/">design painting</a></li><li><a href="https://ai-mosaic-studio.startknowledge.in/">ai mosaic studio</a></li><li><a href="https://ultra-static-seo-engine.startknowledge.in/">ultra static seo engine</a></li><li><a href="https://universal-image-data-explorer-forge.startknowledge.in/">universal image data explorer forge</a></li></ul><h3>🔗 Useful Resources (External)</h3><ul><li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer">Google Search Central – SEO Starter Guide</a></li><li><a href="https://moz.com/beginners-guide-to-seo" target="_blank" rel="noopener noreferrer">Moz Beginner’s Guide to SEO</a></li><li><a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a></li><li><a href="https://ahrefs.com/blog/" target="_blank" rel="noopener noreferrer">Ahrefs Blog – SEO Strategies</a></li><li><a href="https://www.semrush.com/blog/" target="_blank" rel="noopener noreferrer">Semrush SEO Toolkit</a></li><li><a href="https://yoast.com/academy/" target="_blank" rel="noopener noreferrer">Yoast SEO Academy</a></li><li><a href="https://backlinko.com/blog" target="_blank" rel="noopener noreferrer">Backlinko – SEO Techniques</a></li><li><a href="https://www.searchenginejournal.com/" target="_blank" rel="noopener noreferrer">Search Engine Journal</a></li><li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a></li><li><a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org – Structured Data</a></li></ul><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="8024521099" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fw+7+28-5k+1k" data-ad-client="ca-pub-2162324894765763" data-ad-slot="7592527166"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></article>
   <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
     <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
     
       <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/38/200/120" style="width:100%; border-radius: 16px;">
+        <img src="https://picsum.photos/id/11/200/120" style="width:100%; border-radius: 16px;">
         <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
         <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
       </div>
     
       <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/67/200/120" style="width:100%; border-radius: 16px;">
+        <img src="https://picsum.photos/id/78/200/120" style="width:100%; border-radius: 16px;">
         <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
         <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/60/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/29/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/14/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/9/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/21/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/75/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/94/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/35/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/55/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/86/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/68/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/35/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/61/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/1/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/17/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/65/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/95/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/4/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/18/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/77/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/84/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/55/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/6/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/4/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/77/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/80/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/66/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/52/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/45/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/24/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
       </div>
     
     <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
@@ -682,49 +386,7 @@ To optimize canvas on mobile:</p>
           <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
             <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
             <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/93/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/85/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/92/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
+            <img src="https://picsum.photos/id/78/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
             <p><strong>The Genius Song</strong><br>Limited time discount</p>
             <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
           </div>
@@ -746,595 +408,7 @@ To optimize canvas on mobile:</p>
       const floatDiv = document.createElement('div');
       floatDiv.innerHTML = `
         <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/79/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/39/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/36/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/62/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/80/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/51/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/83/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/91/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/66/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/5/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/29/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/34/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/48/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/68/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/94/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/99/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/53/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/24/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/73/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/23/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/91/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/15/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/65/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/34/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/74/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/10/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/71/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/42/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/72/40/40" style="border-radius: 50%; width: 40px;">
+          <img src="https://picsum.photos/id/18/40/40" style="border-radius: 50%; width: 40px;">
           <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
           <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
           <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
