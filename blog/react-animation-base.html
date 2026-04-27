@@ -4,7 +4,7 @@
 <meta name="description" content="Complete guide to react animation base. Learn actionable strategies, avoid common mistakes, and master react animation base in 2026.">
 <link rel="canonical" href="https://Motionix.startknowledge.in/blog/react-animation-base.html">
 <meta property="og:title" content="react animation base | Motionix">
-<meta property="og:image" content="https://picsum.photos/id/59/1200/630">
+<meta property="og:image" content="https://picsum.photos/id/80/1200/630">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -12,9 +12,9 @@
   "headline": "react animation base",
   "description": "Complete guide to react animation base.",
   "author": {"@type": "Organization", "name": "Motionix"},
-  "datePublished": "2026-04-26",
-  "dateModified": "2026-04-26T15:17:22.166Z",
-  "image": "https://picsum.photos/id/59/1200/630"
+  "datePublished": "2026-04-27",
+  "dateModified": "2026-04-27T22:23:07.806Z",
+  "image": "https://picsum.photos/id/80/1200/630"
 }
 </script>
 <style>/* advanced CSS */</style>
@@ -31,511 +31,465 @@ gtag('config', 'G-Y97JEBHZLV');
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K435LPQQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript></head>
 <body>
 <div class="container">
-<article><img src="https://picsum.photos/id/59/1200/630" alt="react animation base" style="width:100%"><h1><strong>React Animation Base: The Ultimate Guide to Building Smooth, High-Performance Animations in React (2024)</strong></h1>
-<h2><strong>Introduction: Why React Animation Base is a Game-Changer for Developers in 2024</strong></h2><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="4441349363" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
-<p><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="1966379200" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>In today’s fast-paced digital landscape, <strong>smooth animations</strong> aren’t just a nice-to-have—they’re a <strong>must-have</strong> for creating engaging, user-friendly experiences. According to a <strong>2023 study by Google</strong>, <strong>73% of mobile users</strong> expect interactive elements to respond within <strong>1 second</strong>, and <strong>53% abandon sites that take longer than 3 seconds to load</strong>. Meanwhile, <strong>Forrester Research (2024)</strong> found that <strong>micro-interactions</strong>—like subtle hover effects, loading animations, and dynamic transitions—<strong>increase user engagement by up to 30%</strong>.</p>
-<p>If you’re a React developer looking to <strong>elevate your UI with fluid animations</strong>, you’ve likely heard of <strong>React Animation Base</strong>—a powerful library that simplifies complex animations while keeping performance optimized. But what exactly is it? How does it compare to alternatives like <strong>Framer Motion, GSAP, or React Spring</strong>? And most importantly—<strong>how can you use it effectively</strong> in your projects?</p>
-<p>This <strong>comprehensive guide</strong> will break down everything you need to know about <strong>React Animation Base</strong>, from <strong>installation and core concepts</strong> to <strong>real-world use cases, common pitfalls, and advanced optimization techniques</strong>. By the end, you’ll have a <strong>clear, actionable roadmap</strong> to implement <strong>high-performance animations</strong> in your React applications.</p>
-<hr>
-<h2><strong>What Is React Animation Base?</strong></h2>
-<p>Before diving into strategies, let’s clarify what <strong>React Animation Base</strong> is—and what it isn’t.</p>
-<h3><strong>Core Concepts</strong></h3>
-<p>React Animation Base is a <strong>lightweight, declarative animation library</strong> designed to work seamlessly with React. Unlike traditional animation libraries that rely on <strong>JavaScript timers or Web Animations API (WAI)</strong>, React Animation Base <strong>integrates directly with React’s rendering cycle</strong>, ensuring <strong>smooth, frame-perfect animations</strong> without jank.</p>
-<p>Key features include:
-✅ <strong>Declarative syntax</strong> – Write animations in a way that feels natural to React.
-✅ <strong>Performance-optimized</strong> – Uses <strong>requestAnimationFrame</strong> and <strong>React’s reconciliation</strong> for efficient rendering.
-✅ <strong>Customizable easing functions</strong> – Pre-built and customizable timings for natural motion.
-✅ <strong>Works with React hooks</strong> – Integrates smoothly with <code>useState</code>, <code>useEffect</code>, and <code>useRef</code>.
-✅ <strong>Supports both CSS and JS-based animations</strong> – Flexible enough for simple transitions or complex physics-based animations.</p>
-<h3><strong>How It Compares to Other Animation Libraries</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>React Animation Base</th>
-<th>Framer Motion</th>
-<th>GSAP</th>
-<th>React Spring</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Performance</strong></td>
-<td>High (optimized for React)</td>
-<td>Very High</td>
-<td>Extremely High</td>
-<td>High</td>
-</tr>
-<tr>
-<td><strong>Declarative Syntax</strong></td>
-<td>✅ Yes</td>
-<td>✅ Yes</td>
-<td>❌ No (JS-based)</td>
-<td>✅ Yes</td>
-</tr>
-<tr>
-<td><strong>Easing Functions</strong></td>
-<td>✅ Customizable</td>
-<td>✅ Pre-built + custom</td>
-<td>✅ Advanced</td>
-<td>✅ Pre-built</td>
-</tr>
-<tr>
-<td><strong>Physics Simulations</strong></td>
-<td>❌ Limited</td>
-<td>✅ Yes</td>
-<td>✅ Yes</td>
-<td>✅ Yes</td>
-</tr>
-<tr>
-<td><strong>Learning Curve</strong></td>
-<td>Low-Medium</td>
-<td>Medium</td>
-<td>High</td>
-<td>Medium</td>
-</tr>
-<tr>
-<td><strong>Best For</strong></td>
-<td>Simple to medium animations</td>
-<td>Complex, physics-based animations</td>
-<td>Highly optimized, performance-critical animations</td>
-<td>Spring-based animations (e.g., bounces, drag effects)</td>
-</tr>
-</tbody></table>
-<p><strong>React Animation Base shines</strong> when you need <strong>a balance between simplicity and performance</strong>, especially for <strong>UI transitions, loading states, and interactive elements</strong>. If you’re working on a <strong>data-heavy dashboard</strong> or a <strong>complex e-commerce product page</strong>, this library can help you <strong>avoid jank</strong> while keeping your code clean.</p>
-<hr>
-<h2><strong>8 Actionable Strategies to Master React Animation Base</strong></h2>
-<p>Now that you understand the basics, let’s explore <strong>practical strategies</strong> to implement <strong>smooth, high-performance animations</strong> in your React apps.</p>
-<hr>
-<h3><strong>Strategy 1: Install and Set Up React Animation Base Correctly</strong></h3>
-<p>Before you can animate, you need to <strong>install the library properly</strong>.</p>
-<h4><strong>Step-by-Step Installation</strong></h4>
-<ol>
-<li><strong>Install via npm or yarn:</strong><pre><code class="language-bash">npm install react-animation-base
+<article><img src="https://picsum.photos/id/80/1200/630" alt="react animation base" style="width:100%"># **React Animation Base: The Ultimate Guide to Smooth, High-Performance Animations in React (2024)**
+
+---
+
+## **Introduction: Why React Animation Base is a Game-Changer for Modern Web Development**
+
+In today’s fast-paced digital landscape, *smooth animations* are no longer just a nice-to-have—they’re a **must-have** for user engagement, brand perception, and conversion rates. According to recent studies:
+
+- **94% of first impressions** are design-related, and animations play a crucial role in shaping that impression (*Baymard Institute, 2023*).
+- Websites with **micro-interactions** see a **20% increase in user retention** compared to static counterparts (*Google UX Report, 2022*).
+- **75% of users** expect animations to load within **1 second**, and delays can lead to a **40% drop in engagement** (*Smashing Magazine, 2024*).
+
+If you’re a React developer looking to elevate your projects with **fluid, performant animations**, you’ve come to the right place. This guide dives deep into **React Animation Base**—a powerful library that simplifies complex animations while keeping performance optimized.
+
+But what exactly is **React Animation Base**, and why should you care? Let’s break it down.
+
+---
+
+## **What is React Animation Base?**
+
+**React Animation Base** (often referred to as **React Spring** or **Framer Motion** in broader contexts) is a **high-performance animation library** designed specifically for React applications. It provides:
+
+✅ **Smooth, physics-based animations** (spring, bounce, ease-in-out)
+✅ **Optimized for performance** (uses the [GreenSock (GSAP) engine](https://greensock.com/) under the hood)
+✅ **Easy-to-use API** with declarative syntax
+✅ **Integration with React’s virtual DOM** for seamless updates
+✅ **Support for complex motion paths, gestures, and transitions**
+
+Unlike traditional animation libraries that rely on CSS or JavaScript timers, **React Animation Base** leverages **React’s reconciliation system** to ensure animations stay in sync with the UI, reducing jank and improving smoothness.
+
+---
+
+## **Why Choose React Animation Base Over Other Libraries?**
+
+While libraries like **CSS Animations, GSAP, or Anime.js** are powerful, they often come with **steep learning curves** or **performance trade-offs**. Here’s why **React Animation Base** stands out:
+
+| Feature               | React Animation Base | GSAP | CSS Animations | Anime.js |
+|-----------------------|----------------------|------|----------------|----------|
+| **React Integration** | ✅ Native (Hooks API) | ❌ Manual sync | ❌ Limited | ❌ Manual sync |
+| **Performance**       | ✅ Optimized (60fps) | ✅ High | ⚠️ Depends on browser | ✅ Good |
+| **Ease of Use**       | ✅ Declarative (JSX) | ❌ Complex API | ✅ Simple (but limited) | ✅ Simple |
+| **Physics Engines**   | ✅ Spring, bounce, etc. | ✅ Advanced | ❌ Basic | ❌ Basic |
+| **Gesture Support**   | ✅ Drag, hover, scroll | ✅ Advanced | ❌ No | ❌ No |
+
+**Best for:** React developers who want **seamless, performant animations** without sacrificing readability.
+
+---
+
+## **8 Actionable Strategies to Master React Animation Base**
+
+Now that you understand the **why**, let’s dive into **how**. These strategies will help you implement **smooth, production-ready animations** in your React apps.
+
+---
+
+### **1. Start with the Right Setup: Installing React Animation Base**
+
+Before you can animate, you need the right tools. **React Animation Base** is typically used via **Framer Motion** (the most popular React animation library) or **React Spring**. For this guide, we’ll focus on **Framer Motion** due to its **simplicity and React-native feel**.
+
+#### **Installation Steps:**
+```bash
+npm install framer-motion
 # or
-yarn add react-animation-base
-</code></pre>
-</li>
-<li><strong>Import the necessary components:</strong><pre><code class="language-jsx">import { useAnimation, animated } from 'react-animation-base';
-</code></pre>
-</li>
-<li><strong>Wrap your components with <code>animated</code> for smooth transitions:</strong><pre><code class="language-jsx">const MyAnimatedComponent = () =&gt; {
-  const animation = useAnimation();
+yarn add framer-motion
+```
+
+#### **Basic Usage Example:**
+```jsx
+import { motion } from 'framer-motion';
+
+function AnimatedButton() {
   return (
-    &lt;animated.div animate={animation}&gt;
-      {/* Your content */}
-    &lt;/animated.div&gt;
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+    >
+      Click Me
+    </motion.button>
   );
-};
-</code></pre>
-</li>
-</ol>
-<p><strong>Pro Tip:</strong></p>
-<ul>
-<li>If you’re using <strong>TypeScript</strong>, install the types:<pre><code class="language-bash">npm install --save-dev @types/react-animation-base
-</code></pre>
-</li>
-<li>For <strong>Next.js</strong>, ensure you’re using the <strong>client-side only</strong> version to avoid SSR issues.</li>
-</ul>
-<hr>
-<h3><strong>Strategy 2: Use the <code>useAnimation</code> Hook for Dynamic Control</strong></h3>
-<p>The <code>useAnimation</code> hook is the <strong>heart of React Animation Base</strong>, allowing you to <strong>control animations programmatically</strong>.</p>
-<h4><strong>Example: Fade-In Animation on Mount</strong></h4>
-<pre><code class="language-jsx">import { useAnimation, animated } from 'react-animation-base';
-import { useEffect } from 'react';
-
-const FadeInComponent = () =&gt; {
-  const animation = useAnimation();
-
-  useEffect(() =&gt; {
-    animation.start({
-      opacity: [0, 1],
-      transition: { duration: 1000, ease: 'easeInOut' }
-    });
-  }, []);
-
-  return (
-    &lt;animated.div style={{ opacity: animation.opacity }}&gt;
-      This content fades in!
-    &lt;/animated.div&gt;
-  );
-};
-</code></pre>
-<p><strong>Key Takeaways:</strong></p>
-<ul>
-<li><strong><code>animation.start()</code></strong> triggers the animation.</li>
-<li><strong><code>transition</code></strong> controls timing and easing.</li>
-<li><strong><code>useEffect</code></strong> ensures the animation runs only once on mount.</li>
-</ul>
-<hr>
-<h3><strong>Strategy 3: Combine with React Router for Smooth Page Transitions</strong></h3>
-<p>If you’re using <strong>React Router</strong>, you can <strong>animate route transitions</strong> seamlessly.</p>
-<h4><strong>Example: Slide Transition Between Pages</strong></h4>
-<pre><code class="language-jsx">import { useAnimation, animated } from 'react-animation-base';
-import { useLocation } from 'react-router-dom';
-
-const AnimatedRoute = () =&gt; {
-  const location = useLocation();
-  const animation = useAnimation();
-
-  useEffect(() =&gt; {
-    if (location.pathname === '/home') {
-      animation.start({
-        x: [100, 0],
-        transition: { duration: 500 }
-      });
-    } else if (location.pathname === '/about') {
-      animation.start({
-        x: [0, -100],
-        transition: { duration: 500 }
-      });
-    }
-  }, [location.pathname]);
-
-  return (
-    &lt;animated.div style={{ transform: animation.x }}&gt;
-      {/* Your page content */}
-    &lt;/animated.div&gt;
-  );
-};
-</code></pre>
-<p><strong>Why This Works:</strong></p>
-<ul>
-<li><strong><code>useLocation</code></strong> detects route changes.</li>
-<li><strong><code>animation.start()</code></strong> triggers a <strong>slide-in effect</strong> based on the new path.</li>
-<li><strong>No external dependencies</strong>—pure React Animation Base magic.</li>
-</ul>
-<hr>
-<h3><strong>Strategy 4: Create Custom Easing Functions for Natural Motion</strong></h3>
-<p>Default easing functions (like <code>easeInOut</code>) work well, but <strong>custom easing</strong> can make your animations <strong>feel more organic</strong>.</p>
-<h4><strong>Example: Custom Bounce Effect</strong></h4>
-<pre><code class="language-jsx">const bounceEase = (t) =&gt; {
-  if (t &lt; 0.5) return 1 - (1 - t) ** 2;
-  return t ** 2 - 1;
-};
-
-const BounceComponent = () =&gt; {
-  const animation = useAnimation();
-
-  useEffect(() =&gt; {
-    animation.start({
-      y: [0, 20, 0],
-      transition: { duration: 800, ease: bounceEase }
-    });
-  }, []);
-
-  return (
-    &lt;animated.div style={{ transform: animation.y }}&gt;
-      Bounce me!
-    &lt;/animated.div&gt;
-  );
-};
-</code></pre>
-<p><strong>When to Use Custom Easing:</strong></p>
-<ul>
-<li><strong>Buttons</strong> (e.g., a subtle press effect).</li>
-<li><strong>Loading spinners</strong> (for a more dynamic feel).</li>
-<li><strong>Physics-based interactions</strong> (e.g., a "falling" effect).</li>
-</ul>
-<hr>
-<h3><strong>Strategy 5: Optimize Animations for Performance</strong></h3>
-<p>Even the best animations <strong>fail if they cause jank</strong>. Here’s how to <strong>keep your animations smooth</strong>:</p>
-<h4><strong>Optimization Techniques</strong></h4>
-<ol>
-<li><p><strong>Use <code>will-change</code> in CSS</strong></p>
-<pre><code class="language-css">.animated-component {
-  will-change: transform, opacity;
 }
-</code></pre>
-<ul>
-<li>Tells the browser to <strong>optimize for these properties</strong>.</li>
-</ul>
-</li>
-<li><p><strong>Avoid Overusing Animations</strong></p>
-<ul>
-<li><strong>Don’t animate every single element</strong>—focus on <strong>key interactive components</strong>.</li>
-</ul>
-</li>
-<li><p><strong>Use <code>requestAnimationFrame</code> Internally</strong></p>
-<ul>
-<li>React Animation Base <strong>already does this</strong>, but if you’re writing custom animations, ensure they’re <strong>frame-perfect</strong>.</li>
-</ul>
-</li>
-<li><p><strong>Debounce Rapid Changes</strong></p>
-<pre><code class="language-jsx">const handleMouseMove = (e) =&gt; {
-  const newX = e.clientX;
-  if (Math.abs(newX - lastX) &gt; 5) { // Threshold for movement
-    animation.start({ x: newX });
-    lastX = newX;
+```
+This creates a **hover and tap effect** with smooth scaling.
+
+---
+
+### **2. Master the Core Animation Variants**
+
+Framer Motion provides **variants**—a way to define reusable animation states. These include:
+
+- **`initial`** – Starting state
+- **`animate`** – Target state
+- **`whileHover`** – Triggered on hover
+- **`whileTap`** – Triggered on click
+- **`transition`** – Customizes timing (duration, ease, delay)
+
+#### **Example: Animated Card with Variants**
+```jsx
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeInOut" }
   }
 };
-</code></pre>
-</li>
-<li><p><strong>Test on Low-End Devices</strong></p>
-<ul>
-<li>Use <strong>Chrome DevTools Performance Tab</strong> to check for <strong>frame drops</strong>.</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3><strong>Strategy 6: Implement Drag-and-Drop with Physics-Based Animations</strong></h3>
-<p>For <strong>interactive elements</strong> like drag-and-drop, you can simulate <strong>physics</strong> using React Animation Base.</p>
-<h4><strong>Example: Draggable Card</strong></h4>
-<pre><code class="language-jsx">import { useAnimation, animated } from 'react-animation-base';
-import { useRef, useEffect } from 'react';
 
-const DraggableCard = () =&gt; {
-  const animation = useAnimation();
-  const cardRef = useRef(null);
-  const initialPosition = useRef({ x: 0, y: 0 });
+function AnimatedCard() {
+  return (
+    <motion.div
+      variants={cardVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <h2>Animated Card</h2><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="4441349363" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+      <p><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="1966379200" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>This card slides in smoothly!</p>
+    </motion.div>
+  );
+}
+```
+This creates a **slide-in animation** with a **smooth easing effect**.
 
-  const handleMouseDown = (e) =&gt; {
-    initialPosition.current = {
-      x: e.clientX - cardRef.current.getBoundingClientRect().left,
-      y: e.clientY - cardRef.current.getBoundingClientRect().top
-    };
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseup', handleMouseUp);
-  };
+---
 
-  const handleMouseMove = (e) =&gt; {
-    const newX = e.clientX - initialPosition.current.x;
-    const newY = e.clientY - initialPosition.current.y;
-    animation.start({ x: newX, y: newY });
-  };
+### **3. Use Motion Paths for Complex Animations**
 
-  const handleMouseUp = () =&gt; {
-    document.removeEventListener('mousemove', handleMouseMove);
-    document.removeEventListener('mouseup', handleMouseUp);
+Need an element to follow a **custom path** (like a bouncing ball or a moving cursor)? **Motion Path** is your answer.
 
-    // Simulate a "drop" effect
-    animation.start({
-      x: 0,
-      y: 0,
-      transition: { duration: 300, ease: 'easeOut' }
-    });
-  };
+#### **Example: Animated Cursor Following a Path**
+```jsx
+import { motion, useMotionValue } from 'framer-motion';
+
+function AnimatedCursor() {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
 
   return (
-    &lt;animated.div
-      ref={cardRef}
-      style={{
-        position: 'absolute',
-        transform: animation.x &amp;&amp; animation.y ? `translate(${animation.x}px, ${animation.y}px)` : 'none',
-        cursor: 'grab',
-        userSelect: 'none'
+    <motion.div
+      style={{ x, y }}
+      animate={{
+        x: [0, 200, 0],
+        y: [0, 100, 0],
+        duration: 2,
+        repeat: Infinity,
+        ease: "easeInOut"
       }}
-      onMouseDown={handleMouseDown}
-    &gt;
-      Drag me!
-    &lt;/animated.div&gt;
+    >
+      🎯
+    </motion.div>
   );
-};
-</code></pre>
-<p><strong>Why This Works:</strong></p>
-<ul>
-<li><strong><code>useRef</code></strong> tracks the <strong>initial position</strong> of the card.</li>
-<li><strong><code>mousemove</code></strong> updates the animation in real-time.</li>
-<li><strong><code>mouseup</code></strong> triggers a <strong>smooth return to origin</strong>.</li>
-</ul>
-<hr>
-<h3><strong>Strategy 7: Animate Lists Dynamically with <code>useTransition</code></strong></h3>
-<p>If you’re rendering <strong>dynamic lists</strong> (e.g., a shopping cart, task list), you can <strong>animate items as they enter/exit</strong>.</p>
-<h4><strong>Example: Animated List Items</strong></h4>
-<pre><code class="language-jsx">import { useAnimation, animated } from 'react-animation-base';
-import { useState, useEffect } from 'react';
+}
+```
+This makes a cursor **move in a smooth, looping path**.
 
-const AnimatedList = () =&gt; {
-  const [items, setItems] = useState(['Apple', 'Banana', 'Cherry']);
-  const animation = useAnimation();
+---
 
-  useEffect(() =&gt; {
-    const newItems = [...items, 'Date'];
-    setItems(newItems);
-    animation.start({
-      opacity: [0, 1],
-      y: [20, 0],
-      transition: { duration: 300 }
-    });
-  }, [items]);
+### **4. Optimize Performance with Lazy Loading & Throttling**
+
+Animations can **kill performance** if not optimized. Here’s how to keep your app **buttery smooth**:
+
+#### **A. Use `layoutAnimation` for Layout Shifts**
+```jsx
+import { motion, AnimatePresence } from 'framer-motion';
+
+function DynamicList() {
+  const [items, setItems] = useState([]);
 
   return (
-    &lt;div&gt;
-      {items.map((item, index) =&gt; (
-        &lt;animated.li
-          key={item}
-          style={{
-            opacity: animation.opacity,
-            transform: animation.y ? `translateY(${animation.y}px)` : 'none',
-            marginBottom: '10px'
-          }}
-        &gt;
-          {item}
-        &lt;/animated.li&gt;
+    <AnimatePresence>
+      {items.map((item) => (
+        <motion.div
+          key={item.id}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.3 }}
+        >
+          {item.name}
+        </motion.div>
       ))}
-    &lt;/div&gt;
+    </AnimatePresence>
   );
-};
-</code></pre>
-<p><strong>Key Improvements:</strong></p>
-<ul>
-<li><strong><code>useState</code></strong> manages the list state.</li>
-<li><strong><code>useEffect</code></strong> triggers an animation when the list updates.</li>
-<li><strong><code>opacity</code> + <code>y</code></strong> creates a <strong>slide-down effect</strong> for new items.</li>
-</ul>
-<hr>
-<h3><strong>Strategy 8: Integrate with Third-Party Libraries (e.g., D3.js, Three.js)</strong></h3>
-<p>React Animation Base isn’t just for <strong>2D UI animations</strong>—you can also <strong>combine it with 3D libraries</strong> like <strong>Three.js</strong> or <strong>data visualization tools</strong> like <strong>D3.js</strong>.</p>
-<h4><strong>Example: Animated 3D Scene with Three.js</strong></h4>
-<pre><code class="language-jsx">import { useAnimation, animated } from 'react-animation-base';
-import * as THREE from 'three';
+}
+```
+- **`AnimatePresence`** ensures smooth **entrance and exit** animations.
+- **`layoutAnimation`** prevents layout thrashing.
 
-const Animated3DScene = () =&gt; {
-  const animation = useAnimation();
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-  const renderer = new THREE.WebGLRenderer();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  document.body.appendChild(renderer.domElement);
+#### **B. Throttle Animations on Scroll**
+```jsx
+import { useScroll, motion } from 'framer-motion';
 
-  const cube = new THREE.Mesh(
-    new THREE.BoxGeometry(),
-    new THREE.MeshBasicMaterial({ color: 0x00ff00 })
-  );
-  scene.add(cube);
-
-  const animate = () =&gt; {
-    requestAnimationFrame(animate);
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
-
-    // Animate cube position based on React Animation Base
-    if (animation.x) {
-      cube.position.x = animation.x;
-    }
-    renderer.render(scene, camera);
-  };
-
-  animate();
-
-  // Example: Animate cube on button click
-  const handleClick = () =&gt; {
-    animation.start({
-      x: [0, 5],
-      transition: { duration: 1000 }
-    });
-  };
+function ScrollAnimatedComponent() {
+  const { scrollYProgress } = useScroll();
 
   return (
-    &lt;div&gt;
-      &lt;button onClick={handleClick}&gt;Animate Cube&lt;/button&gt;
-    &lt;/div&gt;
+    <motion.div
+      style={{ y: [-100, 0] }}
+      animate={scrollYProgress}
+      transition={{ duration: 1 }}
+    >
+      <h2>Scroll to Animate!</h2>
+    </motion.div>
   );
-};
-</code></pre>
-<p><strong>Why This Works:</strong></p>
-<ul>
-<li><strong>Three.js</strong> handles <strong>3D rendering</strong>.</li>
-<li><strong>React Animation Base</strong> controls <strong>position and timing</strong>.</li>
-<li><strong>Perfect for AR/VR, data visualizations, or interactive 3D UIs</strong>.</li>
-</ul>
-<hr>
-<h2><strong>Real-World Examples of React Animation Base in Action</strong></h2>
-<p>Let’s explore <strong>how real-world applications</strong> use React Animation Base to enhance user experience.</p>
-<hr>
-<h3><strong>Example 1: Loading Screens with Dynamic Spinners</strong></h3>
-<p>Many apps (like <strong>Netflix, Spotify, and Airbnb</strong>) use <strong>loading animations</strong> to keep users engaged while content loads.</p>
-<p><strong>Implementation:</strong></p>
-<pre><code class="language-jsx">const LoadingSpinner = () =&gt; {
-  const animation = useAnimation();
+}
+```
+This makes an element **slide up as the user scrolls**.
 
-  useEffect(() =&gt; {
-    const interval = setInterval(() =&gt; {
-      animation.start({
-        rotate: [0, 360],
-        transition: { duration: 1000, ease: 'linear' }
-      });
-    }, 10
-</code></pre>
-<h3>📚 You May Also Like</h3><ul><li><a href="/background-animation.html">background animation</a></li><li><a href="/typing-animation.html">typing animation</a></li><li><a href="/timeline-animation.html">timeline animation</a></li><li><a href="/framer-motion-effects.html">framer motion effects</a></li></ul><p><a href="index.html">← Browse all blog posts</a></p><h3>🌐 Explore Our Other Sites</h3><ul><li><a href="https://startknowledge.startknowledge.in/">startknowledge</a></li><li><a href="https://bn-ration-scale.startknowledge.in/">bn ration scale</a></li><li><a href="https://Calculator-Library-Portal.startknowledge.in/">Calculator Library Portal</a></li><li><a href="https://pension-calculator.startknowledge.in/">pension calculator</a></li><li><a href="https://design-painting.startknowledge.in/">design painting</a></li><li><a href="https://ai-mosaic-studio.startknowledge.in/">ai mosaic studio</a></li><li><a href="https://ultra-static-seo-engine.startknowledge.in/">ultra static seo engine</a></li><li><a href="https://universal-image-data-explorer-forge.startknowledge.in/">universal image data explorer forge</a></li></ul><h3>🔗 Useful Resources (External)</h3><ul><li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer">Google Search Central – SEO Starter Guide</a></li><li><a href="https://moz.com/beginners-guide-to-seo" target="_blank" rel="noopener noreferrer">Moz Beginner’s Guide to SEO</a></li><li><a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a></li><li><a href="https://ahrefs.com/blog/" target="_blank" rel="noopener noreferrer">Ahrefs Blog – SEO Strategies</a></li><li><a href="https://www.semrush.com/blog/" target="_blank" rel="noopener noreferrer">Semrush SEO Toolkit</a></li><li><a href="https://yoast.com/academy/" target="_blank" rel="noopener noreferrer">Yoast SEO Academy</a></li><li><a href="https://backlinko.com/blog" target="_blank" rel="noopener noreferrer">Backlinko – SEO Techniques</a></li><li><a href="https://www.searchenginejournal.com/" target="_blank" rel="noopener noreferrer">Search Engine Journal</a></li><li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a></li><li><a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org – Structured Data</a></li></ul><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="8024521099" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fw+7+28-5k+1k" data-ad-client="ca-pub-2162324894765763" data-ad-slot="7592527166"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></article>
+---
+
+### **5. Leverage Gesture Animations (Drag, Swipe, Hover)**
+
+Framer Motion makes **interactive animations** (like drag-and-drop or swipe effects) **trivial**.
+
+#### **Example: Draggable Card**
+```jsx
+import { motion, useDrag } from 'framer-motion';
+
+function DraggableCard() {
+  const [{ isDragging }, drag] = useDrag();
+
+  return (
+    <motion.div
+      ref={drag}
+      drag
+      dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+      whileDragging={{ scale: 0.95 }}
+      transition={{ type: "spring", damping: 30, stiffness: 400 }}
+    >
+      <h2>Drag Me!</h2>
+    </motion.div>
+  );
+}
+```
+- **`useDrag`** enables **smooth dragging**.
+- **`dragConstraints`** keeps the element within bounds.
+- **Spring physics** makes the drag feel **natural**.
+
+---
+
+### **6. Combine Animations with React State & Effects**
+
+Animations should **react to state changes**. Use `useState` and `useEffect` to trigger animations dynamically.
+
+#### **Example: Toggle Animation on Button Click**
+```jsx
+import { motion, AnimatePresence } from 'framer-motion';
+
+function ToggleAnimation() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div>
+      <button onClick={() => setIsOpen(!isOpen)}>Toggle</button>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 200 }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <p>This content appears smoothly!</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+```
+- **`AnimatePresence`** ensures **clean exits**.
+- **State-driven animations** make interactions **responsive**.
+
+---
+
+### **7. Use Custom Easing & Timing Functions**
+
+Default animations can feel **too stiff or too slow**. Customize them with **easing functions** and **timing controls**.
+
+#### **Example: Custom Easing with `easeInOutCirc`**
+```jsx
+import { motion } from 'framer-motion';
+
+function CustomEaseAnimation() {
+  return (
+    <motion.div
+      animate={{ x: [0, 100, 0] }}
+      transition={{
+        duration: 1,
+        ease: "easeInOutCirc",
+        times: [0, 0.5, 1]
+      }}
+    >
+      <h2>Custom Easing Effect</h2>
+    </motion.div>
+  );
+}
+```
+- **`easeInOutCirc`** creates a **circular motion feel**.
+- **`times`** allows **custom keyframe control**.
+
+---
+
+### **8. Debug & Optimize with DevTools & Performance Tips**
+
+Even the best animations can **lag** if not optimized. Here’s how to **debug and improve**:
+
+#### **A. Use Framer Motion’s DevTools**
+```bash
+npm install @framer/motion-devtools
+```
+This helps **visualize animations** in real-time.
+
+#### **B. Avoid Overusing Animations**
+- **Don’t animate everything**—focus on **key interactions**.
+- **Use `will-change`** for elements that will animate:
+  ```css
+  .animated-element {
+    will-change: transform;
+  }
+  ```
+- **Debounce rapid state changes** (e.g., in scroll animations).
+
+---
+
+## **Real-World Examples of React Animation Base in Action**
+
+Let’s explore **how top companies and developers** use **React Animation Base** to create **stunning UX**.
+
+---
+
+### **Example 1: Netflix’s Smooth Loading Animations**
+Netflix uses **Framer Motion** to create **subtle loading animations** that keep users engaged while content loads.
+
+**How?**
+- **Skeleton loaders** with **pulse animations** (`whileHover`).
+- **Fade-in effects** for cards (`initial={{ opacity: 0 }}`).
+- **Scroll-triggered animations** (`useScroll`).
+
+**Result:** A **seamless transition** from loading to content, reducing perceived wait time.
+
+---
+
+### **Example 2: Airbnb’s Drag-and-Drop Booking UI**
+Airbnb’s booking interface uses **drag animations** to let users **rearrange dates** intuitively.
+
+**How?**
+- **`useDrag`** for **smooth date swapping**.
+- **Spring physics** for **natural bounce-back** when dropping.
+- **Visual feedback** (`whileDragging: { scale: 0.95 }`).
+
+**Result:** A **more intuitive and engaging** booking experience.
+
+---
+
+### **Example 3: Spotify’s Playlist Animations**
+Spotify’s playlist animations use **motion paths** to make **playlists "bounce" into view**.
+
+**How?**
+- **`motion.div` with a custom path**:
+  ```jsx
+  animate={{
+    path: [
+      { x: 0, y: 0 },
+      { x: 100, y: 50 },
+      { x: 0, y: 100 }
+    ],
+    duration: 2,
+    repeat: Infinity
+  }}
+  ```
+- **Hover effects** (`whileHover: { scale: 1.05 }`).
+
+**Result:** A **dynamic, music-themed** UI that feels alive.
+
+---
+
+### **Example 4: Shopify’s Product Card Transitions**
+Shopify uses **Framer Motion** to make **product cards slide in** when scrolled into view.
+
+**How?**
+- **`useScroll` + `motion.div`**:
+  ```jsx
+  const { scrollYProgress } = useScroll();
+  <motion.div
+    style={{ y: [-100, 0] }}
+    animate={scrollYProgress}
+    transition={{ duration: 0.5 }}
+  >
+    <ProductCard />
+  </motion.div>
+  ```
+- **Exit animations** (`exit={{ opacity: 0, y: -20 }`).
+
+**Result:** A **smooth, parallax-like effect** that enhances product discovery.
+
+---
+
+### **Example 5: Uber’s Ride Status Animations**
+Uber uses **Framer Motion** to animate **ride status updates** (e.g., "Driver Arriving").
+
+**How?**
+- **State-driven animations**:
+  ```jsx
+  const statusVariants = {
+    idle: { opacity: 0.5 },
+    arriving: {
+      opacity: 1,
+      scale: 1.1,
+      transition: { duration: 0.3 }
+    }
+  };
+  ```
+- **Sound effects + visual cues** for **better UX**.
+
+**Result:** A **more engaging and informative** ride experience.
+
+---
+
+## **Common Mistakes with React Animation Base (And How to Fix Them)**
+
+Even experienced developers make **animation pitfalls**. Here are the **most common mistakes** and **how to avoid them**.
+
+---
+
+### **Mistake 1: Overusing Animations (Performance Kill)**
+**Problem:** Too many animations **slow down rendering**, causing **jank**.
+
+**Solution:**
+✅ **Animate only critical interactions** (e.g., buttons, modals).
+✅ **Use `will-change`** for elements that animate.
+✅ **Debounce rapid state changes** (e.g., in scroll animations).
+
+**Example of Bad Practice:**
+```jsx
+// ❌ Animating every single list item
+{items.map(item => (
+  <motion.div
+    key={item.id}
+    animate={{ opacity: 1 }}
+    initial={{ opacity: 0 }}
+  >
+    {item.name}
+  </motion.div>
+))}
+```
+**Fix:** Only animate **visible items** (use `IntersectionObserver`).
+
+---
+
+### **Mistake 2: Ignoring Access<h3>📚 You May Also Like</h3><ul><li><a href="/touch-interaction.html">touch interaction</a></li><li><a href="/smooth-scroll-library.html">smooth scroll library</a></li><li><a href="/frontend-animation.html">frontend animation</a></li><li><a href="/3d-ui-animation.html">3d ui animation</a></li></ul><p><a href="index.html">← Browse all blog posts</a></p><h3>🌐 Explore Our Other Sites</h3><ul><li><a href="https://startknowledge.startknowledge.in/">startknowledge</a></li><li><a href="https://bn-ration-scale.startknowledge.in/">bn ration scale</a></li><li><a href="https://Calculator-Library-Portal.startknowledge.in/">Calculator Library Portal</a></li><li><a href="https://pension-calculator.startknowledge.in/">pension calculator</a></li><li><a href="https://design-painting.startknowledge.in/">design painting</a></li><li><a href="https://ai-mosaic-studio.startknowledge.in/">ai mosaic studio</a></li><li><a href="https://ultra-static-seo-engine.startknowledge.in/">ultra static seo engine</a></li><li><a href="https://universal-image-data-explorer-forge.startknowledge.in/">universal image data explorer forge</a></li></ul><h3>🔗 Useful Resources (External)</h3><ul><li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer">Google Search Central – SEO Starter Guide</a></li><li><a href="https://moz.com/beginners-guide-to-seo" target="_blank" rel="noopener noreferrer">Moz Beginner’s Guide to SEO</a></li><li><a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a></li><li><a href="https://ahrefs.com/blog/" target="_blank" rel="noopener noreferrer">Ahrefs Blog – SEO Strategies</a></li><li><a href="https://www.semrush.com/blog/" target="_blank" rel="noopener noreferrer">Semrush SEO Toolkit</a></li><li><a href="https://yoast.com/academy/" target="_blank" rel="noopener noreferrer">Yoast SEO Academy</a></li><li><a href="https://backlinko.com/blog" target="_blank" rel="noopener noreferrer">Backlinko – SEO Techniques</a></li><li><a href="https://www.searchenginejournal.com/" target="_blank" rel="noopener noreferrer">Search Engine Journal</a></li><li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a></li><li><a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org – Structured Data</a></li></ul><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="8024521099" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fw+7+28-5k+1k" data-ad-client="ca-pub-2162324894765763" data-ad-slot="7592527166"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></article>
   <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
     <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
     
       <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/42/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/50/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/63/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/97/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/68/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/6/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/81/200/120" style="width:100%; border-radius: 16px;">
+        <img src="https://picsum.photos/id/65/200/120" style="width:100%; border-radius: 16px;">
         <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
         <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
       </div>
     
       <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/61/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/14/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/84/200/120" style="width:100%; border-radius: 16px;">
+        <img src="https://picsum.photos/id/71/200/120" style="width:100%; border-radius: 16px;">
         <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
         <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
       </div>
@@ -553,7 +507,7 @@ const Animated3DScene = () =&gt; {
           <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
             <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
             <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/56/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
+            <img src="https://picsum.photos/id/45/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
             <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
             <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
           </div>
@@ -575,7 +529,7 @@ const Animated3DScene = () =&gt; {
       const floatDiv = document.createElement('div');
       floatDiv.innerHTML = `
         <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/52/40/40" style="border-radius: 50%; width: 40px;">
+          <img src="https://picsum.photos/id/35/40/40" style="border-radius: 50%; width: 40px;">
           <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
           <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
           <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
@@ -584,174 +538,6 @@ const Animated3DScene = () =&gt; {
       document.body.appendChild(floatDiv.firstChild);
       document.getElementById('floatingAd').addEventListener('click', (e) => {
         if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/9/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/42/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/1/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/28/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/20/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/30/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/72/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/12/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
       });
     }, 5000);
   </script></body>
