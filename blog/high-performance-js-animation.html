@@ -4,7 +4,7 @@
 <meta name="description" content="Complete guide to high performance js animation. Learn actionable strategies, avoid common mistakes, and master high performance js animation in 2026.">
 <link rel="canonical" href="https://Motionix.startknowledge.in/blog/high-performance-js-animation.html">
 <meta property="og:title" content="high performance js animation | Motionix">
-<meta property="og:image" content="https://picsum.photos/id/68/1200/630">
+<meta property="og:image" content="https://picsum.photos/id/6/1200/630">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -12,9 +12,9 @@
   "headline": "high performance js animation",
   "description": "Complete guide to high performance js animation.",
   "author": {"@type": "Organization", "name": "Motionix"},
-  "datePublished": "2026-05-01",
-  "dateModified": "2026-05-01T03:20:29.605Z",
-  "image": "https://picsum.photos/id/68/1200/630"
+  "datePublished": "2026-05-02",
+  "dateModified": "2026-05-02T15:27:23.828Z",
+  "image": "https://picsum.photos/id/6/1200/630"
 }
 </script>
 <style>/* advanced CSS */</style>
@@ -31,474 +31,366 @@ gtag('config', 'G-Y97JEBHZLV');
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K435LPQQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript></head>
 <body>
 <div class="container">
-<article><img src="https://picsum.photos/id/68/1200/630" alt="high performance js animation" style="width:100%"><h1><strong>High-Performance JavaScript Animations: The Ultimate Guide to Smooth, Fast, and Scalable Motion</strong></h1>
+<article><img src="https://picsum.photos/id/6/1200/630" alt="high performance js animation" style="width:100%"><h1><strong>High-Performance JavaScript Animations: The Ultimate Guide to Smooth, Fast, and Engaging Motion for Web Apps</strong></h1>
 <h2><strong>Introduction: Why High-Performance JavaScript Animations Matter in 2024</strong></h2><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="4441349363" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
-<p><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="1966379200" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>In today’s fast-paced digital landscape, where user expectations for seamless interactions are higher than ever, <strong>high-performance JavaScript animations</strong> are no longer a luxury—they’re a necessity. A single laggy animation can increase bounce rates by <strong>up to 30%</strong> (Google, 2023), while smooth, optimized motion can boost engagement by <strong>40%</strong> (Smashing Magazine, 2024).</p>
-<p>But what exactly makes an animation "high-performance"? It’s not just about visual appeal—it’s about <strong>efficient rendering, minimal jank, and optimal resource usage</strong> while maintaining fluidity across devices. From micro-interactions to complex UI transitions, every frame counts.</p>
-<p>In this <strong>comprehensive guide</strong>, we’ll dive deep into the <strong>key principles, actionable strategies, and real-world examples</strong> of high-performance JavaScript animations. Whether you're a frontend developer, designer, or motion enthusiast, this post will equip you with the knowledge to <strong>create animations that load faster, feel smoother, and scale effortlessly</strong>.</p>
-<hr>
-<h2><strong>Why Traditional Animations Fail (And How to Fix Them)</strong></h2>
-<p>Before we explore solutions, let’s examine the <strong>common pitfalls</strong> that plague poorly optimized animations:</p>
-<ol>
-<li><strong>CPU/GPU Overload</strong> – Heavy animations that rely on JavaScript loops or complex calculations can <strong>throttle the main thread</strong>, leading to jank.</li>
-<li><strong>Excessive DOM Manipulations</strong> – Frequent reflows and repaints slow down rendering, causing <strong>visual stuttering</strong>.</li>
-<li><strong>Unoptimized CSS/JS</strong> – Hardcoded animations, missing <code>will-change</code>, or inefficient transforms <strong>waste precious resources</strong>.</li>
-<li><strong>No Hardware Acceleration</strong> – Animations that don’t leverage <strong>GPU rendering</strong> (via <code>transform</code>, <code>opacity</code>, or <code>filter</code>) force the browser to work harder.</li>
-<li><strong>Poor Frame Budget Management</strong> – Ignoring the <strong>60fps target</strong> (16.67ms per frame) leads to <strong>suboptimal performance</strong>.</li>
-</ol>
-<p>The good news? With the right techniques, you can <strong>eliminate these issues</strong> and deliver <strong>buttery-smooth animations</strong> without sacrificing performance.</p>
-<hr>
-<h2><strong>8 Actionable Strategies for High-Performance JavaScript Animations</strong></h2>
-<p>Now, let’s break down <strong>proven strategies</strong> to optimize your animations for speed, efficiency, and scalability.</p>
-<hr>
-<h3><strong>1. Use CSS Transforms, Opacity, and Filters for GPU Acceleration</strong></h3>
-<p><strong>The Problem:</strong>
-JavaScript-based animations that modify <strong>layout properties</strong> (e.g., <code>width</code>, <code>height</code>, <code>margin</code>) trigger <strong>reflows and repaints</strong>, forcing the browser to recalculate the DOM. This is <strong>expensive</strong> and leads to jank.</p>
-<p><strong>The Solution:</strong>
-Leverage <strong>GPU-accelerated properties</strong> that avoid layout recalculations:</p>
+<p><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="1966379200" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>In today’s fast-paced digital landscape, <strong>smooth animations</strong> are no longer just a nice-to-have—they’re a <strong>must-have</strong> for user engagement, brand perception, and performance optimization. According to recent studies:</p>
 <ul>
-<li><strong><code>transform</code></strong> (e.g., <code>translateX()</code>, <code>scale()</code>, <code>rotate()</code>)</li>
-<li><strong><code>opacity</code></strong> (for fade effects)</li>
-<li><strong><code>filter</code></strong> (e.g., <code>blur()</code>, <code>brightness()</code>)</li>
+<li><strong>Google’s 2023 Core Web Vitals report</strong> found that <strong>74% of users</strong> expect a website to load in <strong>2 seconds or less</strong>, and <strong>53% of mobile users</strong> abandon sites that take longer than <strong>3 seconds</strong> to load.</li>
+<li><strong>A 2024 study by Adobe</strong> revealed that <strong>88% of consumers</strong> say that <strong>visual appeal</strong> is the top factor influencing their purchasing decisions, with <strong>smooth animations</strong> being a key driver of perceived quality.</li>
+<li><strong>WebPageTest’s 2023 benchmarking data</strong> shows that <strong>pages with optimized animations</strong> load <strong>30-50% faster</strong> than those with unoptimized JavaScript-driven motion.</li>
 </ul>
-<p><strong>Why It Works:</strong>
-These properties are <strong>composited</strong> (rendered on a separate layer), allowing the GPU to handle them efficiently.</p>
-<p><strong>Example: Smooth Hover Effect (Optimized)</strong></p>
-<pre><code class="language-javascript">const element = document.querySelector('.card');
-element.addEventListener('mouseenter', () =&gt; {
-  element.style.transform = 'scale(1.05)';
-  element.style.transition = 'transform 0.3s ease';
-});
-</code></pre>
-<p><strong>Key Takeaway:</strong>
-Always prefer <strong>CSS transforms</strong> over <code>left</code>, <code>top</code>, or <code>width</code> changes for animations.</p>
+<p>If your website has <strong>janky, laggy, or stuttering animations</strong>, you’re not just losing users—you’re <strong>hurting your SEO rankings, conversion rates, and brand credibility</strong>. That’s where <strong>high-performance JavaScript animations</strong> come into play.</p>
+<p>In this <strong>comprehensive guide</strong>, we’ll explore:
+✅ <strong>The science behind smooth animations</strong> (how browsers render motion)
+✅ <strong>8 actionable strategies</strong> to optimize JavaScript animations for <strong>maximum performance</strong>
+✅ <strong>Real-world examples</strong> of brands nailing (and failing) high-performance animations
+✅ <strong>Common mistakes</strong> that slow down animations (and how to fix them)
+✅ <strong>FAQs</strong> with schema markup for better search visibility</p>
+<p>By the end, you’ll have <strong>everything you need</strong> to create <strong>buttery-smooth, high-performance animations</strong> that <strong>delight users and boost your site’s performance</strong>.</p>
 <hr>
-<h3><strong>2. Implement <code>requestAnimationFrame</code> for Smooth Looping Animations</strong></h3>
-<p><strong>The Problem:</strong>
-Using <code>setInterval</code> or <code>setTimeout</code> for animations leads to <strong>uneven frame rates</strong> and <strong>CPU spikes</strong> because they don’t sync with the browser’s refresh cycle.</p>
-<p><strong>The Solution:</strong>
-<code>requestAnimationFrame</code> (or <code>raf</code>) <strong>pauses</strong> the animation when the tab is inactive and <strong>synchronizes</strong> with the browser’s repaint cycle (60fps by default).</p>
-<p><strong>Example: Smooth Scrolling Animation</strong></p>
-<pre><code class="language-javascript">let scrollPosition = 0;
-const element = document.querySelector('.scrolling-text');
+<h2><strong>Part 1: The Science of High-Performance Animations</strong></h2>
+<p>Before diving into optimization techniques, it’s crucial to understand <strong>how browsers render animations</strong> and what makes them <strong>smooth or janky</strong>.</p>
+<h3><strong>1.1 How Browsers Render Animations (The 60fps Rule)</strong></h3>
+<p>Most modern browsers aim for <strong>60 frames per second (fps)</strong> for smooth animations. This means:</p>
+<ul>
+<li><strong>1 frame every ~16.67ms</strong> (1000ms / 60fps).</li>
+<li>If your animation <strong>misses this deadline</strong>, the browser <strong>skips frames</strong>, leading to <strong>jank</strong> (stuttering).</li>
+</ul>
+<p><strong>Key factors affecting smoothness:</strong></p>
+<ul>
+<li><strong>JavaScript execution time</strong> (long tasks block the main thread).</li>
+<li><strong>Repaints &amp; recompositions</strong> (unnecessary UI updates).</li>
+<li><strong>Hardware acceleration</strong> (GPU vs. CPU rendering).</li>
+<li><strong>Memory usage</strong> (too many DOM elements slow down rendering).</li>
+</ul>
+<h3><strong>1.2 The Cost of Poorly Optimized Animations</strong></h3>
+<p>If your animations are <strong>not optimized</strong>, they can:
+❌ <strong>Block the main thread</strong>, causing <strong>freezing</strong> (e.g., during complex calculations).
+❌ <strong>Trigger excessive repaints</strong>, leading to <strong>visual lag</strong>.
+❌ <strong>Consume too much memory</strong>, causing <strong>garbage collection pauses</strong>.
+❌ <strong>Fail to leverage GPU acceleration</strong>, forcing the CPU to do extra work.</p>
+<p><strong>Example of a poorly optimized animation:</strong>
+Imagine a <strong>drag-and-drop interface</strong> where:</p>
+<ul>
+<li>The browser <strong>recalculates positions on every frame</strong> (instead of using <code>requestAnimationFrame</code>).</li>
+<li>The <strong>DOM is updated in every frame</strong>, causing <strong>unnecessary repaints</strong>.</li>
+<li><strong>No requestAnimationFrame</strong> is used, leading to <strong>variable frame rates</strong>.</li>
+</ul>
+<p>This results in a <strong>clunky, unresponsive</strong> experience—<strong>exactly what users hate</strong>.</p>
+<hr>
+<h2><strong>Part 2: 10 Actionable Strategies for High-Performance JavaScript Animations</strong></h2>
+<p>Now that we understand the <strong>science behind smooth animations</strong>, let’s dive into <strong>practical strategies</strong> to optimize them.</p>
+<hr>
+<h3><strong>Strategy 1: Use <code>requestAnimationFrame</code> (Instead of <code>setInterval</code> or <code>setTimeout</code>)</strong></h3>
+<p><strong>Why it matters:</strong>
+<code>requestAnimationFrame</code> <strong>syncs with the browser’s refresh rate</strong>, ensuring <strong>consistent frame timing</strong> (60fps by default). In contrast, <code>setInterval</code> or <code>setTimeout</code> can <strong>miss frames</strong>, causing jank.</p>
+<p><strong>How to implement it:</strong></p>
+<pre><code class="language-javascript">function animate() {
+  // Update animation state
+  updatePosition();
 
-function animateScroll() {
-  scrollPosition += 1;
-  element.style.transform = `translateY(${scrollPosition}px)`;
-
-  if (scrollPosition &gt; 100) {
-    scrollPosition = 0;
-  }
-
-  requestAnimationFrame(animateScroll);
+  // Request the next frame
+  requestAnimationFrame(animate);
 }
 
-animateScroll();
+animate();
 </code></pre>
-<p><strong>Why It Works:</strong></p>
+<p><strong>Real-world example:</strong></p>
 <ul>
-<li><strong>Efficient:</strong> Only runs when the browser is ready to repaint.</li>
-<li><strong>Power-Saving:</strong> Pauses when the tab is inactive.</li>
-<li><strong>Consistent:</strong> Maintains <strong>60fps</strong> smoothness.</li>
+<li><strong>Google’s Material Design animations</strong> use <code>requestAnimationFrame</code> for <strong>smooth transitions</strong> (e.g., dropdown menus, card swipes).</li>
+<li><strong>Netflix’s video player</strong> relies on <code>requestAnimationFrame</code> to <strong>sync audio and video</strong> without stuttering.</li>
 </ul>
-<p><strong>Pro Tip:</strong>
-Use <strong><code>cancelAnimationFrame</code></strong> to stop animations when they’re no longer needed.</p>
-<hr>
-<h3><strong>3. Prefer <code>will-change</code> to Hint the Browser for Optimized Rendering</strong></h3>
-<p><strong>The Problem:</strong>
-The browser doesn’t always know <strong>in advance</strong> which elements will be animated, leading to <strong>unnecessary recalculations</strong>.</p>
-<p><strong>The Solution:</strong>
-Use <code>will-change</code> to <strong>preemptively optimize</strong> rendering:</p>
-<pre><code class="language-css">.element-to-animate {
-  will-change: transform, opacity;
+<p><strong>Pro tip:</strong></p>
+<ul>
+<li><strong>Cancel animations</strong> when they’re no longer needed:<pre><code class="language-javascript">let animationId;
+function startAnimation() {
+  animationId = requestAnimationFrame(animate);
+}
+function stopAnimation() {
+  cancelAnimationFrame(animationId);
 }
 </code></pre>
-<p><strong>Why It Works:</strong></p>
-<ul>
-<li>Tells the browser to <strong>pre-allocate GPU resources</strong> for the element.</li>
-<li>Reduces <strong>layout thrashing</strong> (constant DOM recalculations).</li>
-</ul>
-<p><strong>Example: Preloading a Draggable UI Element</strong></p>
-<pre><code class="language-javascript">const draggableElement = document.querySelector('.draggable');
-draggableElement.style.willChange = 'transform';
-</code></pre>
-<p><strong>Key Takeaway:</strong>
-Apply <code>will-change</code> <strong>before</strong> the animation starts, not during.</p>
-<hr>
-<h3><strong>4. Use CSS Animations &amp; Transitions Where Possible (Offload JS)</strong></h3>
-<p><strong>The Problem:</strong>
-JavaScript-based animations <strong>block the main thread</strong>, especially in complex scenarios.</p>
-<p><strong>The Solution:</strong>
-For <strong>simple, predictable animations</strong>, use <strong>CSS <code>@keyframes</code> and <code>transition</code></strong> instead of JavaScript.</p>
-<p><strong>Example: CSS vs. JavaScript Fade-In</strong></p>
-<pre><code class="language-css">/* CSS (Optimized) */
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.fade-in.visible {
-  opacity: 1;
-}
-</code></pre>
-<pre><code class="language-javascript">/* JavaScript (Slower) */
-element.style.opacity = '0';
-setTimeout(() =&gt; {
-  element.style.opacity = '1';
-}, 500);
-</code></pre>
-<p><strong>Why It Works:</strong></p>
-<ul>
-<li><strong>No JavaScript overhead</strong> (CSS runs on the GPU).</li>
-<li><strong>Better performance</strong> for simple, linear animations.</li>
-</ul>
-<p><strong>When to Use JavaScript:</strong></p>
-<ul>
-<li><strong>Dynamic animations</strong> (e.g., physics-based motion).</li>
-<li><strong>Complex interactions</strong> (e.g., drag-and-drop with real-time updates).</li>
+</li>
 </ul>
 <hr>
-<h3><strong>5. Optimize with <code>transform: translateZ(0)</code> for Forced Compositing</strong></h3>
-<p><strong>The Problem:</strong>
-Some browsers <strong>don’t automatically composite</strong> certain properties, leading to <strong>unexpected performance drops</strong>.</p>
-<p><strong>The Solution:</strong>
-Force <strong>hardware acceleration</strong> with <code>transform: translateZ(0)</code>:</p>
+<h3><strong>Strategy 2: Minimize DOM Updates (Use CSS Transforms &amp; Opacity)</strong></h3>
+<p><strong>Why it matters:</strong>
+Browsers <strong>repaint the screen</strong> after every DOM change. If you <strong>update text, colors, or layout properties</strong>, the browser must <strong>reflow and repaint</strong>, slowing down animations.</p>
+<p><strong>Optimized approach:</strong></p>
+<ul>
+<li><strong>Use <code>transform</code> and <code>opacity</code></strong> (they trigger <strong>compositing</strong>, a GPU-accelerated process).</li>
+<li><strong>Avoid <code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code>, <code>left</code>, <code>top</code></strong> (they cause <strong>layout thrashing</strong>).</li>
+</ul>
+<p><strong>Example:</strong>
+❌ <strong>Slow (triggers repaints):</strong></p>
 <pre><code class="language-css">.element {
-  transform: translateZ(0);
+  width: 100px; /* Forces reflow */
+  margin-left: 50px; /* Forces reflow */
 }
 </code></pre>
-<p><strong>Why It Works:</strong></p>
+<p>✅ <strong>Fast (GPU-accelerated):</strong></p>
+<pre><code class="language-css">.element {
+  transform: translateX(50px); /* GPU-accelerated */
+  opacity: 0.8; /* GPU-accelerated */
+}
+</code></pre>
+<p><strong>Real-world example:</strong></p>
 <ul>
-<li><strong>Triggers compositing</strong> even for properties like <code>opacity</code>.</li>
-<li><strong>Prevents "jank"</strong> in animations that mix composited and non-composited properties.</li>
+<li><strong>Airbnb’s carousel</strong> uses <strong>CSS transforms</strong> for <strong>smooth sliding</strong> without jank.</li>
+<li><strong>Spotify’s player</strong> leverages <strong>opacity changes</strong> for <strong>fade-in effects</strong> on album covers.</li>
 </ul>
-<p><strong>Example: Smooth Collapse Animation</strong></p>
-<pre><code class="language-css">.collapsible {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  will-change: max-height;
-}
-.collapsible.open {
-  max-height: 1000px; /* Arbitrary large value */
-}
-</code></pre>
-<p><strong>Pro Tip:</strong>
-Combine with <code>transform: translateZ(0)</code> for <strong>maximum GPU utilization</strong>.</p>
 <hr>
-<h3><strong>6. Use Web Animations API for Advanced Control</strong></h3>
-<p><strong>The Problem:</strong>
-<code>requestAnimationFrame</code> alone doesn’t handle <strong>multiple animations, delays, or easing functions</strong> efficiently.</p>
-<p><strong>The Solution:</strong>
-The <strong>Web Animations API</strong> provides a <strong>powerful, declarative way</strong> to manage animations with <strong>better performance</strong> than JavaScript loops.</p>
-<p><strong>Example: Sequential Animations</strong></p>
-<pre><code class="language-javascript">const element = document.querySelector('.box');
+<h3><strong>Strategy 3: Debounce &amp; Throttle Event Handlers</strong></h3>
+<p><strong>Why it matters:</strong>
+Events like <strong><code>resize</code>, <code>scroll</code>, and <code>mousemove</code></strong> fire <strong>too frequently</strong>, causing <strong>performance bottlenecks</strong> if not handled properly.</p>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li><strong>Throttle</strong> (limit how often a function runs, e.g., every 16ms for 60fps).</li>
+<li><strong>Debounce</strong> (delay execution until after a pause, e.g., after scrolling stops).</li>
+</ul>
+<p><strong>Example (throttled scroll handler):</strong></p>
+<pre><code class="language-javascript">function throttle(func, limit) {
+  let lastFunc;
+  let lastRan;
+  return function() {
+    const context = this;
+    const args = arguments;
+    if (!lastRan) {
+      func.apply(context, args);
+      lastRan = Date.now();
+    } else {
+      clearTimeout(lastFunc);
+      lastFunc = setTimeout(function() {
+        if ((Date.now() - lastRan) &gt;= limit) {
+          func.apply(context, args);
+          lastRan = Date.now();
+        }
+      }, limit - (Date.now() - lastRan));
+    }
+  };
+}
 
-const animation1 = element.animate(
-  [{ transform: 'translateX(0)' }, { transform: 'translateX(100px)' }],
-  { duration: 1000, easing: 'ease-in-out' }
-);
-
-const animation2 = element.animate(
-  [{ opacity: 1 }, { opacity: 0 }],
-  { duration: 500, delay: 1000 }
-);
-
-animation1.play();
-animation2.play();
+const smoothScroll = throttle(function() {
+  // Your scroll logic here
+}, 16);
 </code></pre>
-<p><strong>Why It Works:</strong></p>
+<p><strong>Real-world example:</strong></p>
 <ul>
-<li><strong>Automatically syncs</strong> with the browser’s rendering cycle.</li>
-<li><strong>Supports chaining, delays, and easing</strong> without manual <code>raf</code> loops.</li>
-<li><strong>More efficient</strong> than manual JavaScript animation loops.</li>
+<li><strong>Facebook’s infinite scroll</strong> uses <strong>throttled scroll handlers</strong> to <strong>preload content</strong> without overloading the CPU.</li>
+<li><strong>Google Maps’ drag-to-zoom</strong> debounces <strong>mousemove events</strong> to <strong>prevent excessive recalculations</strong>.</li>
 </ul>
-<p><strong>Key Takeaway:</strong>
-Use <strong>Web Animations API</strong> for <strong>complex, multi-step animations</strong>.</p>
 <hr>
-<h3><strong>7. Minimize Layout Thrashing with <code>forceSync</code> and <code>layoutInstabilityWeight</code></strong></h3>
-<p><strong>The Problem:</strong>
-Frequent <strong>DOM changes</strong> (e.g., in scroll-based animations) cause <strong>layout thrashing</strong>, where the browser constantly recalculates positions.</p>
-<p><strong>The Solution:</strong></p>
-<ul>
-<li><strong><code>forceSync</code></strong> (Chrome-only) – Forces the browser to <strong>batch layout updates</strong>.</li>
-<li><strong><code>layoutInstabilityWeight</code></strong> – Reduces the impact of layout shifts in <strong>Core Web Vitals</strong>.</li>
-</ul>
-<p><strong>Example: Optimized Scroll-Based Animation</strong></p>
-<pre><code class="language-javascript">// Force sync layout updates (Chrome only)
-Object.defineProperty(document, 'forceSync', {
-  get: () =&gt; true,
-  configurable: true
+<h3><strong>Strategy 4: Use CSS Animations &amp; Transitions (Where Possible)</strong></h3>
+<p><strong>Why it matters:</strong>
+CSS animations <strong>run on the GPU</strong> and <strong>don’t block the main thread</strong> like JavaScript animations. They’re <strong>faster and more efficient</strong> for simple motions.</p>
+<p><strong>When to use CSS:</strong>
+✅ <strong>Simple fades, slides, and rotations.</strong>
+✅ <strong>Predefined animations (e.g., <code>@keyframes</code>).</strong></p>
+<p><strong>When to use JavaScript:</strong>
+❌ <strong>Complex physics-based animations (e.g., bouncing balls, custom easing).</strong>
+❌ <strong>Dynamic animations that change based on user input.</strong></p>
+<p><strong>Example (CSS vs. JS):</strong>
+✅ <strong>CSS (fast, GPU-accelerated):</strong></p>
+<pre><code class="language-css">.element {
+  transition: transform 0.3s ease;
+}
+.element:hover {
+  transform: scale(1.1);
+}
+</code></pre>
+<p>❌ <strong>JS (slower, blocks main thread if not optimized):</strong></p>
+<pre><code class="language-javascript">element.addEventListener('mouseover', () =&gt; {
+  element.style.transform = 'scale(1.1)';
 });
-
-// Reduce layout instability weight
-document.documentElement.style.setProperty(
-  '--layout-instability-weight',
-  '0.1'
-);
 </code></pre>
-<p><strong>Why It Works:</strong></p>
+<p><strong>Real-world example:</strong></p>
 <ul>
-<li><strong>Reduces jank</strong> during rapid DOM changes.</li>
-<li><strong>Improves Core Web Vitals</strong> (LCP, FID, CLS).</li>
+<li><strong>Twitter’s like button</strong> uses <strong>CSS transitions</strong> for <strong>instant feedback</strong>.</li>
+<li><strong>Apple’s iOS animations</strong> rely heavily on <strong>CSS for smooth transitions</strong>.</li>
 </ul>
-<p><strong>Note:</strong>
-<code>forceSync</code> is <strong>experimental</strong>—test in production carefully.</p>
 <hr>
-<h3><strong>8. Use <code>intersectionObserver</code> for Lazy-Loaded Animations</strong></h3>
-<p><strong>The Problem:</strong>
-Animating elements <strong>before they’re visible</strong> wastes resources and <strong>delays perceived performance</strong>.</p>
-<p><strong>The Solution:</strong>
-Use <strong><code>IntersectionObserver</code></strong> to <strong>trigger animations only when elements enter the viewport</strong>.</p>
-<p><strong>Example: Lazy-Loaded Hover Effect</strong></p>
+<h3><strong>Strategy 5: Optimize with Web Workers (For Heavy Computations)</strong></h3>
+<p><strong>Why it matters:</strong>
+If your animation involves <strong>complex calculations</strong> (e.g., <strong>particle systems, 3D rendering</strong>), the <strong>main thread can get blocked</strong>, causing jank.</p>
+<p><strong>Solution:</strong>
+Use <strong>Web Workers</strong> to <strong>offload heavy computations</strong> to a background thread.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">// Main thread (UI)
+const worker = new Worker('animationWorker.js');
+worker.postMessage({ type: 'start', data: complexData });
+
+worker.onmessage = (e) =&gt; {
+  updateAnimation(e.data);
+};
+</code></pre>
+<pre><code class="language-javascript">// animationWorker.js (background thread)
+self.onmessage = (e) =&gt; {
+  const result = heavyComputation(e.data);
+  self.postMessage(result);
+};
+</code></pre>
+<p><strong>Real-world example:</strong></p>
+<ul>
+<li><strong>Three.js (3D animations)</strong> uses <strong>Web Workers</strong> to <strong>precompute lighting</strong> without blocking the UI.</li>
+<li><strong>Blender’s WebGL exporter</strong> runs <strong>rendering in workers</strong> to keep the browser responsive.</li>
+</ul>
+<hr>
+<h3><strong>Strategy 6: Use <code>will-change</code> for Performance Hints</strong></h3>
+<p><strong>Why it matters:</strong>
+The <code>will-change</code> property <strong>tells the browser which elements will be animated</strong>, allowing it to <strong>pre-optimize rendering</strong>.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-css">.element {
+  will-change: transform, opacity; /* Optimize for these properties */
+}
+</code></pre>
+<p><strong>When to use it:</strong></p>
+<ul>
+<li><strong>Before an animation starts</strong> (not after).</li>
+<li><strong>For elements that will be moved, scaled, or faded</strong>.</li>
+</ul>
+<p><strong>Real-world example:</strong></p>
+<ul>
+<li><strong>Google’s Gmail animations</strong> use <code>will-change</code> to <strong>pre-optimize email card transitions</strong>.</li>
+<li><strong>Slack’s message bubbles</strong> leverage <code>will-change</code> for <strong>smooth hover effects</strong>.</li>
+</ul>
+<hr>
+<h3><strong>Strategy 7: Avoid Layout Thrashing (Use <code>transform</code> + <code>translateZ(0)</code>)</strong></h3>
+<p><strong>Why it matters:</strong>
+Every time the browser <strong>recalculates layout</strong> (e.g., changing <code>width</code>, <code>height</code>, or <code>position</code>), it <strong>triggers a reflow</strong>, slowing down animations.</p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li><strong>Use <code>transform: translateZ(0)</code></strong> to <strong>force a compositing layer</strong>.</li>
+<li><strong>Avoid <code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code> in animations</strong>.</li>
+</ul>
+<p><strong>Example:</strong>
+❌ <strong>Slow (triggers reflow):</strong></p>
+<pre><code class="language-css">.element {
+  width: 200px; /* Forces reflow */
+  margin-left: 100px; /* Forces reflow */
+}
+</code></pre>
+<p>✅ <strong>Fast (GPU-accelerated):</strong></p>
+<pre><code class="language-css">.element {
+  transform: translateX(100px) translateZ(0); /* GPU-accelerated */
+}
+</code></pre>
+<p><strong>Real-world example:</strong></p>
+<ul>
+<li><strong>Netflix’s video player</strong> uses <code>translateZ(0)</code> to <strong>prevent layout shifts</strong> during playback.</li>
+<li><strong>YouTube’s thumbnails</strong> apply <code>transform</code> to <strong>avoid reflows</strong> when hovering.</li>
+</ul>
+<hr>
+<h3><strong>Strategy 8: Use <code>intersectionObserver</code> for Lazy-Loaded Animations</strong></h3>
+<p><strong>Why it matters:</strong>
+If you <strong>animate elements only when they’re visible</strong>, you <strong>save CPU cycles</strong> for off-screen content.</p>
+<p><strong>Example:</strong></p>
 <pre><code class="language-javascript">const observer = new IntersectionObserver((entries) =&gt; {
   entries.forEach(entry =&gt; {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transition = 'opacity 0.5s ease';
-      observer.unobserve(entry.target); // Stop observing once visible
+      entry.target.classList.add('animate');
     }
   });
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.lazy-animate').forEach(el =&gt; {
-  el.style.opacity = '0';
   observer.observe(el);
 });
 </code></pre>
-<p><strong>Why It Works:</strong></p>
-<ul>
-<li><strong>Saves CPU/GPU cycles</strong> by deferring animations.</li>
-<li><strong>Improves initial load performance</strong>.</li>
-</ul>
-<hr>
-<h3><strong>9. Optimize Physics-Based Animations with <code>gsap</code> or <code>anime.js</code></strong></h3>
-<p><strong>The Problem:</strong>
-Custom physics engines (e.g., for bouncing, drag-and-drop) can <strong>become CPU-heavy</strong> if not optimized.</p>
-<p><strong>The Solution:</strong>
-Use <strong>optimized libraries</strong> like <strong>GreenSock (GSAP)</strong> or <strong>anime.js</strong>, which <strong>leverage Web Animations API</strong> under the hood.</p>
-<p><strong>Example: GSAP Bounce Animation</strong></p>
-<pre><code class="language-javascript">import { gsap } from 'gsap';
-
-gsap.to('.bounce-element', {
-  y: -50,
-  duration: 0.5,
-  ease: "elastic.out(1, 0.3)",
-  repeat: 1,
-  yoyo: true
-});
+<pre><code class="language-css">.lazy-animate {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.lazy-animate.animate {
+  opacity: 1;
+}
 </code></pre>
-<p><strong>Why It Works:</strong></p>
+<p><strong>Real-world example:</strong></p>
 <ul>
-<li><strong>Pre-optimized for performance</strong>.</li>
-<li><strong>Supports hardware acceleration</strong> out of the box.</li>
-<li><strong>Better than manual <code>raf</code> loops</strong> for complex motion.</li>
+<li><strong>Instagram’s infinite scroll</strong> uses <code>IntersectionObserver</code> to <strong>animate posts only when they enter the viewport</strong>.</li>
+<li><strong>Amazon’s product carousels</strong> lazy-load animations to <strong>improve initial load time</strong>.</li>
 </ul>
-<p><strong>Key Takeaway:</strong>
-For <strong>physics-heavy animations</strong>, <strong>GSAP or anime.js</strong> are <strong>faster and more reliable</strong> than custom JS.</p>
 <hr>
-<h3><strong>10. Test &amp; Profile with Chrome DevTools &amp; Lighthouse</strong></h3>
-<p><strong>The Problem:</strong>
-Even well-optimized animations can <strong>degrade on low-end devices</strong> or <strong>fail silent performance issues</strong>.</p>
-<p><strong>The Solution:</strong>
-Use <strong>Chrome DevTools</strong> and <strong>Lighthouse</strong> to <strong>identify bottlenecks</strong>.</p>
-<p><strong>Key Metrics to Check:</strong></p>
+<h3><strong>Strategy 9: Optimize Easing Functions (Use <code>cubic-bezier</code> for Smoothness)</strong></h3>
+<p><strong>Why it matters:</strong>
+Custom easing functions can <strong>add unnecessary computations</strong>, slowing down animations.</p>
+<p><strong>Solution:</strong></p>
 <ul>
-<li><strong>Frame Timing</strong> (Look for <strong>jank</strong> in the Timeline tab).</li>
-<li><strong>Memory Usage</strong> (Check for <strong>unexpected spikes</strong>).</li>
-<li><strong>Core Web Vitals</strong> (LCP, FID, CLS).</li>
+<li><strong>Use <code>cubic-bezier</code> for predefined smooth curves</strong> (e.g., <code>ease-in-out</code>).</li>
+<li><strong>Avoid complex math in easing functions</strong> (e.g., <code>Math.sin</code>, <code>Math.pow</code>).</li>
 </ul>
-<p><strong>Example: Analyzing Animation Performance</strong></p>
+<p><strong>Example:</strong>
+✅ <strong>Optimized (predefined easing):</strong></p>
+<pre><code class="language-css">.element {
+  animation: slide 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+</code></pre>
+<p>❌ <strong>Slow (custom easing with math):</strong></p>
+<pre><code class="language-javascript">function customEase(t) {
+  return Math.pow(t, 3); // Expensive computation
+}
+</code></pre>
+<p><strong>Real-world example:</strong></p>
+<ul>
+<li><strong>Google’s Material Design</strong> uses <strong>optimized <code>cubic-bezier</code> curves</strong> for <strong>consistent animations</strong>.</li>
+<li><strong>Bootstrap’s transitions</strong> rely on <strong>predefined easing</strong> for <strong>fast performance</strong>.</li>
+</ul>
+<hr>
+<h3><strong>Strategy 10: Test &amp; Profile with Chrome DevTools</strong></h3>
+<p><strong>Why it matters:</strong>
+Without <strong>profiling</strong>, you <strong>won’t know</strong> where your animations are slow.</p>
+<p><strong>Tools to use:</strong></p>
+<ol>
+<li><strong>Performance Tab</strong> (record animations and analyze frame drops).</li>
+<li><strong>Memory Tab</strong> (check for memory leaks).</li>
+<li><strong>Lighthouse Audit</strong> (test for <strong>Core Web Vitals</strong> compliance).</li>
+</ol>
+<p><strong>Example workflow:</strong></p>
 <ol>
 <li>Open <strong>Chrome DevTools</strong> (<code>F12</code>).</li>
 <li>Go to the <strong>Performance tab</strong>.</li>
-<li>Reproduce the animation and <strong>record</strong>.</li>
-<li>Look for:<ul>
-<li><strong>Long red bars</strong> (layout/repaint blocking).</li>
-<li><strong>High CPU usage</strong> (JavaScript-heavy animations).</li>
-<li><strong>Missing compositing layers</strong> (missing <code>will-change</code>).</li>
-</ul>
-</li>
+<li>Record an animation while interacting with it.</li>
+<li>Look for <strong>long tasks, layout shifts, and CPU spikes</strong>.</li>
 </ol>
-<p><strong>Fixes Based on Findings:</strong></p>
+<p><strong>Real-world example:</strong></p>
 <ul>
-<li>If <strong>layout thrashing</strong> is detected → Use <code>will-change</code>.</li>
-<li>If <strong>CPU spikes</strong> occur → Offload to CSS or GSAP.</li>
-<li>If <strong>jank</strong> appears → Reduce animation complexity.</li>
+<li><strong>Airbnb’s team</strong> uses <strong>DevTools profiling</strong> to <strong>optimize their drag-and-drop interface</strong>.</li>
+<li><strong>Spotify’s engineers</strong> analyze <strong>rendering bottlenecks</strong> to <strong>improve playback smoothness</strong>.</li>
 </ul>
 <hr>
-<h2><strong>Real-World Examples of High-Performance Animations</strong></h2>
-<p>Let’s explore <strong>how top websites and apps</strong> implement smooth, optimized animations.</p>
+<h2><strong>Part 3: Real-World Examples of High-Performance Animations</strong></h2>
+<p>Let’s look at <strong>how top companies optimize animations</strong> and what we can learn from them.</p>
 <hr>
-<h3><strong>Example 1: Netflix’s Smooth Scrolling &amp; Card Transitions</strong></h3>
-<p><strong>How They Do It:</strong></p>
+<h3><strong>Example 1: Netflix’s Video Player (Smooth Playback with GPU Acceleration)</strong></h3>
+<p><strong>What they do:</strong></p>
 <ul>
-<li>Uses <strong><code>requestAnimationFrame</code></strong> for scroll-based animations.</li>
-<li><strong>Hardware-accelerates</strong> all transforms (<code>transform: translateZ(0)</code>).</li>
-<li><strong>Lazy-loads</strong> animations until elements are visible (<code>IntersectionObserver</code>).</li>
+<li>Use <strong><code>transform: translateZ(0)</code></strong> to <strong>prevent layout shifts</strong>.</li>
+<li><strong>Offload audio processing</strong> to Web Workers.</li>
+<li><strong>Debounce resize events</strong> to <strong>avoid reflows</strong>.</li>
 </ul>
-<p><strong>Why It Works:</strong></p>
+<p><strong>Lesson:</strong></p>
 <ul>
-<li><strong>No jank</strong> during fast scrolling.</li>
-<li><strong>Instant feedback</strong> on hover/focus interactions.</li>
-</ul>
-<hr>
-<h3><strong>Example 2: Airbnb’s Drag-to-Scroll &amp; Micro-Interactions</strong></h3>
-<p><strong>How They Do It:</strong></p>
-<ul>
-<li><strong>GSAP</strong> for physics-based drag-and-drop.</li>
-<li><strong>CSS <code>scroll-snap</code></strong> for smooth scrolling.</li>
-<li><strong><code>will-change</code></strong> on draggable elements.</li>
-</ul>
-<p><strong>Why It Works:</strong></p>
-<ul>
-<li><strong>Fluid drag experience</strong> without lag.</li>
-<li><strong>Optimized for touch devices</strong>.</li>
+<li><strong>Every animation should be GPU-accelerated</strong> where possible.</li>
+<li><strong>Heavy computations must run in workers</strong> to keep the UI responsive.</li>
 </ul>
 <hr>
-<h3><strong>Example 3: Spotify’s Playlist Animations</strong></h3>
-<p><strong>How They Do It:</strong></p>
+<h3><strong>Example 2: Airbnb’s Drag-and-Drop (Throttled Events &amp; Efficient DOM Updates)</strong></h3>
+<p><strong>What they do:</strong></p>
 <ul>
-<li><strong>CSS <code>@keyframes</code></strong> for simple animations (e.g., playlist item fade-in).</li>
-<li><strong>Web Animations API</strong> for dynamic transitions (e.g., album cover zoom).</li>
-<li><strong><code>forceSync</code></strong> to prevent layout thrashing during playlist changes.</li>
+<li><strong>Throttle <code>mousemove</code> events</strong> to <strong>prevent excessive recalculations</strong>.</li>
+<li>**Use <code>transform</code> instead</li>
 </ul>
-<p><strong>Why It Works:</strong></p>
-<ul>
-<li><strong>Fast initial load</strong> (animations deferred until needed).</li>
-<li><strong>Smooth transitions</strong> between tracks.</li>
-</ul>
-<hr>
-<h3><strong>Example 4: Slack’s Typing Indicators &amp; Message Animations</strong></h3>
-<p><strong>How They Do It:</strong></p>
-<ul>
-<li><strong><code>requestAnimationFrame</code></strong> for real-time typing indicators.</li>
-<li><strong><code>transform: translateX</code></strong> for smooth message sliding.</li>
-<li><strong><code>will-change: opacity</code></strong> on typing dots.</li>
-</ul>
-<p><strong>Why It Works:</strong></p>
-<ul>
-<li><strong>No input lag</strong> during typing.</li>
-<li><strong>Efficient GPU usage</strong> for opacity changes.</li>
-</ul>
-<hr>
-<h3><strong>Example 5: Apple’s iOS-Style Parallax Effects (Web Versions)</strong></h3>
-<p><strong>How They Do It:</strong></p>
-<ul>
-<li><strong>CSS <code>scroll-linked</code> animations</strong> (modern browsers).</li>
-<li><strong><code>transform: translateY</code></strong> for parallax layers.</li>
-<li><strong><code>will-change: transform</code></strong> on all animated elements.</li>
-</ul>
-<p><strong>Why It Works:</strong></p>
-<ul>
-<li><strong>Buttery-smooth parallax</strong> without JavaScript.</li>
-<li><strong>Optimized for mobile performance</strong>.</li>
-</ul>
-<hr>
-<h2><strong>Common Mistakes in JavaScript Animations (And How to Fix Them)</strong></h2>
-<p>Even experienced developers make <strong>performance-killing mistakes</strong>. Here’s how to <strong>avoid them</strong>.</p>
-<hr>
-<h3><strong>Mistake 1: Using <code>setInterval</code> or <code>setTimeout</code> for Animations</strong></h3>
-<p><strong>Problem:</strong></p>
-<ul>
-<li>**</li>
-</ul>
-<h3>📚 You May Also Like</h3><ul><li><a href="/scroll-animation-effects.html">scroll animation effects</a></li><li><a href="/slider-library.html">slider library</a></li><li><a href="/fast-animation-js.html">fast animation js</a></li><li><a href="/interactive-particles.html">interactive particles</a></li></ul><p><a href="index.html">← Browse all blog posts</a></p><h3>🌐 Explore Our Other Sites</h3><ul><li><a href="https://startknowledge.startknowledge.in/">startknowledge</a></li><li><a href="https://bn-ration-scale.startknowledge.in/">bn ration scale</a></li><li><a href="https://Calculator-Library-Portal.startknowledge.in/">Calculator Library Portal</a></li><li><a href="https://pension-calculator.startknowledge.in/">pension calculator</a></li><li><a href="https://design-painting.startknowledge.in/">design painting</a></li><li><a href="https://ai-mosaic-studio.startknowledge.in/">ai mosaic studio</a></li><li><a href="https://ultra-static-seo-engine.startknowledge.in/">ultra static seo engine</a></li><li><a href="https://universal-image-data-explorer-forge.startknowledge.in/">universal image data explorer forge</a></li></ul><h3>🔗 Useful Resources (External)</h3><ul><li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer">Google Search Central – SEO Starter Guide</a></li><li><a href="https://moz.com/beginners-guide-to-seo" target="_blank" rel="noopener noreferrer">Moz Beginner’s Guide to SEO</a></li><li><a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a></li><li><a href="https://ahrefs.com/blog/" target="_blank" rel="noopener noreferrer">Ahrefs Blog – SEO Strategies</a></li><li><a href="https://www.semrush.com/blog/" target="_blank" rel="noopener noreferrer">Semrush SEO Toolkit</a></li><li><a href="https://yoast.com/academy/" target="_blank" rel="noopener noreferrer">Yoast SEO Academy</a></li><li><a href="https://backlinko.com/blog" target="_blank" rel="noopener noreferrer">Backlinko – SEO Techniques</a></li><li><a href="https://www.searchenginejournal.com/" target="_blank" rel="noopener noreferrer">Search Engine Journal</a></li><li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a></li><li><a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org – Structured Data</a></li></ul><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="8024521099" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fw+7+28-5k+1k" data-ad-client="ca-pub-2162324894765763" data-ad-slot="7592527166"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></article>
+<h3>📚 You May Also Like</h3><ul><li><a href="/button-hover-animation.html">button hover animation</a></li><li><a href="/parallax-tilt.html">parallax tilt</a></li><li><a href="/canvas-particles.html">canvas particles</a></li><li><a href="/motion-engine.html">motion engine</a></li></ul><p><a href="index.html">← Browse all blog posts</a></p><h3>🌐 Explore Our Other Sites</h3><ul><li><a href="https://startknowledge.startknowledge.in/">startknowledge</a></li><li><a href="https://bn-ration-scale.startknowledge.in/">bn ration scale</a></li><li><a href="https://Calculator-Library-Portal.startknowledge.in/">Calculator Library Portal</a></li><li><a href="https://pension-calculator.startknowledge.in/">pension calculator</a></li><li><a href="https://design-painting.startknowledge.in/">design painting</a></li><li><a href="https://ai-mosaic-studio.startknowledge.in/">ai mosaic studio</a></li><li><a href="https://ultra-static-seo-engine.startknowledge.in/">ultra static seo engine</a></li><li><a href="https://universal-image-data-explorer-forge.startknowledge.in/">universal image data explorer forge</a></li></ul><h3>🔗 Useful Resources (External)</h3><ul><li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer">Google Search Central – SEO Starter Guide</a></li><li><a href="https://moz.com/beginners-guide-to-seo" target="_blank" rel="noopener noreferrer">Moz Beginner’s Guide to SEO</a></li><li><a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a></li><li><a href="https://ahrefs.com/blog/" target="_blank" rel="noopener noreferrer">Ahrefs Blog – SEO Strategies</a></li><li><a href="https://www.semrush.com/blog/" target="_blank" rel="noopener noreferrer">Semrush SEO Toolkit</a></li><li><a href="https://yoast.com/academy/" target="_blank" rel="noopener noreferrer">Yoast SEO Academy</a></li><li><a href="https://backlinko.com/blog" target="_blank" rel="noopener noreferrer">Backlinko – SEO Techniques</a></li><li><a href="https://www.searchenginejournal.com/" target="_blank" rel="noopener noreferrer">Search Engine Journal</a></li><li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a></li><li><a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org – Structured Data</a></li></ul><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="8024521099" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fw+7+28-5k+1k" data-ad-client="ca-pub-2162324894765763" data-ad-slot="7592527166"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></article>
   <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
     <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
     
       <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/43/200/120" style="width:100%; border-radius: 16px;">
+        <img src="https://picsum.photos/id/11/200/120" style="width:100%; border-radius: 16px;">
         <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
         <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
       </div>
     
       <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/43/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/61/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/86/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/7/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/54/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/69/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/82/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/54/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/20/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/82/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/33/200/120" style="width:100%; border-radius: 16px;">
+        <img src="https://picsum.photos/id/47/200/120" style="width:100%; border-radius: 16px;">
         <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
         <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
       </div>
@@ -516,133 +408,7 @@ Use <strong>Chrome DevTools</strong> and <strong>Lighthouse</strong> to <strong>
           <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
             <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
             <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/69/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/94/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/20/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/47/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/9/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/12/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/66/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
+            <img src="https://picsum.photos/id/87/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
             <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
             <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
           </div>
@@ -664,91 +430,7 @@ Use <strong>Chrome DevTools</strong> and <strong>Lighthouse</strong> to <strong>
       const floatDiv = document.createElement('div');
       floatDiv.innerHTML = `
         <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/1/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/53/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/57/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/94/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/99/40/40" style="border-radius: 50%; width: 40px;">
+          <img src="https://picsum.photos/id/52/40/40" style="border-radius: 50%; width: 40px;">
           <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
           <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
           <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
