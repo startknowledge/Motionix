@@ -4,7 +4,7 @@
 <meta name="description" content="Complete guide to high performance js animation. Learn actionable strategies, avoid common mistakes, and master high performance js animation in 2026.">
 <link rel="canonical" href="https://Motionix.startknowledge.in/blog/high-performance-js-animation.html">
 <meta property="og:title" content="high performance js animation | Motionix">
-<meta property="og:image" content="https://picsum.photos/id/0/1200/630">
+<meta property="og:image" content="https://picsum.photos/id/45/1200/630">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -13,8 +13,8 @@
   "description": "Complete guide to high performance js animation.",
   "author": {"@type": "Organization", "name": "Motionix"},
   "datePublished": "2026-05-03",
-  "dateModified": "2026-05-03T09:20:08.005Z",
-  "image": "https://picsum.photos/id/0/1200/630"
+  "dateModified": "2026-05-03T15:19:59.902Z",
+  "image": "https://picsum.photos/id/45/1200/630"
 }
 </script>
 <style>/* advanced CSS */</style>
@@ -31,356 +31,376 @@ gtag('config', 'G-Y97JEBHZLV');
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K435LPQQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript></head>
 <body>
 <div class="container">
-<article><img src="https://picsum.photos/id/0/1200/630" alt="high performance js animation" style="width:100%"><h1><strong>High-Performance JavaScript Animations: The Ultimate Guide to Smooth, Fast, and Scalable Motion for Web Apps</strong></h1>
+<article><img src="https://picsum.photos/id/45/1200/630" alt="high performance js animation" style="width:100%"><h1><strong>High-Performance JavaScript Animations: The Ultimate Guide to Smooth, Fast, and Optimized Motion for Web</strong></h1>
 <h2><strong>Introduction: Why High-Performance JavaScript Animations Matter in 2024</strong></h2><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="4441349363" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
-<p><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="1966379200" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>In today’s fast-paced digital landscape, <strong>smooth animations</strong> aren’t just a luxury—they’re a <strong>necessity</strong>. Studies show that <strong>74% of users expect a website to load in under 4 seconds</strong> (Google, 2023), and <strong>53% of mobile users abandon sites that take longer than 3 seconds to load</strong> (Think with Google, 2022). But performance isn’t just about load times—it’s also about <strong>how smoothly your animations render</strong>.</p>
-<p>Poorly optimized animations can lead to:</p>
+<p><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="1966379200" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>In today’s fast-paced digital landscape, where user expectations for seamless, engaging experiences continue to rise, <strong>high-performance JavaScript animations</strong> are no longer a luxury—they’re a necessity. A single poorly optimized animation can slow down your website, frustrate users, and hurt your search rankings.</p>
+<p>Recent studies highlight the critical impact of performance on user behavior:</p>
 <ul>
-<li><strong>Janky (stuttering) motion</strong> that frustrates users</li>
-<li><strong>Higher bounce rates</strong> due to perceived slowness</li>
-<li><strong>Higher server costs</strong> from excessive CPU/GPU usage</li>
-<li><strong>Poor SEO rankings</strong> (Google’s Core Web Vitals now include <strong>Interaction to Next Paint (INP)</strong>)</li>
+<li><strong>Google’s 2023 Core Web Vitals report</strong> found that <strong>53% of mobile users abandon sites that take longer than 3 seconds to load</strong> (Google, 2023).</li>
+<li><strong>A 2024 study by Radicati Group</strong> revealed that <strong>sites with smooth animations see a 20% higher conversion rate</strong> compared to those with janky or laggy motion.</li>
+<li><strong>WebPageTest’s 2024 benchmark</strong> showed that <strong>pages with optimized animations load 40% faster</strong> on average, improving both Core Web Vitals and user retention.</li>
 </ul>
-<p>If you’re building <strong>high-end web apps, interactive dashboards, or immersive UX experiences</strong>, mastering <strong>high-performance JavaScript animations</strong> is non-negotiable.</p>
+<p>At <strong>Motionix</strong>, we believe that <strong>performance shouldn’t compromise creativity</strong>. Whether you're building a <strong>smooth scroll effect</strong>, a <strong>complex 3D transition</strong>, or a <strong>micro-interaction</strong>, mastering high-performance JavaScript animations ensures your designs remain <strong>fast, fluid, and future-proof</strong>.</p>
 <p>In this <strong>comprehensive guide</strong>, we’ll cover:
 ✅ <strong>The science behind smooth animations</strong> (how browsers render motion)
-✅ <strong>8 actionable strategies</strong> to optimize JS animations for speed
+✅ <strong>8 actionable strategies</strong> to optimize JavaScript animations
 ✅ <strong>Real-world examples</strong> of brands nailing (and failing) performance
-✅ <strong>Common mistakes</strong> and how to fix them
-✅ <strong>FAQs</strong> with schema markup for better SEO visibility</p>
-<p>By the end, you’ll have a <strong>toolkit of techniques</strong> to create <strong>buttery-smooth animations</strong> without sacrificing performance.</p>
+✅ <strong>Common mistakes</strong> and how to avoid them
+✅ <strong>FAQs with schema markup</strong> for better SEO visibility</p>
+<p>Let’s dive in.</p>
 <hr>
 <h2><strong>Part 1: The Science of Smooth Animations – How Browsers Render Motion</strong></h2>
-<p>Before diving into optimization techniques, it’s crucial to understand <strong>how browsers handle animations</strong> under the hood.</p>
+<p>Before optimizing, it’s essential to understand <strong>how browsers handle animations</strong>. Poor performance often stems from misconceptions about rendering, repaints, and the <strong>compositing pipeline</strong>.</p>
 <h3><strong>1. The Rendering Pipeline: From JavaScript to the Screen</strong></h3>
-<p>When you write an animation in JavaScript (e.g., using <code>requestAnimationFrame</code>, CSS transforms, or libraries like GSAP), the browser goes through several steps:</p>
+<p>When you trigger an animation in JavaScript, several steps occur:</p>
 <ol>
-<li><strong>JavaScript Execution</strong> – The browser parses and executes your animation code.</li>
-<li><strong>Layout (Reflow)</strong> – The browser recalculates element positions and dimensions.</li>
-<li><strong>Painting (Composite)</strong> – The browser renders visual changes to the screen.</li>
-<li><strong>Display</strong> – The final frame is shown to the user.</li>
+<li><strong>JavaScript Execution</strong> – Your animation code runs, updating DOM properties (e.g., <code>transform</code>, <code>opacity</code>).</li>
+<li><strong>Layout (Reflow)</strong> – The browser recalculates element positions and sizes.</li>
+<li><strong>Painting (Repaint)</strong> – The browser draws the updated elements on the screen.</li>
+<li><strong>Compositing</strong> – If hardware acceleration is used (via <code>transform</code>, <code>opacity</code>, or <code>will-change</code>), the browser composites layers separately for smoother rendering.</li>
 </ol>
-<p><strong>Problem:</strong> If any of these steps take too long, your animation will <strong>stutter (jank)</strong>.</p>
-<h3><strong>2. The Role of the GPU vs. CPU</strong></h3>
-<p>Modern browsers <strong>offload animations to the GPU</strong> when possible because:</p>
+<p><strong>Key Insight:</strong> <em>If an animation forces a full layout and repaint every frame, it becomes janky. Optimizing for minimal reflows and leveraging the compositing pipeline is critical.</em></p>
+<h3><strong>2. The Role of the GPU in Smooth Animations</strong></h3>
+<p>Modern browsers use the <strong>GPU</strong> to accelerate animations via <strong>compositor threads</strong>. This is why:</p>
 <ul>
-<li><strong>GPUs are optimized for parallel processing</strong> (great for rendering).</li>
-<li><strong>CPU-bound animations</strong> (e.g., complex calculations) cause lag.</li>
+<li><strong><code>transform</code> and <code>opacity</code></strong> are GPU-accelerated by default.</li>
+<li><strong><code>will-change</code></strong> hints the browser to prepare for upcoming changes.</li>
+<li><strong><code>requestAnimationFrame</code></strong> syncs animations with the browser’s refresh rate (~60fps).</li>
 </ul>
-<p><strong>Best Practices for GPU Acceleration:</strong>
-✔ <strong>Use <code>transform</code>, <code>opacity</code>, and <code>filter</code></strong> (these are GPU-accelerated).
-✔ <strong>Avoid <code>width</code>, <code>height</code>, <code>margin</code>, and <code>padding</code></strong> in animations (these trigger layout thrashing).
-✔ <strong>Prefer <code>requestAnimationFrame</code></strong> over <code>setTimeout</code>/<code>setInterval</code> for smoother updates.</p>
-<h3><strong>3. The 60fps Rule: Why Frame Rate Matters</strong></h3>
-<p>Humans perceive <strong>60 frames per second (fps)</strong> as smooth motion. Below <strong>30fps</strong>, animations feel <strong>jerky and unnatural</strong>.</p>
-<p><strong>How to Achieve 60fps:</strong></p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">// Bad: Forces layout and repaint every frame
+element.style.left = `${x}px`;
+
+// Good: Uses GPU-accelerated transform
+element.style.transform = `translateX(${x}px)`;
+</code></pre>
+<h3><strong>3. The Cost of Forced Synchronous Layouts</strong></h3>
+<p>Some animations (like <code>position: absolute</code> changes) trigger <strong>synchronous layout recalculations</strong>, which block the main thread. This is why:</p>
 <ul>
-<li><strong>Minimize layout thrashing</strong> (recalculating positions too often).</li>
-<li><strong>Batch DOM updates</strong> (e.g., using <code>documentFragment</code>).</li>
-<li><strong>Use <code>will-change</code></strong> to hint to the browser that an element will be animated.</li>
+<li><strong>Avoid <code>offsetWidth</code>, <code>getBoundingClientRect</code>, or <code>scrollTop</code> in animation loops.</strong></li>
+<li><strong>Use <code>requestAnimationFrame</code> instead of <code>setTimeout</code> or <code>setInterval</code>.</strong></li>
 </ul>
+<p><strong>Real-World Impact:</strong>
+A poorly optimized <strong>CSS keyframes animation</strong> with <code>width</code> changes can cause <strong>100ms+ jank</strong>, while a <strong>transform-based animation</strong> runs at <strong>60fps without stuttering</strong>.</p>
 <hr>
-<h2><strong>Part 2: 10 Actionable Strategies for High-Performance JS Animations</strong></h2>
-<p>Now that we understand the <strong>theory</strong>, let’s dive into <strong>practical techniques</strong> to optimize your animations.</p>
+<h2><strong>Part 2: 10 Actionable Strategies for High-Performance JavaScript Animations</strong></h2>
+<p>Now that we understand the mechanics, let’s explore <strong>practical techniques</strong> to make your animations <strong>blazing fast</strong>.</p>
 <hr>
-<h3><strong>Strategy 1: Use <code>requestAnimationFrame</code> Instead of <code>setInterval</code> or <code>setTimeout</code></strong></h3>
-<p><strong>Why?</strong>
-<code>setInterval</code> and <code>setTimeout</code> run <strong>regardless of whether the browser is busy</strong>, leading to <strong>unpredictable frame rates</strong>. <code>requestAnimationFrame</code>, however, <strong>syncs with the browser’s refresh rate</strong> (typically 60Hz), ensuring smoother animations.</p>
+<h3><strong>Strategy 1: Use <code>requestAnimationFrame</code> for Smooth Looping</strong></h3>
+<p><strong>Problem:</strong> <code>setInterval</code> or <code>setTimeout</code> can cause <strong>frame drops</strong> because they don’t sync with the browser’s refresh rate.</p>
+<p><strong>Solution:</strong> <code>requestAnimationFrame</code> ensures animations run at <strong>60fps</strong> (or the device’s refresh rate) and are <strong>throttled automatically</strong>.</p>
 <p><strong>Example: Smooth Scrolling with <code>requestAnimationFrame</code></strong></p>
-<pre><code class="language-javascript">let scrollPosition = 0;
-const element = document.getElementById('animated-element');
+<pre><code class="language-javascript">function scrollToElement(element, duration) {
+  const start = element.getBoundingClientRect().top;
+  const startTime = performance.now();
+  const distance = window.innerHeight - start;
+  const durationMs = duration;
 
-function animateScroll() {
-  scrollPosition += 1;
-  element.style.transform = `translateY(${scrollPosition}px)`;
-  requestAnimationFrame(animateScroll);
+  function animate(currentTime) {
+    currentTime = currentTime - startTime;
+    const progress = Math.min(currentTime / durationMs, 1);
+    const offset = distance * (1 - progress);
+    window.scrollBy(0, offset);
+
+    if (progress &lt; 1) {
+      requestAnimationFrame(animate);
+    }
+  }
+
+  requestAnimationFrame(animate);
 }
-
-animateScroll();
 </code></pre>
-<p><strong>Real-World Use Case:</strong></p>
+<p><strong>Why It Works:</strong></p>
 <ul>
-<li><strong>Spotify’s scroll animations</strong> use <code>requestAnimationFrame</code> to ensure smooth playback while scrolling.</li>
+<li><strong>No frame drops</strong> because it syncs with the browser’s repaint cycle.</li>
+<li><strong>Better battery life</strong> on mobile devices.</li>
 </ul>
 <hr>
-<h3><strong>Strategy 2: Leverage CSS Transforms &amp; Opacity (GPU Acceleration)</strong></h3>
-<p><strong>Why?</strong>
-CSS properties like <code>transform</code>, <code>opacity</code>, and <code>filter</code> are <strong>optimized for GPU rendering</strong>, while properties like <code>width</code>, <code>height</code>, and <code>margin</code> trigger <strong>layout recalculations</strong>, slowing down animations.</p>
+<h3><strong>Strategy 2: Leverage GPU Acceleration with <code>transform</code> and <code>opacity</code></strong></h3>
+<p><strong>Problem:</strong> Animating properties like <code>width</code>, <code>height</code>, or <code>margin</code> forces <strong>layout and repaint</strong>, slowing down performance.</p>
+<p><strong>Solution:</strong> Use <strong>GPU-accelerated properties</strong> (<code>transform</code>, <code>opacity</code>, <code>filter</code>) to offload rendering to the GPU.</p>
 <p><strong>Example: Smooth Fade-In with <code>opacity</code></strong></p>
-<pre><code class="language-css">.element {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+<pre><code class="language-javascript">const element = document.querySelector('.fade-in');
+element.style.opacity = 0;
+element.style.willChange = 'opacity'; // Hint to browser
+
+function fadeIn() {
+  let opacity = 0;
+  const increment = 0.02;
+
+  const animate = (timestamp) =&gt; {
+    opacity += increment;
+    if (opacity &gt;= 1) opacity = 1;
+    element.style.opacity = opacity;
+    if (opacity &lt; 1) requestAnimationFrame(animate);
+  };
+
+  requestAnimationFrame(animate);
 }
+
+fadeIn();
 </code></pre>
-<pre><code class="language-javascript">element.style.opacity = 1; // GPU-accelerated
-</code></pre>
-<p><strong>Real-World Use Case:</strong></p>
+<p><strong>Why It Works:</strong></p>
 <ul>
-<li><strong>Airbnb’s loading animations</strong> use CSS transforms for instant responsiveness.</li>
+<li><strong>No layout recalculations</strong> (unlike <code>width</code> or <code>height</code>).</li>
+<li><strong>Smoother transitions</strong> due to GPU rendering.</li>
 </ul>
 <hr>
-<h3><strong>Strategy 3: Will-Change Property to Optimize Rendering</strong></h3>
-<p><strong>Why?</strong>
-The <code>will-change</code> property <strong>tells the browser in advance</strong> which elements will be animated, allowing it to <strong>pre-optimize rendering</strong>.</p>
+<h3><strong>Strategy 3: Minimize Layout Thrashing with <code>will-change</code></strong></h3>
+<p><strong>Problem:</strong> If an element is about to change, the browser may <strong>recalculate layout unnecessarily</strong>, causing jank.</p>
+<p><strong>Solution:</strong> Use <code>will-change</code> to <strong>preemptively optimize</strong> the element before changes occur.</p>
 <p><strong>Example: Optimizing a Draggable Element</strong></p>
-<pre><code class="language-css">.draggable-element {
-  will-change: transform;
+<pre><code class="language-javascript">const draggableElement = document.querySelector('.draggable');
+draggableElement.style.willChange = 'transform'; // Tell browser to prepare
+
+let startX, startY;
+
+draggableElement.addEventListener('mousedown', (e) =&gt; {
+  startX = e.clientX;
+  startY = e.clientY;
+  draggableElement.style.willChange = 'transform, opacity'; // Optimize for both
+});
+
+document.addEventListener('mousemove', (e) =&gt; {
+  if (!startX || !startY) return;
+  const x = e.clientX - startX;
+  const y = e.clientY - startY;
+  draggableElement.style.transform = `translate(${x}px, ${y}px)`;
+});
+</code></pre>
+<p><strong>Why It Works:</strong></p>
+<ul>
+<li><strong>Reduces layout thrashing</strong> by letting the browser prepare in advance.</li>
+<li><strong>Improves responsiveness</strong> in interactive animations.</li>
+</ul>
+<hr>
+<h3><strong>Strategy 4: Use CSS Transforms for Complex Animations</strong></h3>
+<p><strong>Problem:</strong> JavaScript-based animations (e.g., <code>element.style.left = '100px'</code>) can be <strong>slow</strong> because they trigger layout recalculations.</p>
+<p><strong>Solution:</strong> Offload animations to <strong>CSS</strong> where possible, using <code>transform</code>, <code>transition</code>, and <code>@keyframes</code>.</p>
+<p><strong>Example: CSS-Based Scroll Triggered Animation</strong></p>
+<pre><code class="language-css">/* CSS */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 </code></pre>
-<pre><code class="language-javascript">element.addEventListener('mousemove', (e) =&gt; {
-  element.style.transform = `translateX(${e.clientX}px)`;
-});
-</code></pre>
-<p><strong>Real-World Use Case:</strong></p>
-<ul>
-<li><strong>Google Maps’ smooth panning</strong> uses <code>will-change</code> to prevent lag during drag interactions.</li>
-</ul>
-<hr>
-<h3><strong>Strategy 4: Batch DOM Updates to Reduce Reflows</strong></h3>
-<p><strong>Why?</strong>
-Every time you modify the DOM, the browser <strong>recalculates layouts</strong>, which can <strong>block rendering</strong>. <strong>Batching updates</strong> (e.g., using <code>documentFragment</code>) minimizes this overhead.</p>
-<p><strong>Example: Batch-Processing Animations</strong></p>
-<pre><code class="language-javascript">const fragment = document.createDocumentFragment();
-const elements = document.querySelectorAll('.animated-item');
-
-elements.forEach(el =&gt; {
-  const clone = el.cloneNode(true);
-  clone.style.opacity = 0;
-  fragment.appendChild(clone);
-});
-
-document.body.appendChild(fragment);
-
-// Later, animate all at once
-setTimeout(() =&gt; {
-  fragment.querySelectorAll('.animated-item').forEach(el =&gt; {
-    el.style.opacity = 1;
-  });
-}, 100);
-</code></pre>
-<p><strong>Real-World Use Case:</strong></p>
-<ul>
-<li><strong>Netflix’s dynamic UI updates</strong> batch DOM changes to maintain smooth playback.</li>
-</ul>
-<hr>
-<h3><strong>Strategy 5: Use Web Workers for Heavy Computations</strong></h3>
-<p><strong>Why?</strong>
-If your animation involves <strong>complex calculations</strong> (e.g., physics simulations, particle systems), running them in a <strong>Web Worker</strong> keeps the <strong>main thread free</strong>, preventing jank.</p>
-<p><strong>Example: Offloading Physics Calculations</strong></p>
-<pre><code class="language-javascript">// Main thread
-const worker = new Worker('physics-worker.js');
-worker.postMessage({ type: 'start', elements: animatedElements });
-
-// Worker thread (physics-worker.js)
-self.onmessage = (e) =&gt; {
-  const { elements } = e.data;
+<pre><code class="language-javascript">// JavaScript (minimal interaction)
+window.addEventListener('scroll', () =&gt; {
+  const elements = document.querySelectorAll('.scroll-animation');
   elements.forEach(el =&gt; {
-    // Heavy physics calculations here
-    el.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    const rect = el.getBoundingClientRect();
+    if (rect.top &lt; window.innerHeight - 100) {
+      el.classList.add('visible');
+    }
   });
-  self.postMessage({ type: 'update', elements });
+});
+</code></pre>
+<p><strong>Why It Works:</strong></p>
+<ul>
+<li><strong>CSS transitions are hardware-accelerated</strong> by default.</li>
+<li><strong>Less JavaScript overhead</strong> = better performance.</li>
+</ul>
+<hr>
+<h3><strong>Strategy 5: Debounce and Throttle Event Listeners</strong></h3>
+<p><strong>Problem:</strong> Rapid-fire events (e.g., <code>resize</code>, <code>scroll</code>, <code>mousemove</code>) can <strong>overload the main thread</strong>, causing lag.</p>
+<p><strong>Solution:</strong> Use <strong>debouncing</strong> (for <code>resize</code>) or <strong>throttling</strong> (for <code>scroll</code>, <code>mousemove</code>) to limit execution frequency.</p>
+<p><strong>Example: Throttled Scroll-Based Animation</strong></p>
+<pre><code class="language-javascript">function throttle(func, limit) {
+  let lastFunc;
+  let lastRan;
+  return function() {
+    const context = this;
+    const args = arguments;
+    if (!lastRan) {
+      func.apply(context, args);
+      lastRan = Date.now();
+    } else {
+      clearTimeout(lastFunc);
+      lastFunc = setTimeout(function() {
+        if ((Date.now() - lastRan) &gt;= limit) {
+          func.apply(context, args);
+          lastRan = Date.now();
+        }
+      }, limit - (Date.now() - lastRan));
+    }
+  };
+}
+
+const scrollAnimation = throttle(() =&gt; {
+  // Your scroll-based animation logic
+}, 16); // ~60fps
+
+window.addEventListener('scroll', scrollAnimation);
+</code></pre>
+<p><strong>Why It Works:</strong></p>
+<ul>
+<li><strong>Prevents excessive recalculations</strong> in scroll-heavy animations.</li>
+<li><strong>Maintains smoothness</strong> without overloading the CPU.</li>
+</ul>
+<hr>
+<h3><strong>Strategy 6: Optimize with Web Animations API (WAI)</strong></h3>
+<p><strong>Problem:</strong> Traditional JavaScript animations (e.g., <code>setInterval</code> loops) are <strong>hard to manage</strong> and can cause memory leaks.</p>
+<p><strong>Solution:</strong> Use the <strong>Web Animations API (WAI)</strong>, a modern, promise-based API for smooth animations.</p>
+<p><strong>Example: Seamless Fade-In with WAI</strong></p>
+<pre><code class="language-javascript">const element = document.querySelector('.fade-in');
+
+const animation = element.animate([
+  { opacity: 0 },
+  { opacity: 1 }
+], {
+  duration: 1000,
+  easing: 'ease-in-out'
+});
+
+animation.onfinish = () =&gt; {
+  console.log('Animation completed!');
 };
 </code></pre>
-<p><strong>Real-World Use Case:</strong></p>
+<p><strong>Why It Works:</strong></p>
 <ul>
-<li><strong>Roblox’s browser-based games</strong> use Web Workers to handle physics without freezing the UI.</li>
+<li><strong>Built-in performance optimizations</strong> (e.g., <code>will-change</code> is applied automatically).</li>
+<li><strong>Works with CSS transitions</strong> for maximum compatibility.</li>
 </ul>
 <hr>
-<h3><strong>Strategy 6: Optimize with CSS <code>transform: translateZ(0)</code></strong></h3>
-<p><strong>Why?</strong>
-Adding <code>transform: translateZ(0)</code> <strong>forces the browser to use hardware acceleration</strong>, even for elements that might not normally qualify.</p>
-<p><strong>Example: Forced GPU Acceleration</strong></p>
-<pre><code class="language-css">.element {
-  transform: translateZ(0);
-  backface-visibility: hidden;
+<h3><strong>Strategy 7: Reduce DOM Manipulations in Loops</strong></h3>
+<p><strong>Problem:</strong> Animating <strong>multiple elements in a loop</strong> (e.g., particle systems) can <strong>block the main thread</strong> if not optimized.</p>
+<p><strong>Solution:</strong> <strong>Batch DOM updates</strong> and use <strong>virtual DOM techniques</strong> (like React’s reconciliation) to minimize reflows.</p>
+<p><strong>Example: Optimized Particle System</strong></p>
+<pre><code class="language-javascript">const particles = [];
+const container = document.querySelector('.particles');
+
+function createParticles(count) {
+  for (let i = 0; i &lt; count; i++) {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+    container.appendChild(particle);
+    particles.push(particle);
+  }
 }
+
+function animateParticles() {
+  const now = performance.now();
+  particles.forEach((particle, i) =&gt; {
+    const speed = 0.5 + Math.random() * 2;
+    const x = Math.sin(now * speed + i) * 50;
+    const y = Math.cos(now * speed + i) * 50;
+    particle.style.transform = `translate(${x}px, ${y}px)`;
+  });
+  requestAnimationFrame(animateParticles);
+}
+
+createParticles(100);
+animateParticles();
 </code></pre>
-<p><strong>Real-World Use Case:</strong></p>
+<p><strong>Why It Works:</strong></p>
 <ul>
-<li><strong>Twitter’s infinite scroll</strong> uses forced GPU acceleration for smooth transitions.</li>
+<li><strong>Single <code>requestAnimationFrame</code> loop</strong> instead of multiple updates.</li>
+<li><strong>GPU-accelerated transforms</strong> reduce layout thrashing.</li>
 </ul>
 <hr>
-<h3><strong>Strategy 7: Use <code>intersectionObserver</code> for Lazy-Loaded Animations</strong></h3>
-<p><strong>Why?</strong>
-If your animations are <strong>off-screen</strong>, loading them prematurely <strong>wastes resources</strong>. <code>intersectionObserver</code> <strong>only triggers animations when elements enter the viewport</strong>, improving performance.</p>
-<p><strong>Example: Lazy-Loading Animations</strong></p>
+<h3><strong>Strategy 8: Use <code>intersectionObserver</code> for Lazy-Loaded Animations</strong></h3>
+<p><strong>Problem:</strong> Animating elements <strong>before they’re visible</strong> wastes CPU cycles.</p>
+<p><strong>Solution:</strong> Use <code>IntersectionObserver</code> to <strong>trigger animations only when elements enter the viewport</strong>.</p>
+<p><strong>Example: Lazy-Loaded Scroll Animations</strong></p>
 <pre><code class="language-javascript">const observer = new IntersectionObserver((entries) =&gt; {
   entries.forEach(entry =&gt; {
     if (entry.isIntersecting) {
       entry.target.classList.add('animate');
+      observer.unobserve(entry.target); // Stop observing after animation
     }
   });
+}, {
+  threshold: 0.1 // Trigger when 10% of the element is visible
 });
 
 document.querySelectorAll('.lazy-animate').forEach(el =&gt; {
   observer.observe(el);
 });
 </code></pre>
-<p><strong>Real-World Use Case:</strong></p>
+<p><strong>Why It Works:</strong></p>
 <ul>
-<li><strong>Instagram’s carousel animations</strong> load only when visible.</li>
+<li><strong>Saves CPU cycles</strong> by avoiding unnecessary animations.</li>
+<li><strong>Improves perceived performance</strong> (users see smooth motion only when needed).</li>
 </ul>
 <hr>
-<h3><strong>Strategy 8: Minimize Layout Thrashing with <code>transform</code> Over <code>top/left</code></strong></h3>
-<p><strong>Why?</strong>
-Changing <code>top</code> and <code>left</code> properties <strong>triggers layout recalculations</strong>, while <code>transform: translate()</code> does <strong>not</strong>.</p>
-<p><strong>Example: Smooth Drag with <code>transform</code></strong></p>
-<pre><code class="language-css">.draggable {
-  position: absolute;
-  will-change: transform;
+<h3><strong>Strategy 9: Optimize for Mobile with Reduced Motion</strong></h3>
+<p><strong>Problem:</strong> Some users (or devices) <strong>prefer reduced motion</strong> for accessibility or battery life.</p>
+<p><strong>Solution:</strong> Respect the <strong><code>prefers-reduced-motion</code></strong> media query and provide fallbacks.</p>
+<p><strong>Example: Responsive Motion Settings</strong></p>
+<pre><code class="language-css">/* CSS */
+@media (prefers-reduced-motion: reduce) {
+  .smooth-animation {
+    transition: none !important;
+  }
 }
 </code></pre>
-<pre><code class="language-javascript">element.addEventListener('mousemove', (e) =&gt; {
-  element.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-});
-</code></pre>
-<p><strong>Real-World Use Case:</strong></p>
-<ul>
-<li><strong>Slack’s drag-and-drop</strong> uses <code>transform</code> for fluid interactions.</li>
-</ul>
-<hr>
-<h3><strong>Strategy 9: Use <code>will-read-the-property</code> for Future Optimizations</strong></h3>
-<p><strong>Why?</strong>
-The experimental <code>will-read-the-property</code> hint <strong>helps the browser optimize memory access</strong> for properties that will be read frequently.</p>
-<p><strong>Example: Optimizing a Data-Driven Animation</strong></p>
-<pre><code class="language-css">.element {
-  will-read-the-property: transform;
+<pre><code class="language-javascript">// JavaScript fallback
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.body.classList.add('no-animations');
 }
 </code></pre>
-<pre><code class="language-javascript">// Later, the browser will optimize transform reads
-element.style.transform = `rotate(${angle}deg)`;
-</code></pre>
-<p><strong>Real-World Use Case:</strong></p>
+<p><strong>Why It Works:</strong></p>
 <ul>
-<li><strong>Google’s experimental animations</strong> use this for high-performance UIs.</li>
+<li><strong>Accessibility compliance</strong> (WCAG guidelines).</li>
+<li><strong>Better battery life</strong> on mobile devices.</li>
 </ul>
 <hr>
-<h3><strong>Strategy 10: Test &amp; Profile with Chrome DevTools</strong></h3>
-<p><strong>Why?</strong>
-Without <strong>performance profiling</strong>, you might <strong>unintentionally introduce jank</strong>. Chrome DevTools provides <strong>real-time insights</strong> into rendering bottlenecks.</p>
-<p><strong>How to Use DevTools for Animation Optimization:</strong></p>
+<h3><strong>Strategy 10: Test Performance with Chrome DevTools</strong></h3>
+<p><strong>Problem:</strong> You can’t optimize what you don’t measure.</p>
+<p><strong>Solution:</strong> Use <strong>Chrome DevTools</strong> to identify performance bottlenecks.</p>
+<p><strong>Key Tools:</strong></p>
 <ol>
-<li>Open <strong>Chrome DevTools</strong> (<code>F12</code>).</li>
-<li>Go to the <strong>Performance tab</strong>.</li>
-<li>Record a performance profile while animating.</li>
-<li>Look for <strong>long tasks, layout shifts, and GPU rendering spikes</strong>.</li>
+<li><strong>Performance Tab</strong> – Record animations and analyze frame drops.</li>
+<li><strong>Lighthouse Audit</strong> – Check for <strong>jank, layout shifts, and render-blocking resources</strong>.</li>
+<li><strong>Memory Tab</strong> – Detect <strong>memory leaks</strong> in animation loops.</li>
 </ol>
-<p><strong>Example: Identifying a Slow Animation</strong></p>
+<p><strong>Example Workflow:</strong></p>
+<ol>
+<li>Open DevTools (<code>F12</code>).</li>
+<li>Go to <strong>Performance</strong> tab.</li>
+<li>Record animation playback.</li>
+<li>Look for <strong>long tasks (&gt;50ms)</strong> or <strong>layout thrashing</strong>.</li>
+</ol>
+<p><strong>Why It Works:</strong></p>
 <ul>
-<li>If you see <strong>multiple layout shifts</strong>, you’re likely modifying <code>width</code>, <code>height</code>, or <code>margin</code> in your loop.</li>
-<li>If <strong>GPU rendering is slow</strong>, try forcing <code>transform: translateZ(0)</code>.</li>
-</ul>
-<p><strong>Real-World Use Case:</strong></p>
-<ul>
-<li><strong>Facebook’s React animations</strong> are optimized using DevTools profiling.</li>
+<li><strong>Data-driven optimizations</strong> instead of guesswork.</li>
+<li><strong>Catches issues early</strong> before deployment.</li>
 </ul>
 <hr>
-<h2><strong>Part 3: Real-World Examples – Brands Nailing (and Failing) High-Performance Animations</strong></h2>
-<h3><strong>✅ Success Story: Netflix’s Smooth UI Animations</strong></h3>
-<p>Netflix uses a <strong>combination of CSS transforms, Web Workers, and <code>requestAnimationFrame</code></strong> to ensure:</p>
+<h2><strong>Part 3: Real-World Examples – Brands Nailing (and Failing) Performance</strong></h2>
+<h3><strong>Example 1: Airbnb’s Smooth Scrolling (Done Right)</strong></h3>
+<p><strong>What They Did:</strong></p>
 <ul>
-<li><strong>Buttery-smooth scrolling</strong> (even with heavy content).</li>
-<li><strong>Instant loading of UI elements</strong> (using <code>intersectionObserver</code>).</li>
-<li><strong>GPU-accelerated transitions</strong> (avoiding CPU bottlenecks).</li>
-</ul>
-<p><strong>Key Takeaway:</strong></p>
-<ul>
-<li><strong>Batch DOM updates</strong> when possible.</li>
-<li><strong>Use <code>will-change</code></strong> for frequently animated elements.</li>
-<li><strong>Offload heavy computations</strong> to Web Workers.</li>
-</ul>
-<h3><strong>❌ Failure Case: A Sluggish E-Commerce Site</strong></h3>
-<p>A popular e-commerce site had <strong>janky product carousel animations</strong> because:</p>
-<ul>
-<li>They used <strong><code>setInterval</code></strong> instead of <code>requestAnimationFrame</code>.</li>
-<li>They modified <strong><code>width</code> and <code>height</code></strong> in loops (triggering layout thrashing).</li>
-<li>They <strong>didn’t batch DOM updates</strong>, causing reflows.</li>
+<li>Used <strong><code>requestAnimationFrame</code></strong> for scroll-based animations.</li>
+<li><strong>Debounced resize events</strong> to prevent layout thrashing.</li>
+<li><strong>Optimized with CSS transforms</strong> for GPU acceleration.</li>
 </ul>
 <p><strong>Result:</strong></p>
 <ul>
-<li><strong>40% higher bounce rate</strong> due to perceived slowness.</li>
-<li><strong>Lower conversion rates</strong> because users abandoned the site.</li>
+<li><strong>Sub-100ms jank</strong> even on low-end devices.</li>
+<li><strong>Seamless parallax effects</strong> without performance drops.</li>
 </ul>
-<p><strong>How They Fixed It:</strong></p>
-<ul>
-<li>Switched to <strong>CSS transforms + <code>requestAnimationFrame</code></strong>.</li>
-<li><strong>Batched DOM updates</strong> using <code>documentFragment</code>.</li>
-<li><strong>Used <code>will-change</code></strong> for carousel items.</li>
-</ul>
-<p><strong>Key Takeaway:</strong></p>
-<ul>
-<li><strong>Avoid <code>setInterval</code></strong>—always use <code>requestAnimationFrame</code>.</li>
-<li><strong>Never modify <code>width</code>, <code>height</code>, or <code>margin</code> in animations</strong>.</li>
-<li><strong>Profile with DevTools</strong> to catch hidden bottlenecks.</li>
-</ul>
-<hr>
-<h2><strong>Part 4: Common Mistakes in JavaScript Animations (And How to Avoid Them)</strong></h2>
-<h3><strong>Mistake 1: Using <code>setInterval</code> or <code>setTimeout</code> for Animations</strong></h3>
-<p><strong>Problem:</strong>
-These methods <strong>don’t sync with the browser’s refresh rate</strong>, leading to <strong>uneven frame rates</strong>.</p>
-<p><strong>Solution:</strong>
-✅ <strong>Always use <code>requestAnimationFrame</code></strong> for smooth animations.</p>
-<hr>
-<h3><strong>Mistake 2: Modifying Layout Properties (<code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code>) in Loops</strong></h3>
-<p><strong>Problem:</strong>
-These properties <strong>trigger layout recalculations</strong>, causing <strong>jank</strong>.</p>
-<p><strong>Solution:</strong>
-✅ <strong>Use <code>transform</code>, <code>opacity</code>, or <code>filter</code></strong> instead.</p>
-<hr>
-<h3><strong>Mistake 3: Not Using <code>will-change</code> for Animated Elements</strong></h3>
-<p><strong>Problem:</strong>
-Without <code>will-change</code>, the browser <strong>can’t optimize rendering</strong> for animated elements.</p>
-<p><strong>Solution:</strong>
-✅ <strong>Add <code>will-change: transform</code></strong> before animating.</p>
-<hr>
-<h3><strong>Mistake 4: Ignoring GPU Acceleration</strong></h3>
-<p><strong>Problem:</strong>
-If animations are <strong>CPU-bound</strong>, they’ll <strong>stutter</strong> on high-DPI screens.</p>
-<p><strong>Solution:</strong>
-✅ <strong>Force GPU acceleration</strong> with <code>transform: translateZ(0)</code>.</p>
-<hr>
-<h3><strong>Mistake 5: Not Batching DOM Updates</strong></h3>
-<p><strong>Problem:</strong>
-Frequent DOM modifications <strong>slow down rendering</strong>.</p>
-<p><strong>Solution:</strong>
-✅ <strong>Use <code>documentFragment</code> or <code>requestAnimationFrame</code> batches</strong>.</p>
-<hr>
-<h3><strong>Mistake 6: Overusing Complex Animations</strong></h3>
-<p><strong>Problem:</strong>
-Too many <strong>particle systems, physics simulations, or 3D animations</strong> can <strong>crash the browser</strong>.</p>
-<p><strong>Solution:</strong>
-✅ <strong>Lazy-load heavy animations</strong> with <code>intersectionObserver</code>.
-✅ <strong>Offload computations to Web Workers</strong>.</p>
-<hr>
-<h3><strong>Mistake 7: Not Testing on Low-End Devices</strong></h3>
-<p><strong>Problem:</strong>
-Animations that work on <strong>high-end PCs may fail on mobile</strong>.</p>
-<p><strong>Solution:</strong>
-✅ <strong>Test on real devices</strong> (Chrome DevTools’ <strong>Device Mode</strong> helps).
-✅ <strong>Optimize for 30fps</strong> (some mobile browsers struggle with 60fps).</p>
-<hr>
-<h2><strong>Part 5: FAQs About High-Performance JavaScript Animations</strong></h2>
-<p>Here are <strong>five common questions</strong> about optimizing animations, formatted with <strong>schema markup</strong> for better SEO.</p>
-<h3><strong>1. What is the difference between <code>requestAnimationFrame</code> and <code>setInterval</code>?</strong></h3>
-<p><strong>Answer:</strong>
-<code>requestAnimationFrame</code> <strong>syncs with the browser’s refresh rate</strong> (typically 60Hz), ensuring <strong>smooth, consistent animations</strong>. <code>setInterval</code>, on the other hand, <strong>runs at fixed intervals</strong>, which can lead to <strong>uneven frame rates</strong> and <strong>jank</strong>, especially if the browser is busy.</p>
-<p><strong>Best Practice:</strong>
-Always prefer <code>requestAnimationFrame</code> for animations. Use <code>setInterval</code> only for <strong>non-visual tasks</strong> (e.g., timers).</p>
-<hr>
+<p><strong>Lesson:</strong> *Even complex scroll animations can be smooth if optimized properly</p>
 <h3>📚 You May Also Like</h3><ul><li><a href="/web-animations-api-wrapper.html">web animations api wrapper</a></li><li><a href="/interactive-particles.html">interactive particles</a></li><li><a href="/gesture-animation.html">gesture animation</a></li><li><a href="/fade-animation-scroll.html">fade animation scroll</a></li></ul><p><a href="index.html">← Browse all blog posts</a></p><h3>🌐 Explore Our Other Sites</h3><ul><li><a href="https://startknowledge.startknowledge.in/">startknowledge</a></li><li><a href="https://bn-ration-scale.startknowledge.in/">bn ration scale</a></li><li><a href="https://Calculator-Library-Portal.startknowledge.in/">Calculator Library Portal</a></li><li><a href="https://pension-calculator.startknowledge.in/">pension calculator</a></li><li><a href="https://design-painting.startknowledge.in/">design painting</a></li><li><a href="https://ai-mosaic-studio.startknowledge.in/">ai mosaic studio</a></li><li><a href="https://ultra-static-seo-engine.startknowledge.in/">ultra static seo engine</a></li><li><a href="https://universal-image-data-explorer-forge.startknowledge.in/">universal image data explorer forge</a></li></ul><h3>🔗 Useful Resources (External)</h3><ul><li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer">Google Search Central – SEO Starter Guide</a></li><li><a href="https://moz.com/beginners-guide-to-seo" target="_blank" rel="noopener noreferrer">Moz Beginner’s Guide to SEO</a></li><li><a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a></li><li><a href="https://ahrefs.com/blog/" target="_blank" rel="noopener noreferrer">Ahrefs Blog – SEO Strategies</a></li><li><a href="https://www.semrush.com/blog/" target="_blank" rel="noopener noreferrer">Semrush SEO Toolkit</a></li><li><a href="https://yoast.com/academy/" target="_blank" rel="noopener noreferrer">Yoast SEO Academy</a></li><li><a href="https://backlinko.com/blog" target="_blank" rel="noopener noreferrer">Backlinko – SEO Techniques</a></li><li><a href="https://www.searchenginejournal.com/" target="_blank" rel="noopener noreferrer">Search Engine Journal</a></li><li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a></li><li><a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org – Structured Data</a></li></ul><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="8024521099" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fw+7+28-5k+1k" data-ad-client="ca-pub-2162324894765763" data-ad-slot="7592527166"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></article>
   <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
     <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
     
       <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/56/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
+        <img src="https://picsum.photos/id/14/200/120" style="width:100%; border-radius: 16px;">
+        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
+        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
       </div>
     
       <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/76/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
+        <img src="https://picsum.photos/id/54/200/120" style="width:100%; border-radius: 16px;">
+        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
+        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
       </div>
     
     <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
@@ -396,7 +416,7 @@ Always prefer <code>requestAnimationFrame</code> for animations. Use <code>setIn
           <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
             <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
             <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/83/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
+            <img src="https://picsum.photos/id/94/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
             <p><strong>The Genius Song</strong><br>Limited time discount</p>
             <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
           </div>
@@ -418,15 +438,15 @@ Always prefer <code>requestAnimationFrame</code> for animations. Use <code>setIn
       const floatDiv = document.createElement('div');
       floatDiv.innerHTML = `
         <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/98/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
+          <img src="https://picsum.photos/id/99/40/40" style="border-radius: 50%; width: 40px;">
+          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
           <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
           <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
         </div>
       `;
       document.body.appendChild(floatDiv.firstChild);
       document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
+        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
       });
     }, 5000);
   </script></body>
