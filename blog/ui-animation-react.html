@@ -4,7 +4,7 @@
 <meta name="description" content="Complete guide to ui animation react. Learn actionable strategies, avoid common mistakes, and master ui animation react in 2026.">
 <link rel="canonical" href="https://Motionix.startknowledge.in/blog/ui-animation-react.html">
 <meta property="og:title" content="ui animation react | Motionix">
-<meta property="og:image" content="https://picsum.photos/id/38/1200/630">
+<meta property="og:image" content="https://picsum.photos/id/24/1200/630">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -12,9 +12,9 @@
   "headline": "ui animation react",
   "description": "Complete guide to ui animation react.",
   "author": {"@type": "Organization", "name": "Motionix"},
-  "datePublished": "2026-05-03",
-  "dateModified": "2026-05-03T03:08:49.768Z",
-  "image": "https://picsum.photos/id/38/1200/630"
+  "datePublished": "2026-05-05",
+  "dateModified": "2026-05-05T22:38:08.031Z",
+  "image": "https://picsum.photos/id/24/1200/630"
 }
 </script>
 <style>/* advanced CSS */</style>
@@ -31,595 +31,445 @@ gtag('config', 'G-Y97JEBHZLV');
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K435LPQQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript></head>
 <body>
 <div class="container">
-<article><img src="https://picsum.photos/id/38/1200/630" alt="ui animation react" style="width:100%"><h1><strong>UI Animation in React: The Ultimate Guide to Creating Smooth, Engaging, and High-Performance Animations</strong></h1>
-<h2><strong>Introduction: Why UI Animation in React Matters in 2024</strong></h2><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="4441349363" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
-<p><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="1966379200" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>In today’s fast-paced digital landscape, <strong>UI animation in React</strong> isn’t just a nice-to-have—it’s a <em>must-have</em> for crafting memorable user experiences. With <strong>63% of users</strong> (per <em>Baymard Institute, 2023</em>) expecting interactive elements to respond instantly, smooth animations can significantly reduce bounce rates while increasing engagement.</p>
-<p>React, the world’s most popular JavaScript library, powers <strong>over 4.4 million websites</strong> (as of <em>BuiltWith, 2024</em>), making it the ideal choice for developers looking to implement high-performance animations. Whether you're building a <strong>single-page application (SPA), a data dashboard, or an e-commerce platform</strong>, well-executed UI animations can:</p>
-<ul>
-<li><strong>Guide users</strong> through complex workflows.</li>
-<li><strong>Improve accessibility</strong> by making interactions more intuitive.</li>
-<li><strong>Boost conversions</strong> by highlighting key actions.</li>
-<li><strong>Enhance brand perception</strong> with polished, professional designs.</li>
-</ul>
-<p>But how do you <strong>create animations that are both visually appealing and optimized for performance</strong>? This guide will walk you through <strong>10 actionable strategies</strong>, real-world examples, common pitfalls, and best practices to master <strong>UI animation in React</strong>.</p>
-<hr>
-<h2><strong>Why React is the Best Choice for UI Animations</strong></h2>
-<p>Before diving into techniques, let’s explore why React stands out for animations:</p>
-<ol>
-<li><strong>Virtual DOM Efficiency</strong> – React’s virtual DOM ensures that only the necessary DOM elements are updated, reducing unnecessary re-renders and improving animation smoothness.</li>
-<li><strong>Component-Based Architecture</strong> – Animations can be scoped to individual components, making them reusable and maintainable.</li>
-<li><strong>Rich Ecosystem</strong> – Libraries like <strong>Framer Motion, React Spring, and GSAP</strong> simplify complex animations with minimal code.</li>
-<li><strong>Performance Optimizations</strong> – React’s <strong>React.memo, useMemo, and useCallback</strong> hooks help optimize animations for better performance.</li>
-<li><strong>Cross-Platform Compatibility</strong> – Whether you're building a <strong>web app, mobile app (via React Native), or even a desktop app (with Tauri or Electron)</strong>, React animations adapt seamlessly.</li>
-</ol>
-<hr>
-<h2><strong>10 Actionable Strategies for UI Animation in React</strong></h2>
-<p>Now, let’s explore <strong>10 proven strategies</strong> to implement <strong>smooth, high-performance animations</strong> in React.</p>
-<hr>
-<h3><strong>1. Choose the Right Animation Library</strong></h3>
-<p>Not all animation libraries are created equal. Here’s a breakdown of the best options:</p>
-<table>
-<thead>
-<tr>
-<th><strong>Library</strong></th>
-<th><strong>Best For</strong></th>
-<th><strong>Performance</strong></th>
-<th><strong>Ease of Use</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Framer Motion</strong></td>
-<td>Complex motion, physics-based effects</td>
-<td>⭐⭐⭐⭐⭐</td>
-<td>⭐⭐⭐⭐⭐</td>
-</tr>
-<tr>
-<td><strong>React Spring</strong></td>
-<td>Spring-based animations, micro-interactions</td>
-<td>⭐⭐⭐⭐</td>
-<td>⭐⭐⭐⭐</td>
-</tr>
-<tr>
-<td><strong>GSAP</strong></td>
-<td>High-end web animations, advanced timing</td>
-<td>⭐⭐⭐⭐⭐</td>
-<td>⭐⭐⭐</td>
-</tr>
-<tr>
-<td><strong>CSS Animations</strong></td>
-<td>Simple transitions, keyframes</td>
-<td>⭐⭐⭐⭐⭐</td>
-<td>⭐⭐⭐⭐⭐</td>
-</tr>
-<tr>
-<td><strong>Anime.js</strong></td>
-<td>Custom, highly optimized animations</td>
-<td>⭐⭐⭐⭐</td>
-<td>⭐⭐⭐</td>
-</tr>
-</tbody></table>
-<p><strong>Recommendation:</strong></p>
-<ul>
-<li>For <strong>most React projects</strong>, <strong>Framer Motion</strong> is the best balance of performance and ease of use.</li>
-<li>If you need <strong>physics-based animations</strong>, <strong>React Spring</strong> is unmatched.</li>
-<li>For <strong>legacy projects or advanced timing controls</strong>, <strong>GSAP</strong> remains a powerhouse.</li>
-</ul>
-<hr>
-<h3><strong>2. Use CSS Transitions for Simple Animations</strong></h3>
-<p>Before jumping into JavaScript-based animations, <strong>CSS transitions</strong> are often the simplest and most performant solution.</p>
-<p><strong>Example: Smooth Hover Effect</strong></p>
-<pre><code class="language-jsx">const Button = () =&gt; {
+<article><img src="https://picsum.photos/id/24/1200/630" alt="ui animation react" style="width:100%"># **UI Animation in React: The Ultimate Guide to Creating Smooth, Engaging, and High-Performance Animations**
+
+## **Introduction: Why UI Animation in React Matters in 2024**
+
+In today’s fast-paced digital landscape, **UI animation in React** isn’t just a nice-to-have—it’s a **must-have** for crafting immersive, user-friendly experiences. According to recent studies:
+
+- **75% of users** (per a 2023 Nielsen Norman Group report) believe that **smooth animations** improve perceived performance, even if the actual load time remains unchanged.
+- **Websites with micro-interactions** see a **20% increase in user engagement** (Baymard Institute, 2024).
+- **React-based applications** with well-executed animations experience a **15% higher conversion rate** compared to static counterparts (Google’s UX Trends Report, 2023).
+
+Whether you're building a **single-page application (SPA)**, a **dashboard**, or an **e-commerce platform**, **UI animations in React** can transform mundane interactions into delightful experiences. But how do you implement them effectively?
+
+This **comprehensive guide** will cover:
+✅ **The fundamentals of UI animation in React**
+✅ **8 actionable strategies** to create high-performance animations
+✅ **Real-world examples** of successful implementations
+✅ **Common mistakes** and how to avoid them
+✅ **FAQs** with schema markup for better SEO visibility
+
+By the end, you’ll have a **toolkit of best practices** to elevate your React applications with **smooth, performant, and engaging animations**.
+
+---
+
+## **Chapter 1: The Fundamentals of UI Animation in React**
+
+Before diving into implementation, it’s crucial to understand **what UI animation is** and **why React is the perfect framework** for it.
+
+### **What Is UI Animation?**
+UI animation refers to the **visual transitions, interactions, and effects** that enhance user experience by:
+- **Guiding attention** (e.g., loading spinners, hover effects)
+- **Providing feedback** (e.g., button clicks, form submissions)
+- **Creating emotional connections** (e.g., smooth scroll effects, playful transitions)
+
+### **Why React?**
+React’s **component-based architecture** and **virtual DOM** make it an ideal choice for animations because:
+✔ **Reusable components** – Animations can be encapsulated in reusable React hooks or components.
+✔ **Efficient updates** – The virtual DOM ensures smooth rendering even with complex animations.
+✔ **Rich ecosystem** – Libraries like **Framer Motion, React Spring, and GSAP** simplify animation implementation.
+
+### **Types of UI Animations in React**
+Animations can be categorized into three main types:
+
+1. **Micro-interactions** – Small, localized animations (e.g., a button pulse on hover).
+2. **Macro-interactions** – Larger-scale animations (e.g., a full-page transition between routes).
+3. **Motion UI** – Dynamic animations that respond to user behavior (e.g., parallax scrolling, drag-and-drop effects).
+
+---
+
+## **Chapter 2: 10 Actionable Strategies for UI Animation in React**
+
+Now that we’ve covered the basics, let’s explore **practical strategies** to implement **high-quality UI animations** in React.
+
+---
+
+### **Strategy 1: Use Framer Motion for Declarative Animations**
+**Framer Motion** is one of the most popular libraries for **React animations** because it allows you to define animations **declaratively** (similar to CSS transitions but more powerful).
+
+#### **How to Implement:**
+```jsx
+import { motion } from "framer-motion";
+
+function AnimatedButton() {
   return (
-    &lt;button className="hover-animation"&gt;
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+    >
       Click Me
-    &lt;/button&gt;
+    </motion.button>
   );
-};
-
-// CSS
-.hover-animation {
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+```
+**Why It Works:**
+- **Spring physics** create natural, bouncy animations.
+- **Customizable transitions** for smooth scaling, fading, and sliding.
 
-.hover-animation:hover {
-  transform: scale(1.05);
-  background-color: #4CAF50;
-}
-</code></pre>
-<p><strong>Why it works:</strong></p>
-<ul>
-<li><strong>Hardware-accelerated</strong> (GPU-optimized).</li>
-<li><strong>Minimal JavaScript overhead</strong>.</li>
-<li><strong>Works seamlessly with React’s virtual DOM</strong>.</li>
-</ul>
-<p><strong>Best for:</strong> Buttons, tooltips, and subtle hover effects.</p>
-<hr>
-<h3><strong>3. Leverage Framer Motion for Advanced Animations</strong></h3>
-<p>Framer Motion is <strong>React’s most popular animation library</strong>, offering <strong>gesture detection, layout animations, and physics-based motion</strong>.</p>
-<p><strong>Example: Fade-In Animation on Page Load</strong></p>
-<pre><code class="language-jsx">import { motion } from "framer-motion";
+**Real-World Example:**
+*Airbnb’s "Book Now" button* uses a **subtle scale-up effect** on hover to encourage clicks without being distracting.
 
-const AnimatedText = () =&gt; {
-  return (
-    &lt;motion.h1
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    &gt;
-      Welcome to Motionix!
-    &lt;/motion.h1&gt;
-  );
-};
-</code></pre>
-<p><strong>Key Features:</strong></p>
-<ul>
-<li><strong><code>initial</code>, <code>animate</code>, <code>exit</code> states</strong> for full animation control.</li>
-<li><strong><code>whileHover</code>, <code>whileTap</code></strong> for interactive effects.</li>
-<li><strong><code>layout</code> animations</strong> for smooth reordering of elements.</li>
-</ul>
-<p><strong>Best for:</strong> Hero sections, loading states, and dynamic content transitions.</p>
-<hr>
-<h3><strong>4. Optimize Animations with React Spring</strong></h3>
-<p>React Spring specializes in <strong>spring physics</strong>, making animations feel more natural.</p>
-<p><strong>Example: Bouncing Animation</strong></p>
-<pre><code class="language-jsx">import { useSpring, animated } from "react-spring";
+---
 
-const BounceButton = () =&gt; {
-  const [props, set] = useSpring(() =&gt; ({ y: 0, config: { tension: 300, friction: 20 } }));
+### **Strategy 2: Leverage React Spring for Physics-Based Animations**
+**React Spring** is another powerful library that specializes in **physics-based animations**, making movements feel more organic.
 
-  const handleClick = () =&gt; {
-    set({ y: -20 });
-    setTimeout(() =&gt; set({ y: 0 }), 300);
+#### **How to Implement:**
+```jsx
+import { useSpring, animated } from "@react-spring/web";
+
+function AnimatedCard() {
+  const [props, set] = useSpring(() => ({ opacity: 0, transform: "translateY(20px)" }));
+
+  const handleClick = () => {
+    set({ opacity: 1, transform: "translateY(0)" });
   };
 
   return (
-    &lt;animated.button style={props} onClick={handleClick}&gt;
-      Click Me
-    &lt;/animated.button&gt;
+    <animated.div style={props} onClick={handleClick}>
+      <h2>Click Me!</h2><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="4441349363" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+    </animated.div>
   );
-};
-</code></pre>
-<p><strong>Why React Spring?</strong></p>
-<ul>
-<li><strong>Physics-based motion</strong> feels more organic.</li>
-<li><strong>Optimized for performance</strong> with minimal re-renders.</li>
-<li><strong>Works well with complex animations</strong> (e.g., drag-and-drop).</li>
-</ul>
-<p><strong>Best for:</strong> Dashboards, interactive charts, and game-like mechanics.</p>
-<hr>
-<h3><strong>5. Implement Micro-Interactions for Engagement</strong></h3>
-<p>Micro-interactions are <strong>small, subtle animations</strong> that enhance usability without overwhelming users.</p>
-<p><strong>Example: Loading Spinner with Pulse Effect</strong></p>
-<pre><code class="language-jsx">const LoadingSpinner = () =&gt; {
+}
+```
+**Why It Works:**
+- **Configurable physics** (e.g., damping, stiffness) for realistic motion.
+- **High performance** due to optimized rendering.
+
+**Real-World Example:**
+*Spotify’s "Now Playing" card* uses a **smooth slide-in animation** when a new track starts, enhancing the music experience.
+
+---
+
+### **Strategy 3: Optimize Animations with CSS Transforms & Opacity**
+For **high-performance animations**, avoid properties like `width`, `height`, and `margin` (which trigger layout recalculations). Instead, use:
+- **`transform`** (for scaling, rotating, moving)
+- **`opacity`** (for fading effects)
+
+#### **How to Implement:**
+```jsx
+import { motion } from "framer-motion";
+
+function OptimizedFadeIn() {
   return (
-    &lt;div className="spinner-container"&gt;
-      &lt;div className="pulse-loader"&gt;&lt;/div&gt;
-    &lt;/div&gt;
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      style={{ transformOrigin: "center" }}
+    >
+      <h1>Optimized Animation</h1>
+    </motion.div>
   );
-};
-
-// CSS
-.pulse-loader {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  border-top: 4px solid #3498db;
-  animation: spin 1s ease-in-out infinite;
 }
+```
+**Why It Works:**
+- **GPU-accelerated** for smoother performance.
+- **Reduces layout thrashing**, improving FPS.
 
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-</code></pre>
-<p><strong>Why they matter:</strong></p>
-<ul>
-<li><strong>Reduce perceived load time</strong> (users expect instant feedback).</li>
-<li><strong>Improve accessibility</strong> by providing visual cues.</li>
-<li><strong>Make interfaces feel alive</strong>.</li>
-</ul>
-<p><strong>Best for:</strong> Form submissions, API calls, and data loading states.</p>
-<hr>
-<h3><strong>6. Use Keyframes for Complex Sequences</strong></h3>
-<p>For <strong>multi-step animations</strong>, CSS <code>@keyframes</code> or Framer Motion’s <code>animate</code> can create <strong>smooth sequences</strong>.</p>
-<p><strong>Example: Sliding Card Animation</strong></p>
-<pre><code class="language-jsx">const CardAnimation = () =&gt; {
+**Real-World Example:**
+*Netflix’s loading screen* uses **CSS transforms** to smoothly scale in the logo without jank.
+
+---
+
+### **Strategy 4: Implement Loading Animations with Skeleton Screens**
+Loading animations should **never be distracting**—they should **inform users** that content is being fetched.
+
+#### **How to Implement:**
+```jsx
+import { motion } from "framer-motion";
+
+function SkeletonLoader() {
   return (
-    &lt;motion.div
-      initial={{ x: -100, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.8 }}
-    &gt;
-      &lt;div className="card"&gt;This card slides in!&lt;/div&gt;
-    &lt;/motion.div&gt;
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.3 }}
+    >
+      <div className="skeleton-rectangle" style={{ height: "20px", width: "100%" }}></div>
+      <div className="skeleton-rectangle" style={{ height: "16px", width: "80%", marginTop: "10px" }}></div>
+    </motion.div>
   );
-};
-</code></pre>
-<p><strong>Advanced Keyframe Example (CSS):</strong></p>
-<pre><code class="language-css">@keyframes slideUp {
-  0% { transform: translateY(20px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
 }
+```
+**Why It Works:**
+- **Reduces perceived load time** by showing a placeholder.
+- **Improves UX** by keeping users engaged.
 
-.slide-up {
-  animation: slideUp 0.5s ease-out forwards;
-}
-</code></pre>
-<p><strong>Best for:</strong> Onboarding flows, step-by-step tutorials, and product showcases.</p>
-<hr>
-<h3><strong>7. Optimize Performance with RequestAnimationFrame</strong></h3>
-<p>For <strong>high-performance animations</strong> (e.g., drag-and-drop, real-time updates), <strong><code>requestAnimationFrame</code></strong> ensures smooth rendering.</p>
-<p><strong>Example: Smooth Drag-and-Drop with Framer Motion</strong></p>
-<pre><code class="language-jsx">import { useDrag } from "framer-motion";
+**Real-World Example:**
+*Twitter’s "Loading tweets" state* uses **skeleton animations** to maintain a polished look while content loads.
 
-const DraggableBox = () =&gt; {
-  const [{ isDragging }, drag] = useDrag();
+---
+
+### **Strategy 5: Use Gesture-Based Animations with Hammer.js**
+For **touch and drag interactions**, **Hammer.js** (or its React wrapper, **react-hammer**) allows you to detect swipes, taps, and drags.
+
+#### **How to Implement:**
+```jsx
+import { useGesture } from "react-use-gesture";
+
+function DraggableCard() {
+  const bind = useGesture({
+    onDrag: ({ xy: [x] }) => {
+      setPosition(x);
+    },
+  });
 
   return (
-    &lt;motion.div
-      ref={drag}
-      drag="x"
-      dragConstraints={{ left: 0, right: 300 }}
-      whileDrag={{ scale: 0.95 }}
-      transition={{ type: "spring", damping: 25 }}
-    &gt;
-      &lt;div className="box"&gt;Drag Me!&lt;/div&gt;
-    &lt;/motion.div&gt;
+    <div {...bind()}>
+      <motion.div
+        style={{ x }}
+        drag="x"
+        dragConstraints={{ left: 0, right: 300 }}
+      >
+        <h2>Drag Me!</h2>
+      </motion.div>
+    </div>
   );
-};
-</code></pre>
-<p><strong>Performance Tips:</strong></p>
-<ul>
-<li><strong>Debounce rapid updates</strong> (e.g., mouse movement).</li>
-<li><strong>Use <code>will-change</code> CSS property</strong> to hint the browser.</li>
-<li><strong>Avoid excessive re-renders</strong> with <code>React.memo</code>.</li>
-</ul>
-<hr>
-<h3><strong>8. Make Animations Accessible</strong></h3>
-<p>Not all users experience animations the same way. <strong>WCAG (Web Content Accessibility Guidelines)</strong> recommends:</p>
-<p>✅ <strong>Provide fallbacks</strong> for users with animations disabled.
-✅ <strong>Use <code>prefers-reduced-motion</code></strong> to respect user preferences.
-✅ <strong>Ensure animations don’t interfere with keyboard navigation</strong>.</p>
-<p><strong>Example: Respecting Reduced Motion</strong></p>
-<pre><code class="language-jsx">import { useEffect } from "react";
+}
+```
+**Why It Works:**
+- **Responsive to touch and mouse** for a seamless experience.
+- **Customizable drag constraints** for controlled movement.
 
-const useReducedMotion = () =&gt; {
-  useEffect(() =&gt; {
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (mediaQuery.matches) {
-      document.body.style.animationDuration = "0.01ms";
+**Real-World Example:**
+*Instagram’s "Swipe to delete" feature* uses **gesture-based animations** for intuitive user control.
+
+---
+
+### **Strategy 6: Create Seamless Page Transitions with React Router**
+For **multi-page applications**, smooth transitions between routes enhance navigation.
+
+#### **How to Implement:**
+```jsx
+import { Routes, Route, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+
+function App() {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={location.key}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+```
+**Why It Works:**
+- **Prevents layout shifts** during navigation.
+- **Smooth cross-fade or slide effects** for better UX.
+
+**Real-World Example:**
+*Medium’s article navigation* uses **smooth fade transitions** between posts.
+
+---
+
+### **Strategy 7: Enhance Forms with Input Animations**
+Forms should **guide users** with subtle animations—like highlighting errors or confirming submissions.
+
+#### **How to Implement:**
+```jsx
+import { motion } from "framer-motion";
+
+function AnimatedForm() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = () => {
+    setIsSubmitted(true);
+  };
+
+  return (
+    <motion.form
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      onSubmit={handleSubmit}
+    >
+      <motion.input
+        whileFocus={{ outline: "2px solid blue" }}
+        transition={{ type: "spring", stiffness: 300 }}
+      />
+      {isSubmitted && (
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          <p><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="1966379200" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>Form submitted successfully!</p>
+        </motion.div>
+      )}
+    </motion.form>
+  );
+}
+```
+**Why It Works:**
+- **Visual feedback** improves user confidence.
+- **Subtle animations** prevent distraction.
+
+**Real-World Example:**
+*Gmail’s "Send" button* pulses slightly after submission, confirming action.
+
+---
+
+### **Strategy 8: Use Parallax Effects for Depth in Scrolling**
+Parallax animations create **depth perception**, making static pages feel dynamic.
+
+#### **How to Implement:**
+```jsx
+import { useScroll, motion } from "framer-motion";
+
+function ParallaxSection() {
+  const { scrollYProgress } = useScroll();
+
+  return (
+    <motion.div
+      style={{
+        y: [-100, 100],
+        opacity: [0.3, 0.8],
+        scale: [0.8, 1.2],
+      }}
+      animate={scrollYProgress}
+      transition={{ duration: 2 }}
+    >
+      <h2>Scroll to See Parallax!</h2>
+    </motion.div>
+  );
+}
+```
+**Why It Works:**
+- **Enhances visual hierarchy** by layering elements.
+- **Engages users** with subtle movement.
+
+**Real-World Example:**
+*Apple’s "New MacBook" landing page* uses **parallax scrolling** to highlight features.
+
+---
+
+### **Strategy 9: Implement Hover & Tooltip Animations**
+Hover effects should be **subtle but noticeable**, while tooltips should **appear smoothly**.
+
+#### **How to Implement:**
+```jsx
+import { motion, AnimatePresence } from "framer-motion";
+
+function HoverTooltip() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        transition={{ type: "spring", stiffness: 400 }}
+      >
+        Hover Me
+      </motion.div>
+      <AnimatePresence>
+        {isHovered && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ duration: 0.2 }}
+            style={{ position: "absolute", background: "white", padding: "8px" }}
+          >
+            This is a tooltip!
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+```
+**Why It Works:**
+- **Encourages exploration** without overwhelming users.
+- **Improves accessibility** by providing context.
+
+**Real-World Example:**
+*Google Maps’ "Info windows"* slide in smoothly when hovered.
+
+---
+
+### **Strategy 10: Optimize Animations for Performance**
+Even the best animations **fail if they’re not performant**. Here’s how to keep them **smooth**:
+
+✅ **Use `requestAnimationFrame`** for manual animations.
+✅ **Debounce rapid state changes** (e.g., in drag interactions).
+✅ **Test on low-end devices** (use Chrome DevTools’ **Performance tab**).
+✅ **Limit concurrent animations** (batch updates where possible).
+
+**Real-World Example:**
+*Facebook’s "Reactions" animation* is **optimized for 60fps** even on mobile.
+
+---
+
+## **Chapter 3: Common Mistakes in UI Animation & How to Avoid Them**
+
+While animations enhance UX, **poor implementation** can lead to **jank, confusion, or frustration**. Here are **five common pitfalls** and how to fix them:
+
+### **Mistake 1: Overusing Animations (Distracting Users)**
+**Problem:** Too many animations can **overwhelm users** and **slow down performance**.
+
+**Solution:**
+- **Keep animations purposeful** (e.g., only for feedback, not decoration).
+- **Test on real devices** to ensure smoothness.
+
+### **Mistake 2: Ignoring Accessibility (Animations for Some, Not All)**
+**Problem:** Some users (e.g., those with **epilepsy or vestibular disorders**) may be **sensitive to flashing animations**.
+
+**Solution:**
+- **Use `prefers-reduced-motion`** to respect user preferences.
+- **Provide static fallbacks** for critical animations.
+
+**Example:**
+```jsx
+import { useEffect } from "react";
+
+function AccessibleAnimation() {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  useEffect(() => {
+    if (prefersReducedMotion) {
+      document.documentElement.style.setProperty("--motion", "none");
     }
   }, []);
-};
 
-useReducedMotion();
-</code></pre>
-<p><strong>Best for:</strong> Public-facing websites, government portals, and enterprise apps.</p>
-<hr>
-<h3><strong>9. Test Animations Across Devices &amp; Browsers</strong></h3>
-<p>Animations can <strong>render differently</strong> across devices due to:</p>
-<ul>
-<li><strong>GPU acceleration</strong> (some devices lag).</li>
-<li><strong>Browser engine differences</strong> (Chrome vs. Safari).</li>
-<li><strong>Network conditions</strong> (slow connections).</li>
-</ul>
-<p><strong>Testing Strategies:</strong></p>
-<ul>
-<li><strong>Use Chrome DevTools</strong> to simulate throttling.</li>
-<li><strong>Test on real devices</strong> (especially mobile).</li>
-<li><strong>Check for jank</strong> (unsteady animation frames).</li>
-</ul>
-<p><strong>Example: Detecting Animation Performance</strong></p>
-<pre><code class="language-jsx">const checkAnimationPerformance = () =&gt; {
-  const start = performance.now();
-  const element = document.querySelector(".animated-element");
-  element.style.transition = "transform 0.3s ease";
-  element.style.transform = "scale(1.1)";
-  const end = performance.now();
+  return <div className="animation" style={{ animation: prefersReducedMotion ? "none" : "fadeIn 0.5s" }} />;
+}
+```
 
-  if (end - start &gt; 16) { // 16ms = ~60fps
-    console.warn("Animation may be lagging!");
-  }
-};
-</code></pre>
-<p><strong>Best for:</strong> Production-ready apps where smoothness is critical.</p>
-<hr>
-<h3><strong>10. Combine Animations with State Management</strong></h3>
-<p>For <strong>complex animations tied to state</strong>, use <strong>React Context, Redux, or Zustand</strong> to manage animation triggers.</p>
-<p><strong>Example: Animated Modal with Zustand</strong></p>
-<pre><code class="language-jsx">import { create } from "zustand";
+### **Mistake 3: Poor Performance Due to Unoptimized Code**
+**Problem:** Animations that **block the main thread** cause **jank and lag**.
 
-const useModalStore = create((set) =&gt; ({
-  isOpen: false,
-  toggle: () =&gt; set((state) =&gt; ({ isOpen: !state.isOpen })),
-}));
-
-const Modal = () =&gt; {
-  const { isOpen, toggle } = useModalStore();
-
-  return (
-    &lt;motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: isOpen ? 1 : 0 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.3 }}
-    &gt;
-      &lt;div className="modal"&gt;Modal Content&lt;/div&gt;
-    &lt;/motion.div&gt;
-  );
-};
-</code></pre>
-<p><strong>Best for:</strong> Dashboards, admin panels, and multi-step workflows.</p>
-<hr>
-<h2><strong>Real-World Examples of UI Animation in React</strong></h2>
-<p>Let’s explore <strong>three high-profile React projects</strong> that use animations effectively.</p>
-<hr>
-<h3><strong>1. Airbnb’s Smooth Scroll &amp; Hover Effects</strong></h3>
-<p>Airbnb’s <strong>React-based frontend</strong> uses <strong>Framer Motion</strong> for:</p>
-<ul>
-<li><strong>Smooth scroll animations</strong> when navigating listings.</li>
-<li><strong>Subtle hover effects</strong> on property cards.</li>
-<li><strong>Loading spinners</strong> with CSS keyframes.</li>
-</ul>
-<p><strong>How They Do It:</strong></p>
-<ul>
-<li><strong><code>motion.div</code></strong> wraps scrollable sections for seamless transitions.</li>
-<li><strong><code>whileHover</code></strong> adds a slight scale effect on property images.</li>
-<li><strong><code>animate</code></strong> ensures consistent timing across devices.</li>
-</ul>
-<p><strong>Takeaway:</strong> Even <strong>large-scale apps</strong> can maintain smooth animations with proper optimization.</p>
-<hr>
-<h3><strong>2. Shopify’s Product Card Animations</strong></h3>
-<p>Shopify’s <strong>React-powered storefront</strong> uses <strong>React Spring</strong> for:</p>
-<ul>
-<li><strong>Bouncing product cards</strong> when clicked.</li>
-<li><strong>Fade-in effects</strong> for new product recommendations.</li>
-<li><strong>Drag-to-reorder</strong> functionality in collections.</li>
-</ul>
-<p><strong>How They Do It:</strong></p>
-<ul>
-<li><strong>Spring physics</strong> (<code>tension: 300, friction: 20</code>) for natural motion.</li>
-<li><strong><code>useDrag</code></strong> for interactive sorting.</li>
-<li><strong><code>useSpring</code></strong> to manage animation state.</li>
-</ul>
-<p><strong>Takeaway:</strong> <strong>E-commerce benefits from animations</strong> that guide users toward purchases.</p>
-<hr>
-<h3><strong>3. Notion’s Dynamic UI Transitions</strong></h3>
-<p>Notion’s <strong>React-based editor</strong> uses <strong>GSAP</strong> for:</p>
-<ul>
-<li><strong>Smooth page transitions</strong> when switching between blocks.</li>
-<li><strong>Pulse animations</strong> on active elements.</li>
-<li><strong>Delayed animations</strong> for async data loading.</li>
-</ul>
-<p><strong>How They Do It:</strong></p>
-<ul>
-<li><strong>GSAP’s <code>TimelineMax</code></strong> for complex sequences.</li>
-<li><strong><code>motion</code> components</strong> for React integration.</li>
-<li><strong>Performance optimizations</strong> (e.g., <code>will-change: transform</code>).</li>
-</ul>
-<p><strong>Takeaway:</strong> <strong>Productivity tools thrive on animations</strong> that reduce cognitive load.</p>
-<hr>
-<h2><strong>Common Mistakes in UI Animation &amp; How to Avoid Them</strong></h2>
-<p>Even experienced developers make animation pitfalls. Here’s how to <strong>avoid them</strong>:</p>
-<h3><strong>❌ Mistake 1: Overusing Animations (Performance Kill)</strong></h3>
-<p><strong>Problem:</strong> Too many animations <strong>slow down the app</strong>, leading to <strong>jank</strong> (unsteady rendering).</p>
-<p><strong>Solution:</strong></p>
-<ul>
-<li><strong>Limit animations to key interactions</strong> (e.g., buttons, modals).</li>
-<li><strong>Use <code>requestAnimationFrame</code></strong> for smooth updates.</li>
-<li><strong>Test on low-end devices</strong> (e.g., older iPhones).</li>
-</ul>
-<p><strong>Fix:</strong></p>
-<pre><code class="language-jsx">// Avoid this:
-&lt;button onClick={() =&gt; setTimeout(() =&gt; alert("Clicked!"), 0)}&gt;
-  Slow Button
-&lt;/button&gt;
-
-// Use this instead:
-&lt;button onClick={() =&gt; {
-  const start = performance.now();
-  if (start - lastClick &lt; 100) return; // Debounce
-  alert("Clicked!");
-  lastClick = start;
-}}&gt;
-  Optimized Button
-&lt;/button&gt;
-</code></pre>
-<hr>
-<h3><strong>❌ Mistake 2: Ignoring Reduced Motion</strong></h3>
-<p><strong>Problem:</strong> Users with <strong>epilepsy or vestibular disorders</strong> may be sensitive to animations.</p>
-<p><strong>Solution:</strong></p>
-<ul>
-<li><strong>Respect <code>prefers-reduced-motion</code></strong>.</li>
-<li><strong>Provide a toggle</strong> in settings.</li>
-</ul>
-<p><strong>Fix:</strong></p>
-<pre><code class="language-jsx">const useReducedMotion = () =&gt; {
-  const [reducedMotion, setReducedMotion] = useState(false);
-
-  useEffect(() =&gt; {
-    const mediaQuery = window.matchMedia("(prefers
-</code></pre>
-<h3>📚 You May Also Like</h3><ul><li><a href="/css-animation-trigger.html">css animation trigger</a></li><li><a href="/animate-on-scroll.html">animate on scroll</a></li><li><a href="/parallax-tilt.html">parallax tilt</a></li><li><a href="/interactive-3d.html">interactive 3d</a></li></ul><p><a href="index.html">← Browse all blog posts</a></p><h3>🌐 Explore Our Other Sites</h3><ul><li><a href="https://startknowledge.startknowledge.in/">startknowledge</a></li><li><a href="https://bn-ration-scale.startknowledge.in/">bn ration scale</a></li><li><a href="https://Calculator-Library-Portal.startknowledge.in/">Calculator Library Portal</a></li><li><a href="https://pension-calculator.startknowledge.in/">pension calculator</a></li><li><a href="https://design-painting.startknowledge.in/">design painting</a></li><li><a href="https://ai-mosaic-studio.startknowledge.in/">ai mosaic studio</a></li><li><a href="https://ultra-static-seo-engine.startknowledge.in/">ultra static seo engine</a></li><li><a href="https://universal-image-data-explorer-forge.startknowledge.in/">universal image data explorer forge</a></li></ul><h3>🔗 Useful Resources (External)</h3><ul><li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer">Google Search Central – SEO Starter Guide</a></li><li><a href="https://moz.com/beginners-guide-to-seo" target="_blank" rel="noopener noreferrer">Moz Beginner’s Guide to SEO</a></li><li><a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a></li><li><a href="https://ahrefs.com/blog/" target="_blank" rel="noopener noreferrer">Ahrefs Blog – SEO Strategies</a></li><li><a href="https://www.semrush.com/blog/" target="_blank" rel="noopener noreferrer">Semrush SEO Toolkit</a></li><li><a href="https://yoast.com/academy/" target="_blank" rel="noopener noreferrer">Yoast SEO Academy</a></li><li><a href="https://backlinko.com/blog" target="_blank" rel="noopener noreferrer">Backlinko – SEO Techniques</a></li><li><a href="https://www.searchenginejournal.com/" target="_blank" rel="noopener noreferrer">Search Engine Journal</a></li><li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a></li><li><a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org – Structured Data</a></li></ul><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="8024521099" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fw+7+28-5k+1k" data-ad-client="ca-pub-2162324894765763" data-ad-slot="7592527166"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></article>
+**Solution:**
+- **Use `transform` and `opacity`** (GPU-accelerated).
+- **Avoid complex calculations in `requestAnimationFrame`**.
+- **Use libraries like Framer Motion or React Spring** (optim<h3>📚 You May Also Like</h3><ul><li><a href="/line-animation-svg.html">line animation svg</a></li><li><a href="/smooth-navigation.html">smooth navigation</a></li><li><a href="/high-performance-animation.html">high performance animation</a></li><li><a href="/scroll-trigger-animation.html">scroll trigger animation</a></li></ul><p><a href="index.html">← Browse all blog posts</a></p><h3>🌐 Explore Our Other Sites</h3><ul><li><a href="https://startknowledge.startknowledge.in/">startknowledge</a></li><li><a href="https://bn-ration-scale.startknowledge.in/">bn ration scale</a></li><li><a href="https://Calculator-Library-Portal.startknowledge.in/">Calculator Library Portal</a></li><li><a href="https://pension-calculator.startknowledge.in/">pension calculator</a></li><li><a href="https://design-painting.startknowledge.in/">design painting</a></li><li><a href="https://ai-mosaic-studio.startknowledge.in/">ai mosaic studio</a></li><li><a href="https://ultra-static-seo-engine.startknowledge.in/">ultra static seo engine</a></li><li><a href="https://universal-image-data-explorer-forge.startknowledge.in/">universal image data explorer forge</a></li></ul><h3>🔗 Useful Resources (External)</h3><ul><li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer">Google Search Central – SEO Starter Guide</a></li><li><a href="https://moz.com/beginners-guide-to-seo" target="_blank" rel="noopener noreferrer">Moz Beginner’s Guide to SEO</a></li><li><a href="https://search.google.com/search-console/about" target="_blank" rel="noopener noreferrer">Google Search Console</a></li><li><a href="https://ahrefs.com/blog/" target="_blank" rel="noopener noreferrer">Ahrefs Blog – SEO Strategies</a></li><li><a href="https://www.semrush.com/blog/" target="_blank" rel="noopener noreferrer">Semrush SEO Toolkit</a></li><li><a href="https://yoast.com/academy/" target="_blank" rel="noopener noreferrer">Yoast SEO Academy</a></li><li><a href="https://backlinko.com/blog" target="_blank" rel="noopener noreferrer">Backlinko – SEO Techniques</a></li><li><a href="https://www.searchenginejournal.com/" target="_blank" rel="noopener noreferrer">Search Engine Journal</a></li><li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a></li><li><a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org – Structured Data</a></li></ul><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2162324894765763" data-ad-slot="8024521099" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="ads"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fw+7+28-5k+1k" data-ad-client="ca-pub-2162324894765763" data-ad-slot="7592527166"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></article>
   <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
     <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
     
       <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/78/200/120" style="width:100%; border-radius: 16px;">
+        <img src="https://picsum.photos/id/12/200/120" style="width:100%; border-radius: 16px;">
         <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
         <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
       </div>
     
       <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/53/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/93/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/58/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/42/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/86/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/74/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/52/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/5/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/39/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/55/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/1/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/94/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/65/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/93/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/72/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/90/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/60/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/42/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
-        <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/77/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 15px;">Affiliate disclosure</p>
-  </aside>
-  <aside class="affiliate-sidebar" style="position: sticky; top: 100px; width: 280px; margin-left: 30px; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-radius: 24px; padding: 20px; border: 1px solid rgba(108,92,231,0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
-    <h4 style="font-size: 1.2rem; margin-bottom: 15px;">🔥 Recommended for you</h4>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/48/200/120" style="width:100%; border-radius: 16px;">
-        <p style="font-weight: bold; margin: 8px 0;">The Genius Song</p>
-        <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
-      </div>
-    
-      <div style="margin-bottom: 20px; text-align: center;">
-        <img src="https://picsum.photos/id/35/200/120" style="width:100%; border-radius: 16px;">
+        <img src="https://picsum.photos/id/21/200/120" style="width:100%; border-radius: 16px;">
         <p style="font-weight: bold; margin: 8px 0;">New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</p>
         <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #6c5ce7, #a29bfe); color: white; padding: 8px 16px; border-radius: 40px; text-decoration: none; font-size: 0.8rem;">Check price →</a>
       </div>
@@ -637,7 +487,7 @@ const Modal = () =&gt; {
           <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
             <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
             <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/91/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
+            <img src="https://picsum.photos/id/14/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
             <p><strong>The Genius Song</strong><br>Limited time discount</p>
             <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
           </div>
@@ -659,427 +509,7 @@ const Modal = () =&gt; {
       const floatDiv = document.createElement('div');
       floatDiv.innerHTML = `
         <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/70/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/82/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/48/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/13/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/84/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/30/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/88/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/36/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/31/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/57/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>The Genius Song</strong><br>Limited time discount</p>
-            <a href="https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/70/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/27/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/89/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 The Genius Song</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://6a0c2oywsltlujaetfogv94x5t.hop.clickbank.net', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/13/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/96/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/23/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/67/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/23/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/8/40/40" style="border-radius: 50%; width: 40px;">
-          <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
-          <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
-          <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>
-        </div>
-      `;
-      document.body.appendChild(floatDiv.firstChild);
-      document.getElementById('floatingAd').addEventListener('click', (e) => {
-        if(!e.target.closest('span')) window.open('https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6', '_blank');
-      });
-    }, 5000);
-  </script>
-  <script>
-    (function() {
-      let popupShown = false;
-      const popupHtml = `
-        <div id="exitPopup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: 0.3s;">
-          <div style="background: white; max-width: 400px; border-radius: 32px; padding: 30px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <span style="float: right; cursor: pointer; font-size: 24px;" onclick="document.getElementById('exitPopup').style.visibility='hidden';">&times;</span>
-            <h3>Wait! Special offer just for you</h3>
-            <img src="https://picsum.photos/id/68/300/160" style="width:100%; border-radius: 20px; margin: 15px 0;">
-            <p><strong>New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</strong><br>Limited time discount</p>
-            <a href="https://9a3e5j236kqbzp8lleslv79k00.hop.clickbank.net/?cbpage=6" rel="sponsored nofollow" target="_blank" style="background: #e67e22; color: white; padding: 12px 24px; border-radius: 40px; display: inline-block; text-decoration: none; margin-top: 10px;">Claim deal →</a>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', popupHtml);
-      document.addEventListener('mouseleave', function(e) {
-        if (!popupShown && e.clientY <= 0) {
-          popupShown = true;
-          const pop = document.getElementById('exitPopup');
-          pop.style.visibility = 'visible';
-          pop.style.opacity = '1';
-        }
-      });
-    })();
-  </script>
-  <script>
-    setTimeout(() => {
-      const floatDiv = document.createElement('div');
-      floatDiv.innerHTML = `
-        <div id="floatingAd" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; background: white; border-radius: 60px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 10px; padding: 8px 16px; cursor: pointer; transition: 0.3s;">
-          <img src="https://picsum.photos/id/19/40/40" style="border-radius: 50%; width: 40px;">
+          <img src="https://picsum.photos/id/53/40/40" style="border-radius: 50%; width: 40px;">
           <span style="font-size: 0.8rem; font-weight: bold;">🔥 New Water Offer: SmartWaterBox -10%+ New VSL Killing It!!!</span>
           <span style="background: #e67e22; color: white; padding: 4px 12px; border-radius: 40px;">Buy</span>
           <span style="margin-left: 5px; cursor: pointer;" onclick="this.parentElement.remove()">✖</span>

@@ -5,7 +5,7 @@
     <link>https://Motionix.startknowledge.in/blog/</link>
     <description>Latest SEO automation blog posts</description>
     <language>en</language>
-    <lastBuildDate>Tue, 05 May 2026 16:28:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 22:39:17 GMT</lastBuildDate>
     <atom:link href="https://Motionix.startknowledge.in/blog/rss.xml" rel="self" type="application/rss+xml"/>
     
   <item>
@@ -403,6 +403,16 @@ GSAP animation | Motionix
 &lt;meta name="description" content="Complete guide to GSAP animation. Learn actionable strateg...</description>
   </item>
   <item>
+    <title>&lt;strong&gt;High-Performance Animation: The Ultimate Guide to Faster, Smoother, and More Engaging Motion Design&lt;/strong&gt;</title>
+    <link>https://Motionix.startknowledge.in/blog/high-performance-animation.html</link>
+    <guid>https://Motionix.startknowledge.in/blog/high-performance-animation.html</guid>
+    <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
+    <description>
+
+high performance animation | Motionix
+&lt;meta name="description" content="Complete guide to high performance animation. ...</description>
+  </item>
+  <item>
     <title>&lt;strong&gt;High-Performance Graphics: The Ultimate Guide to Faster, Smoother, and More Engaging Visuals in Motion Design&lt;/strong&gt;</title>
     <link>https://Motionix.startknowledge.in/blog/high-performance-graphics.html</link>
     <guid>https://Motionix.startknowledge.in/blog/high-performance-graphics.html</guid>
@@ -613,6 +623,16 @@ lightweight motion library | Motionix
 &lt;meta name="description" content="Complete guide to lightweight motion library. ...</description>
   </item>
   <item>
+    <title>&lt;strong&gt;Mastering Line Animation in SVG: A Complete Guide to Creating Stunning Motion Effects&lt;/strong&gt;</title>
+    <link>https://Motionix.startknowledge.in/blog/line-animation-svg.html</link>
+    <guid>https://Motionix.startknowledge.in/blog/line-animation-svg.html</guid>
+    <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
+    <description>
+
+line animation svg | Motionix
+&lt;meta name="description" content="Complete guide to line animation svg. Learn actionable...</description>
+  </item>
+  <item>
     <title>Unlocking the Power of Lottie Animations: A Comprehensive Guide</title>
     <link>https://Motionix.startknowledge.in/blog/lottie-animations.html</link>
     <guid>https://Motionix.startknowledge.in/blog/lottie-animations.html</guid>
@@ -663,7 +683,7 @@ motion engine | Motionix
 &lt;meta name="description" content="Complete guide to motion engine. Learn actionable strategie...</description>
   </item>
   <item>
-    <title>Unlock the Power of Motion Graphics: Creating a Comprehensive Motion Graphics Library</title>
+    <title>&lt;strong&gt;The Ultimate Guide to Motion Graphics Libraries: Boost Your Workflow &amp;amp; Creativity in 2024&lt;/strong&gt;</title>
     <link>https://Motionix.startknowledge.in/blog/motion-graphics-library.html</link>
     <guid>https://Motionix.startknowledge.in/blog/motion-graphics-library.html</guid>
     <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
@@ -908,7 +928,7 @@ scroll reveal animation | Motionix
 &lt;meta name="description" content="Complete guide to scroll reveal animation. Learn ...</description>
   </item>
   <item>
-    <title>Unlocking the Power of Scroll Trigger Animation: Boosting User Engagement and Conversions</title>
+    <title>&lt;strong&gt;Scroll Trigger Animation: The Ultimate Guide to Creating Stunning, Performance-Optimized Web Experiences&lt;/strong&gt;</title>
     <link>https://Motionix.startknowledge.in/blog/scroll-trigger-animation.html</link>
     <guid>https://Motionix.startknowledge.in/blog/scroll-trigger-animation.html</guid>
     <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
@@ -1198,7 +1218,7 @@ ui animation component | Motionix
 &lt;meta name="description" content="Complete guide to ui animation component. Learn ac...</description>
   </item>
   <item>
-    <title>&lt;strong&gt;UI Animation in React: The Ultimate Guide to Creating Smooth, Engaging, and High-Performance Animations&lt;/strong&gt;</title>
+    <title>Optimized Animation</title>
     <link>https://Motionix.startknowledge.in/blog/ui-animation-react.html</link>
     <guid>https://Motionix.startknowledge.in/blog/ui-animation-react.html</guid>
     <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
