@@ -231,9 +231,9 @@
     "date": "5/6/2026"
   },
   {
-    "title": "<strong>Frontend Motion: The Ultimate Guide to Creating Stunning Animations That Wow Users</strong>",
+    "title": "<strong>Frontend Motion: The Ultimate Guide to Crafting Stunning Animations for Modern Web Experiences</strong>",
     "url": "frontend-motion.html",
-    "image": "https://picsum.photos/id/92/1200/630",
+    "image": "https://picsum.photos/id/88/1200/630",
     "excerpt": "\n\nfrontend motion | Motionix\n<meta name=\"description\" content=\"Complete guide to frontend motion. Learn actionable strat...",
     "date": "5/6/2026"
   },
@@ -462,6 +462,13 @@
     "date": "5/6/2026"
   },
   {
+    "title": "<strong>The Ultimate Guide to Mobile Carousels: Boost Engagement, Conversions &amp; UX in 2024</strong>",
+    "url": "mobile-carousel.html",
+    "image": "https://picsum.photos/id/53/1200/630",
+    "excerpt": "\n\nmobile carousel | Motionix\n<meta name=\"description\" content=\"Complete guide to mobile carousel. Learn actionable strat...",
+    "date": "5/6/2026"
+  },
+  {
     "title": "<strong>Modern Animation: The Ultimate Guide to Creating Stunning Motion in 2024</strong>",
     "url": "modern-animation.html",
     "image": "https://picsum.photos/id/0/1200/630",
@@ -553,9 +560,9 @@
     "date": "5/6/2026"
   },
   {
-    "title": "<strong>The Ultimate Guide to Parallax Tilt: Mastering Depth, Motion, and Engagement in Web Design</strong>",
+    "title": "<strong>Mastering Parallax Tilt: The Ultimate Guide to Creating Stunning 3D Depth Effects in Motion Design</strong>",
     "url": "parallax-tilt.html",
-    "image": "https://picsum.photos/id/35/1200/630",
+    "image": "https://picsum.photos/id/82/1200/630",
     "excerpt": "\n\nparallax tilt | Motionix\n<meta name=\"description\" content=\"Complete guide to parallax tilt. Learn actionable strategie...",
     "date": "5/6/2026"
   },
@@ -639,14 +646,14 @@
   {
     "title": "<strong>Scroll Reveal Animation: The Ultimate Guide to Engaging Users &amp; Boosting Conversions in 2024</strong>",
     "url": "scroll-reveal-animation.html",
-    "image": "https://picsum.photos/id/47/1200/630",
+    "image": "https://picsum.photos/id/18/1200/630",
     "excerpt": "\n\nscroll reveal animation | Motionix\n<meta name=\"description\" content=\"Complete guide to scroll reveal animation. Learn ...",
     "date": "5/6/2026"
   },
   {
-    "title": "scroll trigger animation",
+    "title": "<strong>Scroll Trigger Animation: The Ultimate Guide to Creating Stunning, User-Centric Web Experiences in 2024</strong>",
     "url": "scroll-trigger-animation.html",
-    "image": "https://picsum.photos/id/73/1200/630",
+    "image": "https://picsum.photos/id/39/1200/630",
     "excerpt": "\n\nscroll trigger animation | Motionix\n<meta name=\"description\" content=\"Complete guide to scroll trigger animation. Lear...",
     "date": "5/6/2026"
   },
@@ -891,7 +898,7 @@
   {
     "title": "<strong>Viewport Animation: The Ultimate Guide to Creating Stunning, Performance-Optimized Animations That Wow Users</strong>",
     "url": "viewport-animation.html",
-    "image": "https://picsum.photos/id/85/1200/630",
+    "image": "https://picsum.photos/id/29/1200/630",
     "excerpt": "\n\nviewport animation | Motionix\n<meta name=\"description\" content=\"Complete guide to viewport animation. Learn actionable...",
     "date": "5/6/2026"
   },
