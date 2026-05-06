@@ -105,9 +105,9 @@
     "date": "5/6/2026"
   },
   {
-    "title": "<strong>Canvas Rendering: The Ultimate Guide to High-Performance Web Animation &amp; Graphics in 2024</strong>",
+    "title": "Mastering Canvas Rendering: Unlocking Seamless Visual Experiences for Your Website",
     "url": "canvas-rendering.html",
-    "image": "https://picsum.photos/id/81/1200/630",
+    "image": "https://picsum.photos/id/67/1200/630",
     "excerpt": "\n\ncanvas rendering | Motionix\n<meta name=\"description\" content=\"Complete guide to canvas rendering. Learn actionable str...",
     "date": "5/6/2026"
   },
@@ -354,6 +354,13 @@
     "url": "interactive-perspective.html",
     "image": "https://picsum.photos/id/29/1200/630",
     "excerpt": "\n\ninteractive perspective | Motionix\n<meta name=\"description\" content=\"Complete guide to interactive perspective. Learn ...",
+    "date": "5/6/2026"
+  },
+  {
+    "title": "<strong>The Ultimate Guide to Interactive Scroll: Elevate User Engagement with Motionix</strong>",
+    "url": "interactive-scroll.html",
+    "image": "https://picsum.photos/id/56/1200/630",
+    "excerpt": "\n\ninteractive scroll | Motionix\n<meta name=\"description\" content=\"Complete guide to interactive scroll. Learn actionable...",
     "date": "5/6/2026"
   },
   {
@@ -686,9 +693,9 @@
     "date": "5/6/2026"
   },
   {
-    "title": "Mastering Smooth Navigation Animation: Boosting User Experience and Conversions",
+    "title": "<strong>The Ultimate Guide to Smooth Navigation Animations: Elevate User Experience &amp; Boost Engagement</strong>",
     "url": "smooth-navigation-animation.html",
-    "image": "https://picsum.photos/id/81/1200/630",
+    "image": "https://picsum.photos/id/44/1200/630",
     "excerpt": "\n\nsmooth navigation animation | Motionix\n<meta name=\"description\" content=\"Complete guide to smooth navigation animation...",
     "date": "5/6/2026"
   },
@@ -833,9 +840,9 @@
     "date": "5/6/2026"
   },
   {
-    "title": "Unlock the Power of UI Animation in React: 10 Actionable Strategies to Enhance User Experience",
+    "title": "<strong>UI Animation in React: A Complete Guide to Creating Smooth, Engaging, and High-Performance Animations (2024)</strong>",
     "url": "ui-animation-react.html",
-    "image": "https://picsum.photos/id/31/1200/630",
+    "image": "https://picsum.photos/id/83/1200/630",
     "excerpt": "\n\nui animation react | Motionix\n<meta name=\"description\" content=\"Complete guide to ui animation react. Learn actionable...",
     "date": "5/6/2026"
   },
@@ -847,9 +854,9 @@
     "date": "5/6/2026"
   },
   {
-    "title": "<strong>UI Micro-Animations: The Secret Weapon for Engaging, High-Converting User Experiences (2024 Guide)</strong>",
+    "title": "<strong>UI Micro Animations: The Secret Weapon for Engaging, Intuitive, and High-Converting User Experiences (2024 Guide)</strong>",
     "url": "ui-micro-animation.html",
-    "image": "https://picsum.photos/id/86/1200/630",
+    "image": "https://picsum.photos/id/58/1200/630",
     "excerpt": "\n\nui micro animation | Motionix\n<meta name=\"description\" content=\"Complete guide to ui micro animation. Learn actionable...",
     "date": "5/6/2026"
   },
@@ -863,7 +870,7 @@
   {
     "title": "<strong>The Ultimate Guide to UX Animation: How to Create Seamless, Engaging, and High-Converting User Experiences</strong>",
     "url": "ux-animation.html",
-    "image": "https://picsum.photos/id/51/1200/630",
+    "image": "https://picsum.photos/id/27/1200/630",
     "excerpt": "\n\nux animation | Motionix\n<meta name=\"description\" content=\"Complete guide to ux animation. Learn actionable strategies,...",
     "date": "5/6/2026"
   },
