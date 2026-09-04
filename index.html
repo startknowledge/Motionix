@@ -1,216 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Motionix – Premium Web Animation Templates</title>
-  <link rel="stylesheet" href="css/style.css">
-  
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <title>Motionix – Premium Web Animation Templates & GSAP Components</title>
+        <meta name="description" content="Motionix offers premium GSAP-powered animation templates for developers and designers. Build stunning web animations faster with our ready-to-use components." />
+        <meta name="keywords" content="Motionix, Web Animation, GSAP Templates, Animation Components, JavaScript Animation, Premium Animations" />
+        <meta name="author" content="StartKnowledge" />
+        <link rel="canonical" href="https://motionix.startknowledge.in/" />
 
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at top, #0b1220, #000000 70%);
-      color: #ffffff;
-      overflow-x: hidden;
-    }
+        <!-- Favicon (inline SVG) -->
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%231a1a2e'/%3E%3Cstop offset='100%25' stop-color='%2316213e'/%3E%3C/linearGradient%3E%3ClinearGradient id='green' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%230ae448'/%3E%3Cstop offset='100%25' stop-color='%2300c4a0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='4' y='4' width='92' height='92' rx='20' fill='url(%23bg)' stroke='%230ae448' stroke-width='2.5'/%3E%3Ctext x='50' y='66' font-family='Inter, sans-serif' font-size='48' font-weight='800' fill='url(%23green)' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='50' y='88' font-family='Inter, sans-serif' font-size='14' font-weight='600' fill='%23aaa' text-anchor='middle'%3EANIMATION%3C/text%3E%3C/svg%3E" />
 
-    a { text-decoration: none; color: inherit; }
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://motionix.startknowledge.in/" />
+        <meta property="og:title" content="Motionix – Premium Web Animation Templates" />
+        <meta property="og:description" content="Premium GSAP-powered animation templates for developers & designers. Build stunning web animations faster." />
+        <meta property="og:image" content="https://motionix.startknowledge.in/assets/og-image.jpg" />
 
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding: 18px 60px;
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(10px);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 999;
-    }
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Motionix – Premium Web Animation Templates" />
+        <meta name="twitter:description" content="Build stunning web animations faster with Motionix premium GSAP templates." />
 
-    .logo { font-size: 26px; font-weight: 800; letter-spacing: 1px; color: #0ae448; }
+        <!-- JSON-LD Structured Data -->
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://motionix.startknowledge.in/#webpage",
+            "url": "https://motionix.startknowledge.in/",
+            "name": "Motionix – Premium Web Animation Templates",
+            "description": "Motionix offers premium GSAP-powered animation templates for developers and designers.",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://motionix.startknowledge.in/#website",
+                "name": "Motionix",
+                "url": "https://motionix.startknowledge.in/"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "StartKnowledge",
+                "url": "https://www.startknowledge.in/"
+            }
+            }
+        </script>
 
-    nav a { margin-left: 24px; font-weight: 500; opacity: 0.85; }
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    nav a:hover { opacity: 1; color: #0ae448; }
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-    section { padding: 120px 8%; }
+        <!-- Razorpay (for demo) -->
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-    .hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 40px;
-    }
+        <style>
+            /* ===== BASE ===== */
+            * { box-sizing: border-box; margin: 0; padding: 0; }
+            body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top, #0b1220, #000000 70%);
+            color: #ffffff;
+            overflow-x: hidden;
+            line-height: 1.6;
+            }
+            a { text-decoration: none; color: inherit; }
+            a:hover { color: #0ae448; }
 
-    .hero h1 { font-size: 64px; line-height: 1.05; }
-    .hero p { margin-top: 20px; font-size: 18px; opacity: 0.85; }
+            /* ===== NAVIGATION ===== */
+            header.main-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 60px;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+            }
+            .logo { font-size: 26px; font-weight: 800; letter-spacing: 1px; color: #0ae448; }
+            nav a { margin-left: 24px; font-weight: 500; opacity: 0.85; }
+            nav a:hover, nav a[aria-current="page"] { opacity: 1; color: #0ae448; }
 
-    .btn-group { margin-top: 32px; }
+            /* ===== SECTIONS ===== */
+            section { padding: 120px 8%; }
+            .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+            padding-top: 140px;
+            }
+            .hero h1 { font-size: 64px; line-height: 1.05; }
+            .hero p { margin-top: 20px; font-size: 18px; opacity: 0.85; }
+            .btn-group { margin-top: 32px; }
+            .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-right: 14px;
+            transition: 0.3s ease;
+            }
+            .btn.primary { background: #0ae448; color: #000; }
+            .btn.secondary { border: 1px solid #555; }
+            .btn:hover { transform: scale(1.06); }
 
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      border-radius: 30px;
-      font-weight: 600;
-      margin-right: 14px;
-      transition: 0.3s ease;
-    }
+            .hero-visual {
+            width: 100%;
+            height: 420px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #0ae448, #0072ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            font-weight: 800;
+            color: #000;
+            box-shadow: 0 0 80px rgba(10,228,72,0.4);
+            }
 
-    .btn.primary { background: #0ae448; color: #000; }
-    .btn.secondary { border: 1px solid #555; }
+            h2 { font-size: 48px; margin-bottom: 40px; }
+            .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            }
+            .card {
+            background: rgba(255,255,255,0.04);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            transition: 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.06);
+            }
+            .card:hover { transform: translateY(-10px) scale(1.03); box-shadow: 0 0 40px rgba(10,228,72,0.25); }
+            .demo-box {
+            height: 140px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #111, #222);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #0ae448;
+            margin-bottom: 14px;
+            }
+            .price { color: #0ae448; font-size: 20px; font-weight: 700; margin-top: 10px; }
 
-    .btn:hover { transform: scale(1.06); }
+            /* ===== FOOTER (shared) ===== */
+            .site-footer {
+            text-align: center;
+            padding: 40px 20px 30px;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(4px);
+            border-top: 1px solid #2a2a2a;
+            color: #b0b0b0;
+            margin-top: 20px;
+            line-height: 1.8;
+            }
+            .site-footer a { color: #8ab8ff; }
+            .site-footer a:hover { color: #0ae448; text-decoration: underline; }
+            .footer-links, .footer-projects, .footer-contact {
+            margin-top: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 16px;
+            }
+            .footer-projects { font-size: 0.9rem; }
+            .footer-contact { font-size: 0.95rem; }
 
-    .hero-visual {
-      width: 100%;
-      height: 420px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #0ae448, #0072ff);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 38px;
-      font-weight: 800;
-      color: #000;
-      box-shadow: 0 0 80px rgba(10,228,72,0.4);
-    }
+            /* ===== RESPONSIVE ===== */
+            @media (max-width: 900px) {
+            header.main-header { padding: 16px 24px; flex-wrap: wrap; }
+            nav a { margin-left: 12px; font-size: 14px; }
+            .hero { grid-template-columns: 1fr; text-align: center; padding-top: 120px; }
+            .hero h1 { font-size: 48px; }
+            .hero-visual { height: 250px; font-size: 28px; }
+            h2 { font-size: 36px; }
+            }
+            @media (max-width: 600px) {
+            section { padding: 80px 5%; }
+            .hero { min-height: 80vh; }
+            .footer-links, .footer-projects, .footer-contact { flex-direction: column; gap: 4px; }
+            }
+        </style>
+    </head>
 
-    h2 { font-size: 48px; margin-bottom: 40px; }
+    <body>
+        <header class="main-header">
+            <div class="logo">Motionix</div>
+            <nav>
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="terms.html">Terms</a>
+                <a href="faq.html">FAQ</a>
+                <a href="documentation.html">Docs</a>
+                <a href="support.html">Support</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="additional.html">Additional</a>
+                <a href="changelog.html">Changelog</a>
+            </nav>
+        </header>
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-    }
+        <section class="hero">
+            <div>
+                <h1>Build Stunning Web Animations Faster</h1>
+                <p>Premium GSAP powered animation templates for developers & designers.</p>
+                <div class="btn-group">
+                    <a class="btn primary" href="#demos">View Demos</a>
+                    <a class="btn secondary" href="#templates">Browse Templates</a>
+                </div>
+            </div>
 
-    .card {
-      background: rgba(255,255,255,0.04);
-      border-radius: 16px;
-      padding: 24px;
-      text-align: center;
-      transition: 0.3s ease;
-      border: 1px solid rgba(255,255,255,0.06);
-    }
+            <div class="hero-visual">
+                GSAP POWER
+            </div>
+            
+        </section>
 
-    .card:hover { transform: translateY(-10px) scale(1.03); box-shadow: 0 0 40px rgba(10,228,72,0.25); }
+        <section id="demos">
+            <h2>Live Animation Demos</h2>
+            <div class="grid">
+                <div class="card demo">
+                    <div class="demo-box">
+                        Hover Button
+                    </div>
+                    Live Demo
+                </div>
 
-    .demo-box {
-      height: 140px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #111, #222);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: #0ae448;
-      margin-bottom: 14px;
-    }
+                <div class="card demo">
+                    <div class="demo-box">
+                        Scroll Text
+                    </div>
+                    Live Demo
+                </div>
 
-    .price { color: #0ae448; font-size: 20px; font-weight: 700; margin-top: 10px; }
+                <div class="card demo">
+                    <div class="demo-box">
+                        Card Hover
+                    </div>
+                    Live Demo
+                </div>
 
-    footer { text-align: center; padding: 60px 20px; opacity: 0.6; }
+                <div class="card demo">
+                    <div class="demo-box">
+                        Loader
+                    </div>
+                    Live Demo
+                </div>
+            </div>
+        </section>
 
-    @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; text-align: center; }
-      header { padding: 16px 24px; }
-      .hero h1 { font-size: 48px; }
-    }
-  </style>
-</head>
+        <section id="templates">
+            <h2>Featured Templates</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="demo-box">Button Pack</div>
+                    Button Animation Pack
+                    <div class="price">
+                        $9
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="demo-box">
+                        Scroll Pack
+                    </div>
+                    Scroll Animation Pack
+                    <div class="price">
+                        $12
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="demo-box">
+                        Loader Pack
+                    </div>
+                    Loader Animation Pack
+                    <div class="price">
+                        $7
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<body>
+        <section id="work">
+            <h2>How It Works</h2>
+            <div class="grid">
+                <div class="card">1. Choose Template</div>
+                <div class="card">2. Copy Code</div>
+                <div class="card">3. Paste In Project</div>
+                <div class="card">4. Done 🚀</div>
+            </div>
+        </section>
 
-<header>
-  <div class="logo">Motionix</div>
-  <nav>
-    <a href="#demos">Demos</a>
-    <a href="#templates">Templates</a>
-    <a href="#work">How It Works</a>
-  </nav>
-</header>
+        <div class="card" style="max-width:400px; margin:40px auto; text-align:center;">
+            <div class="demo-box">Button Hover Demo</div>
+            <button onclick="openDemo()" style="background:#0ae448; border:none; padding:12px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Live Demo</button>
+            <button onclick="buyTemplate('button-pack',199)" style="background:#333; border:1px solid #0ae448; color:#fff; padding:12px 24px; border-radius:30px; margin-left:8px; cursor:pointer;">Buy ₹199</button>
+        </div>
 
-<section class="hero">
-  <div>
-    <h1>Build Stunning Web Animations Faster</h1>
-    <p>Premium GSAP powered animation templates for developers & designers.</p>
-    <div class="btn-group">
-      <a class="btn primary" href="#demos">View Demos</a>
-      <a class="btn secondary" href="#templates">Browse Templates</a>
-    </div>
-  </div>
-  <div class="hero-visual">GSAP POWER</div>
-</section>
+        <script>
+            // Razorpay demo (placeholder)
+            function buyTemplate(name, price) {
+                alert('Template "' + name + '" added to cart (demo). Price: ₹' + price);
+            }
+            function openDemo() {
+                alert('Live demo preview (simulated).');
+            }
 
-<section id="demos">
-  <h2>Live Animation Demos</h2>
-  <div class="grid">
-    <div class="card demo"><div class="demo-box">Hover Button</div>Live Demo</div>
-    <div class="card demo"><div class="demo-box">Scroll Text</div>Live Demo</div>
-    <div class="card demo"><div class="demo-box">Card Hover</div>Live Demo</div>
-    <div class="card demo"><div class="demo-box">Loader</div>Live Demo</div>
-  </div>
-</section>
+            // GSAP Animations
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.from(".hero h1", { y: 80, opacity: 0, duration: 1.2 });
+            gsap.from(".hero p", { y: 50, opacity: 0, duration: 1, delay: 0.2 });
+            gsap.from(".btn", { scale: 0.8, opacity: 0, duration: 0.8, delay: 0.4, stagger: 0.1 });
+            gsap.utils.toArray(".card").forEach(card => {
+                gsap.from(card, { scrollTrigger: { trigger: card, start: "top 85%" }, y: 60, opacity: 0, duration: 0.8 });
+            });
+        </script>
 
-<section id="templates">
-  <h2>Featured Templates</h2>
-  <div class="grid">
-    <div class="card"><div class="demo-box">Button Pack</div>Button Animation Pack<div class="price">$9</div></div>
-    <div class="card"><div class="demo-box">Scroll Pack</div>Scroll Animation Pack<div class="price">$12</div></div>
-    <div class="card"><div class="demo-box">Loader Pack</div>Loader Animation Pack<div class="price">$7</div></div>
-  </div>
-</section>
+        <!-- ===== FOOTER ===== -->
+        <footer class="site-footer">
+        <p>&copy; 2026 Motionix | A <a href="https://www.startknowledge.in/" target="_blank">StartKnowledge</a> Project. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="cookies.html">Cookies Policy</a> |
+            <a href="terms.html">Terms &amp; Conditions</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="documentation.html">Documentation</a> |
+            <a href="support.html">Support</a> |
+            <a href="disclaimer.html">Disclaimer</a> |
+            <a href="changelog.html">Changelog</a> |
+            <a href="additional.html">Additional</a>
+        </div>
+        <div class="footer-projects">
+            <a href="https://www.startknowledge.in/blog/" target="_blank" rel="noopener noreferrer">Blogs</a> |
+            <a href="https://www.startknowledge.in/" target="_blank" rel="noopener noreferrer">StartKnowledge.in</a> |
+            <a href="https://ultrastaticseoengine.startknowledge.in/" target="_blank" rel="noopener noreferrer">Ultra Static SEO Engine</a> |
+            <a href="https://youtubevideointanalyzer.startknowledge.in/" target="_blank" rel="noopener noreferrer">YouTube Video Analyzer</a> |
+            <a href="https://calculatorlibraryportal.startknowledge.in/" target="_blank" rel="noopener noreferrer">Calculator Library</a> |
+            <a href="https://bnrationscale.startknowledge.in/" target="_blank" rel="noopener noreferrer">BN Ration Scale</a> |
+            <a href="https://pencalculator.startknowledge.in/" target="_blank" rel="noopener noreferrer">Army Pension Calculator</a> |
+            <a href="https://aimosaicstudio.startknowledge.in/" target="_blank" rel="noopener noreferrer">AiMosaic Studio</a> |
+            <a href="https://designpainting.startknowledge.in/" target="_blank" rel="noopener noreferrer">Design Painting</a> |
+            <a href="https://motionix.startknowledge.in/" target="_blank" rel="noopener noreferrer">Motionix</a>
+        </div>
+        <div class="footer-contact">
+            📧 <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a> |
+            📧 <a href="mailto:support@startknowledge.in">support@startknowledge.in</a> |
+            📧 <a href="mailto:hello@startknowledge.in">hello@startknowledge.in</a>
+        </div>
+        </footer>
 
-<section id="work">
-  <h2>How It Works</h2>
-  <div class="grid">
-    <div class="card">1. Choose Template</div>
-    <div class="card">2. Copy Code</div>
-    <div class="card">3. Paste In Project</div>
-    <div class="card">4. Done 🚀</div>
-  </div>
-</section>
-<div class="card">
-  <div class="demo-box">Button Hover Demo</div>
-
-  <button onclick="openDemo()">Live Demo</button>
-
-  <!--<button onclick="buyTemplate('button-pack')">
-    Buy ₹199
-  </button>-->
-  <button onclick="buyTemplate('button-pack',199)">Buy ₹199</button>
-</div>
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<script src="js/main.js"></script>
-
-<footer>
-  © 2026 Motionix — Premium Web Animations
-</footer>
-
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.from(".hero h1", { y: 80, opacity: 0, duration: 1.2 });
-  gsap.from(".hero p", { y: 50, opacity: 0, duration: 1, delay: 0.2 });
-  gsap.from(".btn", { scale: 0.8, opacity: 0, duration: 0.8, delay: 0.4, stagger: 0.1 });
-
-  gsap.utils.toArray(".card").forEach(card => {
-    gsap.from(card, {
-      scrollTrigger: { trigger: card, start: "top 85%" },
-      y: 60, opacity: 0, duration: 0.8
-    });
-  });
-</script>
-
-</body>
+    </body>
 </html>

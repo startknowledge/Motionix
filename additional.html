@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Documentation – Motionix</title>
-  <meta name="description" content="Complete documentation for Motionix. Learn how to install, customise, and use our GSAP animation templates effectively." />
-  <meta name="keywords" content="Documentation, Motionix Guide, How to Use GSAP Templates, Animation Help" />
+  <title>Additional Information – Motionix</title>
+  <meta name="description" content="Additional information about Motionix, including our technology stack, roadmap, and other supplementary details." />
+  <meta name="keywords" content="Additional Information, Motionix Tech Stack, Roadmap, Project Details" />
   <meta name="author" content="StartKnowledge" />
-  <link rel="canonical" href="https://motionix.startknowledge.in/documentation.html" />
+  <link rel="canonical" href="https://motionix.startknowledge.in/additional.html" />
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%231a1a2e'/%3E%3Cstop offset='100%25' stop-color='%2316213e'/%3E%3C/linearGradient%3E%3ClinearGradient id='green' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%230ae448'/%3E%3Cstop offset='100%25' stop-color='%2300c4a0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='4' y='4' width='92' height='92' rx='20' fill='url(%23bg)' stroke='%230ae448' stroke-width='2.5'/%3E%3Ctext x='50' y='66' font-family='Inter, sans-serif' font-size='48' font-weight='800' fill='url(%23green)' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='50' y='88' font-family='Inter, sans-serif' font-size='14' font-weight='600' fill='%23aaa' text-anchor='middle'%3EANIMATION%3C/text%3E%3C/svg%3E" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://motionix.startknowledge.in/documentation.html" />
-  <meta property="og:title" content="Documentation – Motionix" />
-  <meta property="og:description" content="Complete user guide for Motionix GSAP templates." />
-  <meta property="og:image" content="https://motionix.startknowledge.in/assets/og-docs.jpg" />
+  <meta property="og:url" content="https://motionix.startknowledge.in/additional.html" />
+  <meta property="og:title" content="Additional Information – Motionix" />
+  <meta property="og:description" content="Supplementary information about Motionix." />
+  <meta property="og:image" content="https://motionix.startknowledge.in/assets/og-additional.jpg" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Documentation – Motionix" />
-  <meta name="twitter:description" content="Learn how to use Motionix templates." />
+  <meta name="twitter:title" content="Additional Information – Motionix" />
+  <meta name="twitter:description" content="Additional details about Motionix." />
 
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "@id": "https://motionix.startknowledge.in/documentation.html#webpage",
-      "url": "https://motionix.startknowledge.in/documentation.html",
-      "name": "Documentation – Motionix",
-      "description": "Complete documentation for Motionix animation templates.",
+      "@id": "https://motionix.startknowledge.in/additional.html#webpage",
+      "url": "https://motionix.startknowledge.in/additional.html",
+      "name": "Additional Information – Motionix",
+      "description": "Additional information about Motionix.",
       "isPartOf": {
         "@type": "WebSite",
         "@id": "https://motionix.startknowledge.in/#website",
@@ -44,7 +44,7 @@
   </script>
 
   <style>
-    /* Same shared CSS as above – abbreviated for space */
+    /* Same shared CSS */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Inter', sans-serif;
@@ -100,22 +100,25 @@
     h2 { font-size: 1.9rem; color: #0ae448; margin-bottom: 18px; border-bottom: 2px solid #2a2a2a; padding-bottom: 10px; }
     h3 { font-size: 1.4rem; color: #0ae448; margin: 24px 0 12px; }
     p { margin-bottom: 16px; color: #d0d0d0; }
-    ul, ol { padding-left: 28px; margin-bottom: 16px; }
+    ul { padding-left: 28px; margin-bottom: 16px; }
     li { margin-bottom: 8px; color: #c0c0c0; }
-    .step {
-      background: rgba(40,40,40,0.4);
-      border-radius: 10px;
-      padding: 14px 18px;
-      margin-bottom: 12px;
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin-top: 16px;
     }
-    .step strong { color: #0ae448; }
-    .highlight {
-      border-left: 5px solid #0ae448;
-      background: rgba(10,228,72,0.08);
-      padding: 16px 22px;
-      border-radius: 8px;
-      margin: 20px 0;
+    .project-card {
+      background: rgba(40,40,40,0.6);
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 18px 16px;
+      transition: background 0.2s;
     }
+    .project-card:hover { background: rgba(50,50,50,0.8); }
+    .project-card h3 { margin-top: 0; font-size: 1.1rem; color: #0ae448; }
+    .project-card p { font-size: 0.95rem; color: #b0b0b0; margin-bottom: 10px; }
+    .project-card a { font-weight: 600; }
     .site-footer {
       text-align: center;
       padding: 40px 20px 30px;
@@ -161,82 +164,82 @@
     <a href="cookies.html">Cookies</a>
     <a href="terms.html">Terms</a>
     <a href="faq.html">FAQ</a>
-    <a href="documentation.html" aria-current="page">Docs</a>
+    <a href="documentation.html">Docs</a>
     <a href="support.html">Support</a>
     <a href="disclaimer.html">Disclaimer</a>
-    <a href="additional.html">Additional</a>
+    <a href="additional.html" aria-current="page">Additional</a>
     <a href="changelog.html">Changelog</a>
   </nav>
 </header>
 
 <div class="page-header">
-  <h1>Documentation</h1>
-  <p>Everything you need to know to install, customise, and use Motionix animation templates.</p>
-  <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;›&nbsp; Documentation</div>
+  <h1>Additional Information</h1>
+  <p>Supplementary details about Motionix – our technology, roadmap, and other key facts.</p>
+  <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;›&nbsp; Additional</div>
 </div>
 
 <main class="container">
   <section class="content-card">
-    <h2>Getting Started</h2>
-    <p>Welcome to Motionix! This guide will help you integrate our <a href="https://designpainting.startknowledge.in/" target="_blank" rel="noopener noreferrer">Design GSAP</a> templates into your projects quickly.</p>
-
-    <div class="step">
-      <p><strong>Step 1: Choose Your Template</strong></p>
-      <p>Browse our collection and select the template that fits your needs. Each template includes a live demo and detailed description.</p>
-    </div>
-    <div class="step">
-      <p><strong>Step 2: Purchase or Download</strong></p>
-      <p>If it's a paid template, complete the purchase via Razorpay. Free templates can be downloaded immediately.</p>
-    </div>
-    <div class="step">
-      <p><strong>Step 3: Extract Files</strong></p>
-      <p>Unzip the downloaded file. You'll find HTML, CSS, and JavaScript files, along with a README.</p>
-    </div>
-    <div class="step">
-      <p><strong>Step 4: Add to Your Project</strong></p>
-      <p>Copy the relevant code into your HTML, CSS, and JS files. Ensure <a href="https://designpainting.startknowledge.in/" target="_blank" rel="noopener noreferrer">Design GSAP</a>  is loaded if not already included.</p>
-    </div>
-    <div class="step">
-      <p><strong>Step 5: Customise</strong></p>
-      <p>Adjust colours, timing, easing, and other parameters to match your brand and design.</p>
-    </div>
-  </section>
-
-  <section class="content-card">
-    <h2>Customisation Guide</h2>
-    <h3>Changing Colours</h3>
-    <p>Most templates use CSS variables for colours. Look for <code>:root</code> in the CSS file and update the values.</p>
-    <h3>Adjusting Animation Timing</h3>
-    <p>In the JavaScript file, you'll find GSAP timelines. Modify the <code>duration</code> and <code>delay</code> parameters to speed up or slow down animations.</p>
-    <h3>Adding New Elements</h3>
-    <p>You can extend the template by adding your own HTML elements and corresponding GSAP animations.</p>
-  </section>
-
-  <section class="content-card">
-    <h2>Integration Examples</h2>
-    <p>Here are some common use cases for our templates:</p>
+    <h2>Technology Stack</h2>
+    <p>Motionix is built using modern web technologies to deliver a fast, secure, and smooth user experience.</p>
     <ul>
-      <li><strong>Landing Pages:</strong> Use hero animations to capture attention.</li>
-      <li><strong>Portfolios:</strong> Add scroll‑triggered reveals for projects.</li>
-      <li><strong>E‑commerce:</strong> Create engaging product hover effects.</li>
-      <li><strong>Dashboards:</strong> Use loader animations to improve perceived performance.</li>
+      <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+)</li>
+      <li><strong>Animation Library:</strong> GSAP with ScrollTrigger</li>
+      <li><strong>Fonts:</strong> Google Fonts (Inter)</li>
+      <li><strong>Payment Processing:</strong> Razorpay (for demo)</li>
+      <li><strong>Hosting:</strong> Static hosting on StartKnowledge</li>
     </ul>
   </section>
 
   <section class="content-card">
-    <h2>Performance Tips</h2>
+    <h2>Project Roadmap</h2>
+    <p>We are continuously improving Motionix. Here's what's planned for the future:</p>
     <ul>
-      <li>Use <code>will-change</code> and <code>transform</code> for smooth GPU‑accelerated animations.</li>
-      <li>Minimise DOM manipulation during animations.</li>
-      <li>Use GSAP's <code>ScrollTrigger</code> efficiently to avoid performance bottlenecks.</li>
+      <li><strong>Q4 2026:</strong> Launch of 20 new templates, including 3D and interactive elements.</li>
+      <li><strong>Q1 2027:</strong> Introduce a subscription model for unlimited access.</li>
+      <li><strong>Q2 2027:</strong> Build a community platform for users to share custom templates.</li>
+      <li><strong>Q3 2027:</strong> Integration with popular frameworks like React and Vue.</li>
     </ul>
-    <div class="highlight">For more advanced optimizations, refer to the <a href="https://gsap.com/docs/" target="_blank">GSAP documentation</a>.</div>
+    <div class="highlight">We welcome feature requests – let us know what you'd like to see!</div>
   </section>
 
   <section class="content-card">
-    <h2>Need More Help?</h2>
-    <p>Check our <a href="faq.html">FAQ</a> or visit the <a href="support.html">Support</a> page. You can also reach out to us directly.</p>
+    <h2>Affiliations &amp; Ecosystem</h2>
+    <p>Motionix is a proud member of the StartKnowledge family of projects. Explore other innovative tools:</p>
+    <div class="project-grid">
+      <div class="project-card"><h3>Ultra Static SEO Engine</h3><p>Static website and SEO automation project.</p><a href="https://ultrastaticseoengine.startknowledge.in/" target="_blank">Visit →</a></div>
+      <div class="project-card"><h3>YouTube Video Analyzer</h3><p>Video analysis and YouTube intelligence.</p><a href="https://youtubevideointanalyzer.startknowledge.in/" target="_blank">Visit →</a></div>
+      <div class="project-card"><h3>Calculator Library</h3><p>A collection of calculators and utility tools.</p><a href="https://calculatorlibraryportal.startknowledge.in/" target="_blank">Visit →</a></div>
+      <div class="project-card"><h3>BN Ration Scale</h3><p>Battalion ration calculation utility.</p><a href="https://bnrationscale.startknowledge.in/" target="_blank">Visit →</a></div>
+      <div class="project-card"><h3>Army Pension Calculator</h3><p>Pension calculation and reference utility.</p><a href="https://pencalculator.startknowledge.in/" target="_blank">Visit →</a></div>
+      <div class="project-card"><h3>AiMosaic Studio</h3><p>AI and creative technology project.</p><a href="https://aimosaicstudio.startknowledge.in/" target="_blank">Visit →</a></div>
+      <div class="project-card"><h3>Design Painting</h3><p>Design and creative visual project.</p><a href="https://designpainting.startknowledge.in/" target="_blank">Visit →</a></div>
+      <div class="project-card"><h3>Motionix</h3><p>Motion and digital creative technology project.</p><a href="https://motionix.startknowledge.in/" target="_blank">Visit →</a></div>
+    </div>
   </section>
+
+  <section class="content-card">
+    <h2>Open Source &amp; Credits</h2>
+    <p>Motionix uses several open‑source libraries and frameworks. We are grateful to the developers and communities behind them.</p>
+    <ul>
+      <li><strong>GSAP</strong> – Commercial license</li>
+      <li><strong>Inter</strong> – Open‑source font (SIL OFL)</li>
+      <li><strong>Razorpay</strong> – Payment API</li>
+    </ul>
+  </section>
+
+    <section class="content-card">
+        <h2>Contact</h2>    
+        <p>
+            <strong>
+                Email:- <br>
+            </strong> 
+            
+            📧 <a href="mailto:support@startknowledge.in">support@startknowledge.in</a> <br>
+            📧 <a href="mailto:hello@startknowledge.in">hello@startknowledge.in</a></p>
+        
+            <p>For any additional questions, please reach out to us at <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a>.</p>
+    </section>
 </main>
 
 <footer class="site-footer">
