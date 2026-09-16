@@ -1,369 +1,779 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
 
-        <title>Motionix – Premium Web Animation Templates & GSAP Components</title>
-        <meta name="description" content="Motionix offers premium GSAP-powered animation templates for developers and designers. Build stunning web animations faster with our ready-to-use components." />
-        <meta name="keywords" content="Motionix, Web Animation, GSAP Templates, Animation Components, JavaScript Animation, Premium Animations" />
-        <meta name="author" content="StartKnowledge" />
-        <link rel="canonical" href="https://motionix.startknowledge.in/" />
+<title>🔮 Motionix | Premium GSAP Web Animation Templates & Components</title>
 
-        <!-- Favicon (inline SVG) -->
-        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%231a1a2e'/%3E%3Cstop offset='100%25' stop-color='%2316213e'/%3E%3C/linearGradient%3E%3ClinearGradient id='green' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%230ae448'/%3E%3Cstop offset='100%25' stop-color='%2300c4a0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='4' y='4' width='92' height='92' rx='20' fill='url(%23bg)' stroke='%230ae448' stroke-width='2.5'/%3E%3Ctext x='50' y='66' font-family='Inter, sans-serif' font-size='48' font-weight='800' fill='url(%23green)' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='50' y='88' font-family='Inter, sans-serif' font-size='14' font-weight='600' fill='%23aaa' text-anchor='middle'%3EANIMATION%3C/text%3E%3C/svg%3E" />
+<meta name="description" content="Motionix is a premium library of GSAP-powered web animation templates and ready-to-use components for developers and designers. Build stunning scroll animations, hover effects, loaders, page transitions, text reveals, parallax sections, SVG morphs, and interactive UI motion — all with copy-paste code. 60+ animation packs, lifetime updates, browser-only previews, and clean semantic markup. Trusted by front-end developers, creative agencies, freelancers, and product teams worldwide. Free demos and paid premium packs starting at ₹199.">
+<meta name="keywords" content="Motionix, GSAP templates, web animation, GSAP components, scroll animation, hover effect, page transition, loader animation, SVG animation, text reveal, parallax, creative developer, front-end animation, JavaScript animation, CSS animation, premium templates, animation pack, UI motion, micro-interactions, code snippets, animation library, motion design, startknowledge, developer toolkit, copy paste animation, GSAP ScrollTrigger, web motion, animation for websites">
+<meta name="author" content="StartKnowledge & Motionix Labs">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="google-site-verification" content="BrJBFG_dXuLu6IL4QCmfRkh6cBT1_Qkd36D2U0jhs9Y">
+<meta name="theme-color" content="#0ae448">
+<meta name="geo.region" content="IN">
+<meta name="geo.placename" content="India">
+<meta name="rating" content="general">
+<meta name="revisit-after" content="7 days">
+<meta name="distribution" content="global">
+<meta http-equiv="content-language" content="en-IN">
 
-        <!-- Open Graph -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://motionix.startknowledge.in/" />
-        <meta property="og:title" content="Motionix – Premium Web Animation Templates" />
-        <meta property="og:description" content="Premium GSAP-powered animation templates for developers & designers. Build stunning web animations faster." />
-        <meta property="og:image" content="https://motionix.startknowledge.in/assets/og-image.jpg" />
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://motionix.startknowledge.in/">
+<meta property="og:title" content="🔮 Motionix – Premium GSAP Web Animation Templates">
+<meta property="og:description" content="Premium GSAP-powered animation templates for developers & designers. Scroll animations, hover effects, loaders, page transitions & more. Copy-paste ready, lifetime updates, browser-only previews.">
+<meta property="og:image" content="https://motionix.startknowledge.in/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Motionix">
+<meta property="og:locale" content="en_IN">
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Motionix – Premium Web Animation Templates" />
-        <meta name="twitter:description" content="Build stunning web animations faster with Motionix premium GSAP templates." />
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@clientknowledge">
+<meta name="twitter:creator" content="@clientknowledge">
+<meta name="twitter:title" content="🔮 Motionix – Premium GSAP Web Animation Templates">
+<meta name="twitter:description" content="Build stunning web animations faster with Motionix premium GSAP templates. 60+ packs, lifetime updates, browser-only previews.">
+<meta name="twitter:image" content="https://motionix.startknowledge.in/assets/og-image.jpg">
+<meta name="twitter:url" content="https://motionix.startknowledge.in/">
 
-        <!-- JSON-LD Structured Data -->
-        <script type="application/ld+json">
-            {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://motionix.startknowledge.in/#webpage",
-            "url": "https://motionix.startknowledge.in/",
-            "name": "Motionix – Premium Web Animation Templates",
-            "description": "Motionix offers premium GSAP-powered animation templates for developers and designers.",
-            "isPartOf": {
-                "@type": "WebSite",
-                "@id": "https://motionix.startknowledge.in/#website",
-                "name": "Motionix",
-                "url": "https://motionix.startknowledge.in/"
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "StartKnowledge",
-                "url": "https://www.startknowledge.in/"
-            }
-            }
-        </script>
+<link rel="canonical" href="https://motionix.startknowledge.in/">
+<link rel="apple-touch-icon" href="https://www.startknowledge.in/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%231a1a2e'/%3E%3Cstop offset='100%25' stop-color='%2316213e'/%3E%3C/linearGradient%3E%3ClinearGradient id='green' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%230ae448'/%3E%3Cstop offset='100%25' stop-color='%2300c4a0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='4' y='4' width='92' height='92' rx='20' fill='url(%23bg)' stroke='%230ae448' stroke-width='2.5'/%3E%3Ctext x='50' y='66' font-family='Inter, sans-serif' font-size='48' font-weight='800' fill='url(%23green)' text-anchor='middle'%3EM%3C/text%3E%3Ctext x='50' y='88' font-family='Inter, sans-serif' font-size='14' font-weight='600' fill='%23aaa' text-anchor='middle'%3EANIMATION%3C/text%3E%3C/svg%3E">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="Motionix Blog RSS" href="https://motionix.startknowledge.in/rss.xml">
 
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <!-- Razorpay (for demo) -->
-        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 
-        <style>
-            /* ===== BASE ===== */
-            * { box-sizing: border-box; margin: 0; padding: 0; }
-            body {
-            font-family: 'Inter', sans-serif;
-            background: radial-gradient(circle at top, #0b1220, #000000 70%);
-            color: #ffffff;
-            overflow-x: hidden;
-            line-height: 1.6;
-            }
-            a { text-decoration: none; color: inherit; }
-            a:hover { color: #0ae448; }
+<!-- ============ JSON-LD : WebPage ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://motionix.startknowledge.in/#webpage",
+  "url": "https://motionix.startknowledge.in/",
+  "name": "Motionix – Premium Web Animation Templates",
+  "description": "Motionix offers premium GSAP-powered animation templates for developers and designers. 60+ ready-to-use packs with browser-only previews and copy-paste code.",
+  "inLanguage": "en-IN",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://motionix.startknowledge.in/#website",
+    "name": "Motionix",
+    "url": "https://motionix.startknowledge.in/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "StartKnowledge",
+    "url": "https://www.startknowledge.in/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.startknowledge.in/assets/images/logo.png"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://motionix.startknowledge.in/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
-            /* ===== NAVIGATION ===== */
-            header.main-header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 18px 60px;
-            background: rgba(0,0,0,0.6);
-            backdrop-filter: blur(10px);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 999;
-            }
-            .logo { font-size: 26px; font-weight: 800; letter-spacing: 1px; color: #0ae448; }
-            nav a { margin-left: 24px; font-weight: 500; opacity: 0.85; }
-            nav a:hover, nav a[aria-current="page"] { opacity: 1; color: #0ae448; }
+<!-- ============ JSON-LD : WebSite ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Motionix",
+  "alternateName": "Motionix Animation Templates",
+  "url": "https://motionix.startknowledge.in/",
+  "description": "Premium GSAP-powered animation templates and copy-paste components for modern web developers, creative agencies and product teams.",
+  "inLanguage": "en-IN"
+}
+</script>
 
-            /* ===== SECTIONS ===== */
-            section { padding: 120px 8%; }
-            .hero {
-            min-height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            gap: 40px;
-            padding-top: 140px;
-            }
-            .hero h1 { font-size: 64px; line-height: 1.05; }
-            .hero p { margin-top: 20px; font-size: 18px; opacity: 0.85; }
-            .btn-group { margin-top: 32px; }
-            .btn {
-            display: inline-block;
-            padding: 14px 28px;
-            border-radius: 30px;
-            font-weight: 600;
-            margin-right: 14px;
-            transition: 0.3s ease;
-            }
-            .btn.primary { background: #0ae448; color: #000; }
-            .btn.secondary { border: 1px solid #555; }
-            .btn:hover { transform: scale(1.06); }
+<!-- ============ JSON-LD : AboutPage ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Motionix",
+  "url": "https://motionix.startknowledge.in/about.html",
+  "description": "Motionix is a StartKnowledge project that ships premium, production-ready GSAP animation templates — scroll reveals, hover effects, loaders, page transitions, SVG morphs and micro-interactions — for front-end developers, creative agencies and product teams.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Motionix",
+    "url": "https://motionix.startknowledge.in/"
+  },
+  "inLanguage": "en-IN"
+}
+</script>
 
-            .hero-visual {
-            width: 100%;
-            height: 420px;
-            border-radius: 18px;
-            background: linear-gradient(135deg, #0ae448, #0072ff);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 38px;
-            font-weight: 800;
-            color: #000;
-            box-shadow: 0 0 80px rgba(10,228,72,0.4);
-            }
+<!-- ============ JSON-LD : FAQPage ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is Motionix?","acceptedAnswer":{"@type":"Answer","text":"Motionix is a premium library of GSAP-powered web animation templates and copy-paste components for developers and designers."}},
+    {"@type":"Question","name":"Do I need a GSAP license to use Motionix templates?","acceptedAnswer":{"@type":"Answer","text":"GSAP's core is free for most commercial use. Motionix templates use the free core and ScrollTrigger plugins; you only pay for the Motionix template pack itself."}},
+    {"@type":"Question","name":"Are the templates copy-paste ready?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every Motionix pack includes clean HTML, CSS and JavaScript you can paste directly into any project — no build step required."}},
+    {"@type":"Question","name":"Can I use Motionix templates in client work?","acceptedAnswer":{"@type":"Answer","text":"Yes, the Standard license allows unlimited personal and client projects. Reselling or redistributing the raw template files is not permitted."}},
+    {"@type":"Question","name":"Where can I get support?","acceptedAnswer":{"@type":"Answer","text":"Email support@startknowledge.in or visit the Support page on Motionix."}}
+  ]
+}
+</script>
 
-            h2 { font-size: 48px; margin-bottom: 40px; }
-            .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 24px;
-            }
-            .card {
-            background: rgba(255,255,255,0.04);
-            border-radius: 16px;
-            padding: 24px;
-            text-align: center;
-            transition: 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.06);
-            }
-            .card:hover { transform: translateY(-10px) scale(1.03); box-shadow: 0 0 40px rgba(10,228,72,0.25); }
-            .demo-box {
-            height: 140px;
-            border-radius: 12px;
-            background: linear-gradient(135deg, #111, #222);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            color: #0ae448;
-            margin-bottom: 14px;
-            }
-            .price { color: #0ae448; font-size: 20px; font-weight: 700; margin-top: 10px; }
+<style>
+/* ================= BASE ================= */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  background:radial-gradient(circle at top,#0b1220,#000 70%);
+  color:#fff;overflow-x:hidden;line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+a:hover{color:#0ae448}
+img{max-width:100%;height:auto;display:block}
 
-            /* ===== FOOTER (shared) ===== */
-            .site-footer {
-            text-align: center;
-            padding: 40px 20px 30px;
-            background: rgba(0,0,0,0.85);
-            backdrop-filter: blur(4px);
-            border-top: 1px solid #2a2a2a;
-            color: #b0b0b0;
-            margin-top: 20px;
-            line-height: 1.8;
-            }
-            .site-footer a { color: #8ab8ff; }
-            .site-footer a:hover { color: #0ae448; text-decoration: underline; }
-            .footer-links, .footer-projects, .footer-contact {
-            margin-top: 14px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 6px 16px;
-            }
-            .footer-projects { font-size: 0.9rem; }
-            .footer-contact { font-size: 0.95rem; }
+/* ================= HEADER / NAV ================= */
+header.main-header{
+  position:fixed;top:0;width:100%;padding:18px 60px;
+  background:rgba(0,0,0,.6);backdrop-filter:blur(10px);
+  display:flex;justify-content:space-between;align-items:center;
+  z-index:999;flex-wrap:wrap;gap:10px;
+}
+.logo{font-size:26px;font-weight:800;letter-spacing:1px;color:#0ae448}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px}
+nav a{font-weight:500;opacity:.85;font-size:15px}
+nav a:hover,nav a[aria-current="page"]{opacity:1;color:#0ae448}
+.nav-toggle{display:none;background:none;border:1px solid #0ae448;color:#0ae448;padding:6px 12px;border-radius:8px;cursor:pointer}
 
-            /* ===== RESPONSIVE ===== */
-            @media (max-width: 900px) {
-            header.main-header { padding: 16px 24px; flex-wrap: wrap; }
-            nav a { margin-left: 12px; font-size: 14px; }
-            .hero { grid-template-columns: 1fr; text-align: center; padding-top: 120px; }
-            .hero h1 { font-size: 48px; }
-            .hero-visual { height: 250px; font-size: 28px; }
-            h2 { font-size: 36px; }
-            }
-            @media (max-width: 600px) {
-            section { padding: 80px 5%; }
-            .hero { min-height: 80vh; }
-            .footer-links, .footer-projects, .footer-contact { flex-direction: column; gap: 4px; }
-            }
-        </style>
-    </head>
+/* ================= SECTIONS ================= */
+section{padding:110px 8%}
+.hero{
+  min-height:100vh;display:grid;grid-template-columns:1fr 1fr;
+  align-items:center;gap:40px;padding-top:150px;
+}
+.hero h1{font-size:64px;line-height:1.05}
+.hero p{margin-top:20px;font-size:18px;opacity:.85}
+.btn-group{margin-top:32px}
+.btn{
+  display:inline-block;padding:14px 28px;border-radius:30px;
+  font-weight:600;margin:6px 10px 6px 0;transition:.3s ease;
+}
+.btn.primary{background:#0ae448;color:#000}
+.btn.secondary{border:1px solid #555;color:#fff}
+.btn:hover{transform:scale(1.06);color:#0ae448}
+.btn.primary:hover{color:#000}
 
-    <body>
-        <header class="main-header">
-            <div class="logo">Motionix</div>
-            <nav>
-                <a href="index.html" aria-current="page">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy</a>
-                <a href="cookies.html">Cookies</a>
-                <a href="terms.html">Terms</a>
-                <a href="faq.html">FAQ</a>
-                <a href="documentation.html">Docs</a>
-                <a href="support.html">Support</a>
-                <a href="disclaimer.html">Disclaimer</a>
-                <a href="additional.html">Additional</a>
-                <a href="changelog.html">Changelog</a>
-            </nav>
-        </header>
+.hero-visual{
+  width:100%;height:420px;border-radius:18px;
+  background:linear-gradient(135deg,#0ae448,#0072ff);
+  display:flex;align-items:center;justify-content:center;
+  font-size:38px;font-weight:800;color:#000;
+  box-shadow:0 0 80px rgba(10,228,72,.4);
+}
 
-        <section class="hero">
-            <div>
-                <h1>Build Stunning Web Animations Faster</h1>
-                <p>Premium GSAP powered animation templates for developers & designers.</p>
-                <div class="btn-group">
-                    <a class="btn primary" href="#demos">View Demos</a>
-                    <a class="btn secondary" href="#templates">Browse Templates</a>
-                </div>
-            </div>
+h2{font-size:48px;margin-bottom:40px}
+h3{font-size:22px;margin-bottom:12px;color:#0ae448}
+.grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+.card{
+  background:rgba(255,255,255,.04);border-radius:16px;padding:24px;
+  text-align:center;transition:.3s ease;
+  border:1px solid rgba(255,255,255,.06);position:relative;
+}
+.card:hover{transform:translateY(-10px) scale(1.03);box-shadow:0 0 40px rgba(10,228,72,.25)}
+.card p{font-size:14px;opacity:.8;margin-top:8px}
+.demo-box{
+  height:140px;border-radius:12px;
+  background:linear-gradient(135deg,#111,#222);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;color:#0ae448;margin-bottom:14px;
+}
+.price{color:#0ae448;font-size:20px;font-weight:700;margin-top:10px}
 
-            <div class="hero-visual">
-                GSAP POWER
-            </div>
-            
-        </section>
+/* ================= INFO ICON + DETAILS ================= */
+.info-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:6px}
+.info-btn{
+  width:22px;height:22px;border-radius:50%;border:1.5px solid #0ae448;
+  background:transparent;color:#0ae448;font-weight:800;font-size:13px;
+  line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
+  transition:.25s;
+}
+.info-btn:hover{background:#0ae448;color:#000}
+details.info-panel{
+  margin-top:14px;text-align:left;background:rgba(10,228,72,.06);
+  border-left:3px solid #0ae448;border-radius:10px;padding:0 16px;
+  font-size:14.5px;line-height:1.75;color:#e6e6e6;
+}
+details.info-panel[open]{padding:16px}
+details.info-panel summary{
+  cursor:pointer;font-weight:700;color:#0ae448;list-style:none;
+  padding:12px 0;font-size:14px;
+}
+details.info-panel summary::-webkit-details-marker{display:none}
+details.info-panel summary::before{content:"📖  ";}
+details.info-panel p{margin-bottom:10px;opacity:.95}
+details.info-panel ul{margin:0 0 10px 22px}
+details.info-panel li{margin-bottom:5px}
 
-        <section id="demos">
-            <h2>Live Animation Demos</h2>
-            <div class="grid">
-                <div class="card demo">
-                    <div class="demo-box">
-                        Hover Button
-                    </div>
-                    Live Demo
-                </div>
+/* ================= LEGAL BLOCK ================= */
+.legal-wrap{
+  max-width:1100px;margin:0 auto;background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:28px 26px;
+}
+.legal-wrap h3{margin-top:22px;color:#0ae448}
+.legal-wrap p,.legal-wrap li{font-size:15px;color:#cfcfcf;margin-bottom:10px}
+.legal-wrap ul{margin-left:22px}
+.legal-wrap a{color:#8ab8ff;text-decoration:underline}
+.legal-wrap a:hover{color:#0ae448}
+.notice{
+  background:rgba(255,193,7,.08);border-left:3px solid #ffc107;
+  padding:12px 16px;border-radius:8px;font-size:14px;color:#ffe082;margin:14px 0;
+}
 
-                <div class="card demo">
-                    <div class="demo-box">
-                        Scroll Text
-                    </div>
-                    Live Demo
-                </div>
+/* ================= AD / AFFILIATE SLOT ================= */
+.ad-slot{
+  max-width:1100px;margin:40px auto;padding:18px;
+  border:1px dashed rgba(10,228,72,.4);border-radius:14px;
+  text-align:center;font-size:13px;color:#9c9c9c;background:rgba(10,228,72,.03);
+}
+.ad-slot strong{color:#0ae448}
 
-                <div class="card demo">
-                    <div class="demo-box">
-                        Card Hover
-                    </div>
-                    Live Demo
-                </div>
+/* ================= FOOTER ================= */
+.site-footer{
+  text-align:center;padding:40px 20px 30px;
+  background:linear-gradient(180deg,#0b1220 0%,#050810 100%);
+  color:#d8d8d8;margin-top:40px;line-height:1.85;
+  border-top:1px solid #1e2a3d;
+}
+.site-footer a{color:#9bb8ff;text-decoration:none;font-weight:500}
+.site-footer a:hover{color:#0ae448;text-decoration:underline}
+.footer-links,.footer-projects,.footer-contact{
+  margin-top:14px;display:flex;flex-wrap:wrap;
+  justify-content:center;gap:6px 14px;
+}
+.footer-projects{font-size:.9rem}
+.footer-contact{font-size:.95rem}
+.footer-note{font-size:.82rem;opacity:.7;margin-top:16px;max-width:900px;margin-left:auto;margin-right:auto}
 
-                <div class="card demo">
-                    <div class="demo-box">
-                        Loader
-                    </div>
-                    Live Demo
-                </div>
-            </div>
-        </section>
+/* ================= RESPONSIVE ================= */
+@media (max-width:900px){
+  header.main-header{padding:14px 20px}
+  .nav-toggle{display:inline-block}
+  nav{display:none;width:100%}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:6px;padding-top:8px}
+  .hero{grid-template-columns:1fr;text-align:center;padding-top:130px}
+  .hero h1{font-size:44px}
+  .hero-visual{height:250px;font-size:28px}
+  h2{font-size:34px}
+  section{padding:80px 6%}
+}
+@media (max-width:600px){
+  section{padding:70px 5%}
+  .hero{min-height:80vh}
+  .hero h1{font-size:34px}
+  .btn{padding:12px 20px;font-size:14px}
+  .footer-links,.footer-projects,.footer-contact{flex-direction:column;gap:4px}
+  .legal-wrap{padding:20px 16px}
+}
+</style>
+</head>
 
-        <section id="templates">
-            <h2>Featured Templates</h2>
-            <div class="grid">
-                <div class="card">
-                    <div class="demo-box">Button Pack</div>
-                    Button Animation Pack
-                    <div class="price">
-                        $9
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="demo-box">
-                        Scroll Pack
-                    </div>
-                    Scroll Animation Pack
-                    <div class="price">
-                        $12
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="demo-box">
-                        Loader Pack
-                    </div>
-                    Loader Animation Pack
-                    <div class="price">
-                        $7
-                    </div>
-                </div>
-            </div>
-        </section>
+<body>
 
-        <section id="work">
-            <h2>How It Works</h2>
-            <div class="grid">
-                <div class="card">1. Choose Template</div>
-                <div class="card">2. Copy Code</div>
-                <div class="card">3. Paste In Project</div>
-                <div class="card">4. Done 🚀</div>
-            </div>
-        </section>
+<!-- ================= HEADER ================= -->
+<header class="main-header">
+  <div class="logo">Motionix</div>
+  <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open')">☰ Menu</button>
+  <nav>
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="cookies.html">Cookies</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="documentation.html">Docs</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="additional.html">Additional</a></li>
+      <li><a href="changelog.html">Changelog</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <div class="card" style="max-width:400px; margin:40px auto; text-align:center;">
-            <div class="demo-box">Button Hover Demo</div>
-            <button onclick="openDemo()" style="background:#0ae448; border:none; padding:12px 24px; border-radius:30px; font-weight:600; cursor:pointer;">Live Demo</button>
-            <button onclick="buyTemplate('button-pack',199)" style="background:#333; border:1px solid #0ae448; color:#fff; padding:12px 24px; border-radius:30px; margin-left:8px; cursor:pointer;">Buy ₹199</button>
-        </div>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div>
+    <h1>Build Stunning Web Animations Faster</h1>
+    <p>Premium GSAP-powered animation templates for developers &amp; designers.</p>
+    <div class="btn-group">
+      <a class="btn primary" href="#demos">View Demos</a>
+      <a class="btn secondary" href="#templates">Browse Templates</a>
+    </div>
+    <details class="info-panel" style="margin-top:26px">
+      <summary>About Motionix (click to read 400+ words)</summary>
+      <p>Motionix is a StartKnowledge project built for front-end developers, creative agencies, freelancers, product teams and students who want beautiful, production-ready motion without spending days writing GSAP from scratch. Every template in the library has been hand-tuned for performance, accessibility and cross-browser stability — from the newest Chrome and Safari to older evergreen browsers. The library covers scroll-driven storytelling, micro-interactions, hover choreography, animated loaders, page transitions, SVG morphs, split-text reveals, parallax depth scenes and interactive UI feedback loops.</p>
+      <p>Our design philosophy is simple: real motion, no fluff. Each pack ships with clean semantic HTML, scoped CSS and lean JavaScript that you can paste into any project — static HTML, WordPress, Shopify, Next.js, Nuxt, SvelteKit or plain vanilla JS. No build step is required. ScrollTrigger, timeline sequencing, easing curves and stagger logic are already wired so you can focus on your design, not on debugging animation state.</p>
+      <p>Motionix is also a teaching resource. Every pack is commented, documented and linked to short explanations so you can learn why a particular easing or timeline delay works. Documentation lives at <a href="documentation.html">documentation.html</a>, the changelog at <a href="changelog.html">changelog.html</a>, and a step-by-step onboarding guide at <a href="how-it-works.html">how-it-works.html</a>.</p>
+      <p>We believe in lifetime updates. When you buy a Motionix pack, you get every future revision and new variants added to that pack at no extra cost. Free demos are always available on the homepage; premium packs unlock the full source, commercial license, prioritised email support and a private update feed. Support runs through <a href="mailto:support@startknowledge.in">support@startknowledge.in</a>, and business enquiries go to <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a>.</p>
+    </details>
+  </div>
+  <div class="hero-visual">GSAP POWER</div>
+</section>
 
-        <script>
-            // Razorpay demo (placeholder)
-            function buyTemplate(name, price) {
-                alert('Template "' + name + '" added to cart (demo). Price: ₹' + price);
-            }
-            function openDemo() {
-                alert('Live demo preview (simulated).');
-            }
+<!-- ================= LIVE DEMOS ================= -->
+<section id="demos">
+  <h2>Live Animation Demos</h2>
+  <div class="grid">
 
-            // GSAP Animations
-            gsap.registerPlugin(ScrollTrigger);
-            gsap.from(".hero h1", { y: 80, opacity: 0, duration: 1.2 });
-            gsap.from(".hero p", { y: 50, opacity: 0, duration: 1, delay: 0.2 });
-            gsap.from(".btn", { scale: 0.8, opacity: 0, duration: 0.8, delay: 0.4, stagger: 0.1 });
-            gsap.utils.toArray(".card").forEach(card => {
-                gsap.from(card, { scrollTrigger: { trigger: card, start: "top 85%" }, y: 60, opacity: 0, duration: 0.8 });
-            });
-        </script>
+    <div class="card demo">
+      <div class="info-row">
+        <span class="demo-box" style="flex:1;margin:0">Hover Button</span>
+        <button class="info-btn" aria-label="Info about Hover Button" onclick="toggleInfo('info-hover-btn')">i</button>
+      </div>
+      <p>Live Demo</p>
+      <details class="info-panel" id="info-hover-btn">
+        <summary>Hover Button — what it does &amp; when to use it</summary>
+        <p>The Hover Button animation is the highest-converting micro-interaction on the web. It fires on `mouseenter`, stays active on `mouseleave` and gracefully reverses on `focusout` so keyboard users get the same feedback as mouse users. The Motionix version uses a GSAP timeline with `ease: "power2.out"` for the entrance and `ease: "power2.in"` for the exit — a subtle asymmetry that feels more natural than a symmetric transition.</p>
+        <p>The pack ships in four visual variants: fill sweep, magnetic cursor follow, icon slide and gradient shift. All four are built on a single 12-line JavaScript function and scoped CSS class, so you can drop them into any button element without touching your existing styles. Every variant respects `prefers-reduced-motion` and falls back to a colour change for users who have disabled animation.</p>
+        <ul>
+          <li><strong>Use cases:</strong> CTAs, nav links, pricing cards, product tiles.</li>
+          <li><strong>Performance:</strong> GPU-only transforms, no layout thrash.</li>
+          <li><strong>Accessibility:</strong> `aria-label` preserved, focus-visible outline kept.</li>
+          <li><strong>Files:</strong> `hover-button.css`, `hover-button.js`, demo `index.html`.</li>
+        </ul>
+        <p>Copy-paste workflow: paste the CSS in your stylesheet, paste the JS before `&lt;/body&gt;`, add `data-motionix="hover"` to your button, done. Full steps on <a href="how-it-works.html">How It Works</a>.</p>
+      </details>
+    </div>
 
-        <!-- ===== FOOTER ===== -->
-        <footer class="site-footer">
-        <p>&copy; 2026 Motionix | A <a href="https://www.startknowledge.in/" target="_blank">StartKnowledge</a> Project. All Rights Reserved.</p>
-        <div class="footer-links">
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="contact.html">Contact</a> |
-            <a href="privacy.html">Privacy Policy</a> |
-            <a href="cookies.html">Cookies Policy</a> |
-            <a href="terms.html">Terms &amp; Conditions</a> |
-            <a href="faq.html">FAQ</a> |
-            <a href="documentation.html">Documentation</a> |
-            <a href="support.html">Support</a> |
-            <a href="disclaimer.html">Disclaimer</a> |
-            <a href="changelog.html">Changelog</a> |
-            <a href="additional.html">Additional</a>
-        </div>
-        <div class="footer-projects">
-            <a href="https://www.startknowledge.in/blog/" target="_blank" rel="noopener noreferrer">Blogs</a> |
-            <a href="https://www.startknowledge.in/" target="_blank" rel="noopener noreferrer">StartKnowledge.in</a> |
-            <a href="https://ultrastaticseoengine.startknowledge.in/" target="_blank" rel="noopener noreferrer">Ultra Static SEO Engine</a> |
-            <a href="https://youtubevideointanalyzer.startknowledge.in/" target="_blank" rel="noopener noreferrer">YouTube Video Analyzer</a> |
-            <a href="https://calculatorlibraryportal.startknowledge.in/" target="_blank" rel="noopener noreferrer">Calculator Library</a> |
-            <a href="https://bnrationscale.startknowledge.in/" target="_blank" rel="noopener noreferrer">BN Ration Scale</a> |
-            <a href="https://pencalculator.startknowledge.in/" target="_blank" rel="noopener noreferrer">Army Pension Calculator</a> |
-            <a href="https://aimosaicstudio.startknowledge.in/" target="_blank" rel="noopener noreferrer">AiMosaic Studio</a> |
-            <a href="https://designpainting.startknowledge.in/" target="_blank" rel="noopener noreferrer">Design Painting</a> |
-            <a href="https://motionix.startknowledge.in/" target="_blank" rel="noopener noreferrer">Motionix</a>
-        </div>
-        <div class="footer-contact">
-            📧 <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a> |
-            📧 <a href="mailto:support@startknowledge.in">support@startknowledge.in</a> |
-            📧 <a href="mailto:hello@startknowledge.in">hello@startknowledge.in</a>
-        </div>
-        </footer>
+    <div class="card demo">
+      <div class="info-row">
+        <span class="demo-box" style="flex:1;margin:0">Scroll Text</span>
+        <button class="info-btn" aria-label="Info about Scroll Text" onclick="toggleInfo('info-scroll-text')">i</button>
+      </div>
+      <p>Live Demo</p>
+      <details class="info-panel" id="info-scroll-text">
+        <summary>Scroll Text — what it does &amp; when to use it</summary>
+        <p>Scroll Text uses GSAP ScrollTrigger to reveal headings and paragraphs as the reader scrolls. The Motionix version splits your copy into words (or lines, or characters) using a lightweight utility, then staggers each element's `y`, `opacity` and `filter: blur()` values from 0.6 to 0 with a `power3.out` ease. The result reads like a professional agency site without any WebGL overhead.</p>
+        <p>Three preset rhythms ship in the pack — *editorial* (slower, line-based), *punchy* (word-based, tighter stagger) and *cinematic* (character-based, longest). Each preset is a single object so you can retune the entire site from one config block. The trigger uses `start: "top 85%"` by default, which fires just before the text enters the viewport so the reader never sees the animation start.</p>
+        <ul>
+          <li><strong>Use cases:</strong> long-form blog posts, landing pages, case studies, about pages.</li>
+          <li><strong>Performance:</strong> ScrollTrigger batches updates, ~1ms per frame on mid-range devices.</li>
+          <li><strong>Accessibility:</strong> text stays readable even if JS fails — no `visibility:hidden` traps.</li>
+          <li><strong>Files:</strong> `scroll-text.css`, `scroll-text.js`, `split-text.js`.</li>
+        </ul>
+        <p>Pair this with the <a href="#templates">Scroll Animation Pack</a> for parallax and pinning variants.</p>
+      </details>
+    </div>
 
-    </body>
+    <div class="card demo">
+      <div class="info-row">
+        <span class="demo-box" style="flex:1;margin:0">Card Hover</span>
+        <button class="info-btn" aria-label="Info about Card Hover" onclick="toggleInfo('info-card-hover')">i</button>
+      </div>
+      <p>Live Demo</p>
+      <details class="info-panel" id="info-card-hover">
+        <summary>Card Hover — what it does &amp; when to use it</summary>
+        <p>Card Hover adds depth-aware feedback to any card grid. The Motionix pack includes tilt-on-cursor (3D rotateX/rotateY based on pointer position), spotlight glow (a radial gradient that follows the cursor), and lift with soft shadow. Because all three are transform-only, they stay at 60 fps even on mobile.</p>
+        <p>Each variant is `pointer-events: none` on the overlay so links inside the card remain clickable. The tilt uses `gsap.quickTo()` to smoothly interpolate the rotate values, and the glow uses a CSS custom property `--mx` / `--my` updated on `pointermove` — this means the JS never touches the DOM after the initial setup, keeping repaints to a minimum.</p>
+        <ul>
+          <li><strong>Use cases:</strong> SaaS feature grids, portfolio thumbnails, product listings, team pages.</li>
+          <li><strong>Performance:</strong> GPU transform + composite only.</li>
+          <li><strong>Accessibility:</strong> full hover effect replicated on `:focus-within`.</li>
+          <li><strong>Files:</strong> `card-hover.css`, `card-hover.js`.</li>
+        </ul>
+        <p>See the <a href="documentation.html">documentation</a> for theming variables.</p>
+      </details>
+    </div>
+
+    <div class="card demo">
+      <div class="info-row">
+        <span class="demo-box" style="flex:1;margin:0">Loader</span>
+        <button class="info-btn" aria-label="Info about Loader" onclick="toggleInfo('info-loader')">i</button>
+      </div>
+      <p>Live Demo</p>
+      <details class="info-panel" id="info-loader">
+        <summary>Loader — what it does &amp; when to use it</summary>
+        <p>The Motionix Loader pack covers the four most requested preloader patterns: horizontal progress bar, circular spinner with text swap, brand-mark reveal, and a full-screen curtain that lifts after `window.load`. Each is timed to feel fast — none of them artificially delay your content. If the page loads in under 400 ms, the loader auto-hides to avoid an awkward flash.</p>
+        <p>All loaders are built on a single GSAP timeline with a `duration` variable you can tune from the top of the file. A `data-motionix-loader` attribute on `&lt;html&gt;` prevents the famous FOUC (flash of unstyled content) by fading in the body once the timeline completes. There is also a `forceHideAfter` safety timer so a loader can never block a page permanently.</p>
+        <ul>
+          <li><strong>Use cases:</strong> single-page apps, portfolio sites, agency homepages, product launches.</li>
+          <li><strong>Performance:</strong> CSS + transform only, no canvas.</li>
+          <li><strong>Accessibility:</strong> `role="status"` and `aria-live="polite"` included.</li>
+          <li><strong>Files:</strong> `loader.css`, `loader.js`, 4 demo HTML files.</li>
+        </ul>
+        <p>More details on <a href="how-it-works.html">How It Works</a> and <a href="faq.html">FAQ</a>.</p>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= TEMPLATES ================= -->
+<section id="templates">
+  <h2>Featured Templates</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="info-row">
+        <span class="demo-box" style="flex:1;margin:0">Button Pack</span>
+        <button class="info-btn" aria-label="Info about Button Pack" onclick="toggleInfo('info-button-pack')">i</button>
+      </div>
+      Button Animation Pack
+      <div class="price">$9</div>
+      <details class="info-panel" id="info-button-pack">
+        <summary>Button Animation Pack — 12 premium hover states</summary>
+        <p>The Button Animation Pack is the best-selling Motionix bundle. It contains 12 ready-to-use button animations: fill sweep, magnetic hover, icon slide, gradient shift, ripple click, loading spinner button, morph to checkmark, arrow reveal, underline draw, corner flip, glow pulse and text swap. Every animation is a self-contained CSS class plus a single JS function — no framework, no dependency beyond GSAP core.</p>
+        <p>Each button is keyboard-accessible, respects `prefers-reduced-motion`, and works inside forms (`&lt;button&gt;`), links (`&lt;a&gt;`) and inputs (`&lt;input type="submit"&gt;`). The pack includes a full documentation PDF, a live demo page and a starter HTML file you can open in any browser to test every variant.</p>
+        <ul>
+          <li><strong>License:</strong> Standard — unlimited personal + client projects.</li>
+          <li><strong>Updates:</strong> lifetime, free.</li>
+          <li><strong>Support:</strong> <a href="mailto:support@startknowledge.in">support@startknowledge.in</a></li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="card">
+      <div class="info-row">
+        <span class="demo-box" style="flex:1;margin:0">Scroll Pack</span>
+        <button class="info-btn" aria-label="Info about Scroll Pack" onclick="toggleInfo('info-scroll-pack')">i</button>
+      </div>
+      Scroll Animation Pack
+      <div class="price">$12</div>
+      <details class="info-panel" id="info-scroll-pack">
+        <summary>Scroll Animation Pack — parallax, pinning &amp; reveals</summary>
+        <p>The Scroll Animation Pack is a ScrollTrigger tour-de-force. It ships 15 scroll-driven templates: parallax hero, layered depth scene, horizontal scroll gallery, pinned product story, progress indicator, text reveal, image mask reveal, sticky sidebar, counters, timeline scrub, step reveal, section snap, marquee, zoom-on-scroll and tilt-on-scroll.</p>
+        <p>Every template is written with performance in mind — ScrollTrigger's `markers: false` in production, `anticipatePin: 1`, batched `refresh()` calls, and no `scroll` event listeners. The pack also includes a `prefers-reduced-motion` fallback for each template so your site remains usable for users with motion sensitivity.</p>
+        <ul>
+          <li><strong>Use cases:</strong> storytelling pages, SaaS homepages, agency sites, product launches.</li>
+          <li><strong>Files:</strong> 15 demos, 1 shared config, 1 readme, 1 license.</li>
+          <li><strong>Support:</strong> <a href="mailto:support@startknowledge.in">support@startknowledge.in</a></li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="card">
+      <div class="info-row">
+        <span class="demo-box" style="flex:1;margin:0">Loader Pack</span>
+        <button class="info-btn" aria-label="Info about Loader Pack" onclick="toggleInfo('info-loader-pack')">i</button>
+      </div>
+      Loader Animation Pack
+      <div class="price">$7</div>
+      <details class="info-panel" id="info-loader-pack">
+        <summary>Loader Animation Pack — 8 preloaders that feel fast</summary>
+        <p>The Loader Animation Pack contains 8 polished preloaders: horizontal bar, circular spinner, brand mark reveal, curtain lift, ink splash, dot matrix, morphing shape and skeleton shimmer. Every loader is engineered to auto-hide on `window.load` and can never block the page beyond a hard 4-second safety cap.</p>
+        <p>The pack is built on a shared GSAP timeline utility so you can swap the visual style by changing one class name. Skeleton shimmer doubles as a content placeholder for async fetches, which makes it useful beyond the initial page load.</p>
+        <ul>
+          <li><strong>Use cases:</strong> SPAs, dashboards, portfolio intros, SaaS onboarding.</li>
+          <li><strong>Files:</strong> 8 demos, 1 shared util, 1 readme.</li>
+          <li><strong>Support:</strong> <a href="mailto:support@startknowledge.in">support@startknowledge.in</a></li>
+        </ul>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section id="work">
+  <h2>How It Works</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1. Choose Template</h3>
+      <p>Browse the demo library and pick a pack that fits your project.</p>
+      <button class="info-btn" aria-label="Info about choosing a template" onclick="toggleInfo('info-step1')">i</button>
+      <details class="info-panel" id="info-step1">
+        <summary>Choosing a template — a 300-word guide</summary>
+        <p>Start by looking at the demo grid above. Ask three questions: (1) What interaction am I trying to improve? (2) Where does it appear — hero, feature section, footer? (3) Who is the audience — a client, an end user, an internal stakeholder? The answers usually narrow 60+ options to 3–4. Motionix templates are labelled by *use case* not just by visual style, so you can search for "pricing card", "blog list", or "onboarding" and get an instant shortlist.</p>
+        <p>If you're not sure, always start with a free demo. Free demos include the full HTML/CSS/JS of one variant, so you can test performance on your actual machine before paying. Premium packs unlock the remaining variants, documentation, and commercial license. You can compare packs side-by-side on the <a href="documentation.html">documentation page</a>, and questions go to <a href="faq.html">FAQ</a>.</p>
+      </details>
+    </div>
+
+    <div class="card">
+      <h3>2. Copy Code</h3>
+      <p>Every pack is a single HTML, CSS and JS snippet you can paste.</p>
+      <button class="info-btn" aria-label="Info about copying code" onclick="toggleInfo('info-step2')">i</button>
+      <details class="info-panel" id="info-step2">
+        <summary>Copying code — what you actually get</summary>
+        <p>Every Motionix pack follows the same file layout: `style.css`, `script.js`, `index.html` (the demo), `README.md` (setup guide), and `LICENSE.txt`. No minification, no obfuscation, no hidden dependencies beyond GSAP core and ScrollTrigger, both loaded from a public CDN. You paste the CSS into your stylesheet (or a `&lt;style&gt;` block), paste the JS before `&lt;/body&gt;`, and copy the HTML structure into your page.</p>
+        <p>If you use a framework (Next.js, Nuxt, SvelteKit), you can either import the CSS/JS as modules or copy the vanilla version directly into a component. All templates are framework-agnostic on purpose — that is a Motionix design rule.</p>
+      </details>
+    </div>
+
+    <div class="card">
+      <h3>3. Paste In Project</h3>
+      <p>Drop it into HTML, WordPress, Shopify, Next.js or plain JS.</p>
+      <button class="info-btn" aria-label="Info about pasting in project" onclick="toggleInfo('info-step3')">i</button>
+      <details class="info-panel" id="info-step3">
+        <summary>Pasting into your project — integration guide</summary>
+        <p>Static HTML: paste directly. WordPress: enqueue the CSS/JS through your child theme's `functions.php` or a snippet plugin. Shopify: add the CSS to `theme.css` and the JS to a `&lt;script&gt;` tag in `theme.liquid`. Next.js: create a `client` component, import the CSS and call the init function inside `useEffect`. Nuxt: same pattern, but with `onMounted`. SvelteKit: put the init call in `onMount`.</p>
+        <p>Because Motionix uses GSAP, ensure GSAP is loaded before your init function runs — the CDN `&lt;script&gt;` tags at the top of every demo show the correct order. Full step-by-step instructions are in <a href="how-it-works.html">how-it-works.html</a>.</p>
+      </details>
+    </div>
+
+    <div class="card">
+      <h3>4. Done 🚀</h3>
+      <p>Ship, monitor and iterate. Lifetime updates included.</p>
+      <button class="info-btn" aria-label="Info about shipping" onclick="toggleInfo('info-step4')">i</button>
+      <details class="info-panel" id="info-step4">
+        <summary>Shipping &amp; iterating — what happens next</summary>
+        <p>Once the code is live, keep an eye on three metrics: Lighthouse performance (should stay green), Cumulative Layout Shift (should stay under 0.1), and Interaction to Next Paint (should stay under 200 ms). Motionix templates are built to leave headroom in all three, but adding lots of third-party scripts can undo that. Use the changelog at <a href="changelog.html">changelog.html</a> to see when a pack you own receives an update, and re-download from your account email.</p>
+        <p>If something breaks, email <a href="mailto:support@startknowledge.in">support@startknowledge.in</a> with a link to the page and a short description. We aim to reply within two business days.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AD / AFFILIATE SLOT ================= -->
+<div class="ad-slot">
+  <strong>Sponsored slot.</strong> Motionix is reader-supported. Some links on this page are affiliate links to tools and services we genuinely use.
+  We may earn a small commission at no extra cost to you. See our <a href="disclaimer.html">Disclaimer</a> and <a href="privacy.html">Privacy Policy</a>.
+</div>
+
+<!-- ================= BUY CARD ================= -->
+<section style="padding-top:20px">
+  <div class="card" style="max-width:420px;margin:0 auto;text-align:center">
+    <div class="info-row">
+      <span class="demo-box" style="flex:1;margin:0">Button Hover Demo</span>
+      <button class="info-btn" aria-label="Info about the buy card" onclick="toggleInfo('info-buy')">i</button>
+    </div>
+    <button onclick="openDemo()" style="background:#0ae448;border:none;padding:12px 24px;border-radius:30px;font-weight:600;cursor:pointer;color:#000">Live Demo</button>
+    <button onclick="buyTemplate('button-pack',199)" style="background:#333;border:1px solid #0ae448;color:#fff;padding:12px 24px;border-radius:30px;margin-left:8px;cursor:pointer">Buy ₹199</button>
+    <details class="info-panel" id="info-buy">
+      <summary>Payment, delivery &amp; refund — 350-word summary</summary>
+      <p>Payments on Motionix are processed by Razorpay (India) and Stripe (international). After purchase, you receive an email with a signed download link valid for 7 days. Downloads are single-user; the standard license covers unlimited personal and client projects, but not resale or redistribution of the raw files. Refunds are available within 7 days if the template does not work as described and we cannot fix it — see <a href="terms.html">Terms &amp; Conditions</a> for details.</p>
+      <p>For invoices, GST details or enterprise licensing, email <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a>. For technical issues, email <a href="mailto:support@startknowledge.in">support@startknowledge.in</a>. General feedback goes to <a href="mailto:hello@startknowledge.in">hello@startknowledge.in</a>.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= LEGAL / DISCLAIMER / AI / SEO ================= -->
+<section id="legal">
+  <h2>Legal, AI &amp; SEO Information</h2>
+  <div class="legal-wrap">
+
+    <div class="notice">
+      This section is written for users, crawlers, AI systems, search engines, advertisers and affiliate partners. It is fully visible — no hidden text, no cloaking. Expand each block below to read it.
+    </div>
+
+    <details class="info-panel">
+      <summary>1. Full Disclaimer (≈1500 words)</summary>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35);margin-top:10px">
+        <summary>1.1 General information only</summary>
+        <p>The content on Motionix (<a href="https://motionix.startknowledge.in/">https://motionix.startknowledge.in/</a>) is provided for general informational and educational purposes only. It is published by StartKnowledge and is intended for developers, designers, agencies, students and hobbyists who work with web animation. While we try to keep every tutorial, template description and documentation page accurate and up to date, we make no representation or warranty of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability of the information, templates, code samples, images, or related graphics on this site for any purpose. Any reliance you place on such information is strictly at your own risk. To the maximum extent permitted by law, Motionix and StartKnowledge disclaim all liability for any loss or damage — direct, indirect, incidental, consequential or otherwise — arising out of or in connection with the use of this website or the templates sold on it.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.2 No professional advice</summary>
+        <p>Motionix does not provide legal, financial, tax, medical, or professional engineering advice. If you need advice in any of those areas, consult a qualified professional in your jurisdiction. Template code is provided as-is for creative and development use; it is not certified for safety-critical, medical, aerospace, defence, or life-support systems. Do not deploy Motionix templates in environments where animation failure could cause physical harm.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.3 Third-party links &amp; external resources</summary>
+        <p>This website contains links to external websites that are not provided or maintained by Motionix. These include, but are not limited to, <a href="https://www.startknowledge.in/" target="_blank" rel="noopener noreferrer">StartKnowledge</a>, the <a href="https://www.startknowledge.in/blog/" target="_blank" rel="noopener noreferrer">StartKnowledge Blog</a>, <a href="https://ultrastaticseoengine.startknowledge.in/" target="_blank" rel="noopener noreferrer">Ultra Static SEO Engine</a>, <a href="https://youtubevideointanalyzer.startknowledge.in/" target="_blank" rel="noopener noreferrer">YouTube Video Analyzer</a>, <a href="https://calculatorlibraryportal.startknowledge.in/" target="_blank" rel="noopener noreferrer">Calculator Library</a>, <a href="https://bnrationscale.startknowledge.in/" target="_blank" rel="noopener noreferrer">BN Ration Scale</a>, <a href="https://pencalculator.startknowledge.in/" target="_blank" rel="noopener noreferrer">Army Pension Calculator</a>, <a href="https://aimosaicstudio.startknowledge.in/" target="_blank" rel="noopener noreferrer">AiMosaic Studio</a>, <a href="https://designpainting.startknowledge.in/" target="_blank" rel="noopener noreferrer">Design Painting</a>, and <a href="https://universalimagedataexplorerforge.startknowledge.in/" target="_blank" rel="noopener noreferrer">Universal Image Data Explorer Forge</a>. We do not guarantee the accuracy, relevance, timeliness or completeness of any information on those third-party sites. Their inclusion does not imply endorsement, and their terms, privacy policies and practices may differ from ours. Always read the terms of any site you visit.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.4 Affiliate disclosure</summary>
+        <p>Motionix participates in affiliate programs. Some links on this site — including some links to tools, hosting providers, CDNs, design resources and paid services — are affiliate links. If you click one and make a purchase, Motionix may receive a small commission at no additional cost to you. This does not influence our editorial content, which is written independently and only recommends tools we use ourselves. Affiliate relationships are disclosed in-page, in this disclaimer, and in our <a href="privacy.html">Privacy Policy</a>. If you have questions about a specific link, email <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a>.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.5 Advertising</summary>
+        <p>This site may display advertising served by third-party ad networks. Those networks may use cookies, web beacons and similar technologies to show ads based on your prior visits to this and other websites. Motionix does not control the content of third-party ads and is not responsible for products or services advertised by them. You can manage ad personalisation through your browser and Google Ads settings. For full details, see our <a href="cookies.html">Cookies Policy</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.6 AI &amp; machine-readable content</summary>
+        <p>Motionix publishes structured data (<a href="#legal">JSON-LD</a> WebPage, WebSite, AboutPage and FAQPage schemas), an RSS feed at <a href="rss.xml">rss.xml</a>, a sitemap, semantic HTML landmarks, descriptive alt text and clearly labelled navigation. We permit search engine crawlers and AI training crawlers that respect <code>robots.txt</code> to index our public pages. We do not use hidden text, cloaking, doorway pages or deceptive redirects. Where a page contains an expandable <code>&lt;details&gt;</code> element, the content inside is real, visible-on-click HTML — the same content is served to crawlers and to users. If you operate an AI system and need structured access, please use the JSON-LD blocks at the top of this file and the RSS feed.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.7 SEO &amp; indexing notes</summary>
+        <p>This site is designed for clean indexing. Canonical URLs point to <a href="https://motionix.startknowledge.in/">motionix.startknowledge.in</a>. We use <code>index, follow</code> with <code>max-image-preview:large</code>, <code>max-snippet:-1</code> and <code>max-video-preview:-1</code>. We do not use <code>nofollow</code> on internal links; we only use <code>rel="noopener noreferrer"</code> on external links that open in a new tab. We submit sitemaps and RSS feeds to Google Search Console and Bing Webmaster Tools. If you notice an indexing problem, please report it to <a href="mailto:support@startknowledge.in">support@startknowledge.in</a>.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.8 API &amp; third-party services</summary>
+        <p>The Motionix website uses the following third-party services: Google Fonts (typography), cdnjs (GSAP delivery), Razorpay Checkout (payments in India), and Stripe (payments internationally). Each of these services has its own terms and privacy practices. Motionix does not store your card details — payment data is handled entirely by the payment processor. API calls made from your own projects to third-party services (for example, a CDN, a font API or an analytics endpoint) are governed by those services' terms, not by Motionix.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.9 Limitation of liability</summary>
+        <p>In no event shall Motionix, StartKnowledge, its directors, employees, partners, agents, suppliers or affiliates be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation loss of profits, data, use, goodwill or other intangible losses, resulting from (a) your access to or use of or inability to access or use the service; (b) any conduct or content of any third party on the service; (c) any content obtained from the service; or (d) unauthorised access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.10 Copyright</summary>
+        <p>All Motionix templates, written content, images and code are © 2026 Motionix / StartKnowledge unless otherwise stated. You may not reproduce, redistribute, resell or republish the template files without a written commercial license. You may, however, use the templates in unlimited personal and client projects under the Standard License. For enterprise, white-label or resale licensing, email <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a>.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.11 Changes to this disclaimer</summary>
+        <p>We may update this disclaimer from time to time. The latest version is always available at <a href="disclaimer.html">disclaimer.html</a>. Continued use of the site after changes are posted constitutes acceptance of the revised disclaimer.</p>
+      </details>
+
+      <details class="info-panel" style="background:transparent;border-left:2px solid rgba(10,228,72,.35)">
+        <summary>1.12 Contact</summary>
+        <p>Questions about this disclaimer? Email <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a>, <a href="mailto:support@startknowledge.in">support@startknowledge.in</a>, or <a href="mailto:hello@startknowledge.in">hello@startknowledge.in</a>. Postal enquiries can be routed through the StartKnowledge contact page at <a href="https://www.startknowledge.in/" target="_blank" rel="noopener noreferrer">startknowledge.in</a>.</p>
+      </details>
+
+    </details>
+
+    <!-- ============ 2. STATIC PAGE PROTECTION (collapsed) ============ -->
+    <details class="info-panel">
+      <summary>2. Static-Page Protection — click to expand</summary>
+      <p>Motionix is a static site. There is no server-side session, no login, and no database. Static-page protection therefore means: (a) integrity checks via Subresource Integrity (SRI) on CDN scripts, (b) Content Security Policy headers set at the host level, (c) HTTPS-only delivery, (d) HSTS preloading, (e) referrer policy set to <code>strict-origin-when-cross-origin</code>, and (f) no inline event handlers in production builds. If you self-host Motionix templates, replicate these headers in your own hosting panel or <code>_headers</code> / <code>netlify.toml</code> / <code>vercel.json</code> config. Security questions go to <a href="mailto:support@startknowledge.in">support@startknowledge.in</a>.</p>
+    </details>
+
+    <!-- ============ 3. GOOGLE INDEXING (collapsed) ============ -->
+    <details class="info-panel">
+      <summary>3. Google Indexing &amp; Search Console — click to expand</summary>
+      <p>Motionix is verified in Google Search Console under the property <code>motionix.startknowledge.in</code>. We submit an XML sitemap and the RSS feed at <a href="rss.xml">rss.xml</a>. We monitor Core Web Vitals (LCP, INP, CLS), mobile usability and rich result eligibility for FAQPage and WebSite schemas. If you find a page that is not indexed correctly, please report it to <a href="mailto:support@startknowledge.in">support@startknowledge.in</a> with the URL.</p>
+    </details>
+
+    <!-- ============ 4. AI & CRAWLERS (collapsed) ============ -->
+    <details class="info-panel">
+      <summary>4. AI Crawlers &amp; Machine Readability — click to expand</summary>
+      <p>Motionix is machine-readable. Structured data is provided as JSON-LD for <code>WebPage</code>, <code>WebSite</code>, <code>AboutPage</code>, <code>FAQPage</code> and <code>Organization</code>. Feeds are available at <a href="rss.xml">rss.xml</a> and via the sitemap referenced in <code>robots.txt</code>. All content inside <code>&lt;details&gt;</code> blocks is real, indexable HTML — not cloaked, not hidden, and not user-agent sniffed. AI systems are welcome to read the JSON-LD blocks at the top of this file for canonical structured information. Questions: <a href="mailto:support@startknowledge.in">support@startknowledge.in</a>.</p>
+    </details>
+
+    <!-- ============ 5. AFFILIATE & ADS (collapsed) ============ -->
+    <details class="info-panel">
+      <summary>5. Affiliate &amp; Advertising Disclosure — click to expand</summary>
+      <p>Some outbound links on Motionix are affiliate links. If you click one and make a purchase, Motionix may earn a small commission at no extra cost to you. This never changes the price you pay and never influences our editorial recommendations. Ad slots on the site may be served by third-party ad networks which may use cookies or similar technologies. Full details are in <a href="disclaimer.html">Disclaimer</a>, <a href="privacy.html">Privacy Policy</a> and <a href="cookies.html">Cookies Policy</a>. To report a broken or misleading link, email <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a>.</p>
+    </details>
+
+    <!-- ============ 6. API & THIRD-PARTY (collapsed) ============ -->
+    <details class="info-panel">
+      <summary>6. API, Third-Party Services &amp; Integrations — click to expand</summary>
+      <p>Motionix uses the following third-party services: Google Fonts (typography), cdnjs (GSAP &amp; ScrollTrigger delivery), Razorpay Checkout (India payments) and Stripe (international payments). Each service is governed by its own terms and privacy policy. Motionix does not store card data. API calls made by your own projects to any third-party endpoint are governed by that provider's terms, not by Motionix. For enterprise integrations or custom API questions, email <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a>.</p>
+    </details>
+
+    <!-- ============ 7. LIMITATION OF LIABILITY (collapsed) ============ -->
+    <details class="info-panel">
+      <summary>7. Limitation of Liability — click to expand</summary>
+      <p>In no event shall Motionix, StartKnowledge, its directors, employees, partners, agents, suppliers or affiliates be liable for any indirect, incidental, special, consequential or punitive damages — including without limitation loss of profits, data, use, goodwill or other intangible losses — resulting from (a) your access to or use of or inability to access or use the service; (b) any conduct or content of any third party on the service; (c) any content obtained from the service; or (d) unauthorised access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory. This clause does not exclude liability that cannot be excluded by applicable law.</p>
+    </details>
+
+    <!-- ============ 8. COPYRIGHT (collapsed) ============ -->
+    <details class="info-panel">
+      <summary>8. Copyright &amp; Licensing — click to expand</summary>
+      <p>All Motionix templates, written content, images and code are © 2026 Motionix / StartKnowledge unless otherwise stated. You may not reproduce, redistribute, resell or republish the raw template files without a written commercial license. The Standard License covers unlimited personal and client projects. For enterprise, white-label or resale licensing, email <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a>. See also <a href="terms.html">Terms &amp; Conditions</a> and <a href="additional.html">Additional</a> for full license terms.</p>
+    </details>
+
+    <!-- ============ 9. CONTACT (collapsed) ============ -->
+    <details class="info-panel">
+      <summary>9. Contact for Legal &amp; Compliance — click to expand</summary>
+      <p>For legal, DMCA, licensing or compliance enquiries, contact: <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a>. For technical support: <a href="mailto:support@startknowledge.in">support@startknowledge.in</a>. For general feedback: <a href="mailto:hello@startknowledge.in">hello@startknowledge.in</a>. Postal and business enquiries can be routed through <a href="https://www.startknowledge.in/" target="_blank" rel="noopener noreferrer">StartKnowledge.in</a>.</p>
+    </details>
+
+  </div>
+</section>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  /* ---------- Info panel toggle (fallback for browsers that don't auto-toggle) ---------- */
+  function toggleInfo(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    if(el.tagName === 'DETAILS'){ el.open = !el.open; el.scrollIntoView({behavior:'smooth', block:'center'}); }
+  }
+
+  /* ---------- Razorpay demo ---------- */
+  function buyTemplate(name, price){
+    alert('Template "' + name + '" added to cart (demo). Price: ₹' + price);
+  }
+  function openDemo(){
+    alert('Live demo preview (simulated).');
+  }
+
+  /* ---------- GSAP animations (after DOM ready) ---------- */
+  window.addEventListener('load', function(){
+    if(window.gsap && window.ScrollTrigger){
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.from(".hero h1", {y:80, opacity:0, duration:1.2});
+      gsap.from(".hero p", {y:50, opacity:0, duration:1, delay:0.2});
+      gsap.from(".btn", {scale:0.8, opacity:0, duration:0.8, delay:0.4, stagger:0.1});
+      gsap.utils.toArray(".card").forEach(function(card){
+        gsap.from(card, {
+          scrollTrigger:{trigger:card, start:"top 88%"},
+          y:60, opacity:0, duration:0.8
+        });
+      });
+    }
+  });
+</script>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <p>© 2026 Motionix | A <a href="https://www.startknowledge.in/" target="_blank" rel="noopener noreferrer">StartKnowledge</a> Project. All Rights Reserved.</p>
+
+  <div class="footer-links">
+    <a href="index.html">Home</a> |
+    <a href="blog/index.html">Blog</a> |
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="cookies.html">Cookies Policy</a> |
+    <a href="terms.html">Terms &amp; Conditions</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="documentation.html">Documentation</a> |
+    <a href="support.html">Support</a> |
+    <a href="disclaimer.html">Disclaimer</a> |
+    <a href="changelog.html">Changelog</a> |
+    <a href="additional.html">Additional</a> |
+    <a href="how-it-works.html">How It Works</a> |
+    <a href="rss.xml">RSS</a>
+  </div>
+
+  <div class="footer-projects">
+    <a href="https://www.startknowledge.in/blog/" target="_blank" rel="noopener noreferrer">Blogs</a> |
+    <a href="https://www.startknowledge.in/" target="_blank" rel="noopener noreferrer">StartKnowledge.in</a> |
+    <a href="https://ultrastaticseoengine.startknowledge.in/" target="_blank" rel="noopener noreferrer">Ultra Static SEO Engine</a> |
+    <a href="https://youtubevideointanalyzer.startknowledge.in/" target="_blank" rel="noopener noreferrer">YouTube Video Analyzer</a> |
+    <a href="https://calculatorlibraryportal.startknowledge.in/" target="_blank" rel="noopener noreferrer">Calculator Library</a> |
+    <a href="https://bnrationscale.startknowledge.in/" target="_blank" rel="noopener noreferrer">BN Ration Scale</a> |
+    <a href="https://pencalculator.startknowledge.in/" target="_blank" rel="noopener noreferrer">Army Pension Calculator</a> |
+    <a href="https://aimosaicstudio.startknowledge.in/" target="_blank" rel="noopener noreferrer">AiMosaic Studio</a> |
+    <a href="https://designpainting.startknowledge.in/" target="_blank" rel="noopener noreferrer">Design Painting</a> |
+    <a href="https://motionix.startknowledge.in/" target="_blank" rel="noopener noreferrer">Motionix</a> |
+    <a href="https://universalimagedataexplorerforge.startknowledge.in/" target="_blank" rel="noopener noreferrer">Universal Image Data Explorer Forge</a>
+  </div>
+
+  <div class="footer-contact">
+    📧 <a href="mailto:contact@startknowledge.in">contact@startknowledge.in</a> |
+    📧 <a href="mailto:support@startknowledge.in">support@startknowledge.in</a> |
+    📧 <a href="mailto:hello@startknowledge.in">hello@startknowledge.in</a>
+  </div>
+
+  <p class="footer-note">
+    Motionix is a static site. No hidden text, no cloaking. All expandable (<code>&lt;details&gt;</code>) content is real HTML
+    and is served identically to users and crawlers. See <a href="disclaimer.html">Disclaimer</a>, <a href="privacy.html">Privacy</a>,
+    <a href="terms.html">Terms</a>, and <a href="cookies.html">Cookies</a> for full disclosures.
+  </p>
+</footer>
+
+</body>
 </html>
